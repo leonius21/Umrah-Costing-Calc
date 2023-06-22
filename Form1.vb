@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports System.Runtime.Intrinsics.X86
+
+Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim currentDate As DateTime = DateTime.Now
         Me.FormBorderStyle = FormBorderStyle.FixedSingle
@@ -38,52 +40,64 @@
         ' Calculate the total price
         Dim totalPrice As Double = 0
 
-        If Not String.IsNullOrEmpty(visaPrice.Text) Then
-            totalPrice += Double.Parse(visaPrice.Text)
-        End If
+        Dim textboxes() As TextBox = {visaPrice, bulletTrain, luggagePrice, bukuUmrah, tagLanyard, mutawifMy, tourLeaderMy, zamZam, agentComm, officePrice, miscPrice}
 
-        If Not String.IsNullOrEmpty(bulletTrain.Text) Then
-            totalPrice += Double.Parse(bulletTrain.Text)
-        End If
-
-        If Not String.IsNullOrEmpty(luggagePrice.Text) Then
-            totalPrice += Double.Parse(luggagePrice.Text)
-        End If
-
-        If Not String.IsNullOrEmpty(bukuUmrah.Text) Then
-            totalPrice += Double.Parse(bukuUmrah.Text)
-        End If
-
-        If Not String.IsNullOrEmpty(tagLanyard.Text) Then
-            totalPrice += Double.Parse(tagLanyard.Text)
-        End If
-
-        If Not String.IsNullOrEmpty(mutawifMy.Text) Then
-            totalPrice += Double.Parse(mutawifMy.Text)
-        End If
-
-        If Not String.IsNullOrEmpty(tourLeaderMy.Text) Then
-            totalPrice += Double.Parse(tourLeaderMy.Text)
-        End If
-
-        If Not String.IsNullOrEmpty(zamZam.Text) Then
-            totalPrice += Double.Parse(zamZam.Text)
-        End If
-
-        If Not String.IsNullOrEmpty(agentComm.Text) Then
-            totalPrice += Double.Parse(agentComm.Text)
-        End If
-
-        If Not String.IsNullOrEmpty(officePrice.Text) Then
-            totalPrice += Double.Parse(officePrice.Text)
-        End If
-
-        If Not String.IsNullOrEmpty(miscPrice.Text) Then
-            totalPrice += Double.Parse(miscPrice.Text)
-        End If
+        For Each textbox As TextBox In textboxes
+            If Not String.IsNullOrEmpty(textbox.Text) Then
+                totalPrice += Double.Parse(textbox.Text)
+            End If
+        Next
 
         ' Display the total price
         necessTotalPrice.Text = totalPrice.ToString()
+
+    End Sub
+
+    Private Sub SaudiArr_TextChanged(sender As Object, e As EventArgs) Handles saudiArrPerPaxSar.TextChanged, saudiArrPax.TextChanged
+        Dim ovrPrice As Double
+        Dim paxValue As Integer
+        Dim pricePerPaxValue As Double
+
+        If Integer.TryParse(saudiArrPax.Text, paxValue) AndAlso Double.TryParse(saudiArrPerPaxSar.Text, pricePerPaxValue) Then
+            ovrPrice = paxValue * pricePerPaxValue
+            saudiArrPriceSar.Text = ovrPrice.ToString("0.00")
+        Else
+            saudiArrPriceSar.Text = ""
+        End If
+
+    End Sub
+
+    Private Sub TourLead_TextChanged(sender As Object, e As EventArgs) Handles tourLeadPax.TextChanged, tourLeadPriceSar.TextChanged
+        Dim perPaxPrice As Double
+        Dim paxValue As Integer
+        Dim ovrValue As Double
+
+        If Integer.TryParse(tourLeadPax.Text, paxValue) AndAlso Double.TryParse(tourLeadPriceSar.Text, ovrValue) Then
+            perPaxPrice = paxValue * ovrValue
+            tourLeadPerPax.Text = perPaxPrice.ToString("0.00")
+        Else
+            tourLeadPerPax.Text = ""
+        End If
+
+    End Sub
+
+    Private Sub ExchgRate_TextChanged(sender As Object, e As EventArgs) Handles exchgRate.TextChanged
+        Dim excRate As Double
+        Dim saudiArrSar As Double
+        Dim tourLeadSar As Double
+        If Double.TryParse(exchgRate.Text, excRate) AndAlso Double.TryParse(saudiArrPriceSar.Text, saudiArrSar) Then
+            Dim saudiArrRmPrice As Double = excRate * saudiArrSar
+            saudiArrPriceRm.Text = saudiArrRmPrice.ToString("0.00")
+            If Double.TryParse(exchgRate.Text, excRate) AndAlso Double.TryParse(tourLeadPriceSar.Text, tourLeadSar) Then
+                Dim tourLeadRmPrice As Double = excRate * tourLeadSar
+                tourLeadPriceRm.Text = tourLeadRmPrice.ToString("0.00")
+            Else
+                tourLeadPriceRm.Text = ""
+            End If
+        Else
+            saudiArrPriceRm.Text = ""
+        End If
+
     End Sub
 End Class
 

@@ -225,7 +225,7 @@ Partial Class Form1
         roomPrice4 = New TextBox()
         roomPrice3 = New TextBox()
         roomPrice2 = New TextBox()
-        hotelName = New TextBox()
+        hotelNameMak = New TextBox()
         Label87 = New Label()
         Label86 = New Label()
         Label85 = New Label()
@@ -236,38 +236,38 @@ Partial Class Form1
         Label80 = New Label()
         TabPage8 = New TabPage()
         Label92 = New Label()
-        TextBox105 = New TextBox()
+        ovrTotalMadRm5 = New TextBox()
         Label93 = New Label()
-        TextBox106 = New TextBox()
+        ovrTotalMadRm4 = New TextBox()
         Label94 = New Label()
         Label95 = New Label()
-        TextBox107 = New TextBox()
-        TextBox108 = New TextBox()
-        TextBox109 = New TextBox()
-        TextBox110 = New TextBox()
-        TextBox111 = New TextBox()
-        TextBox112 = New TextBox()
-        TextBox113 = New TextBox()
-        TextBox114 = New TextBox()
-        TextBox115 = New TextBox()
-        TextBox116 = New TextBox()
-        TextBox117 = New TextBox()
-        TextBox118 = New TextBox()
-        TextBox119 = New TextBox()
-        TextBox120 = New TextBox()
-        TextBox121 = New TextBox()
-        TextBox122 = New TextBox()
-        TextBox123 = New TextBox()
-        TextBox124 = New TextBox()
-        TextBox125 = New TextBox()
-        TextBox126 = New TextBox()
-        TextBox127 = New TextBox()
-        TextBox128 = New TextBox()
-        TextBox129 = New TextBox()
-        TextBox130 = New TextBox()
-        TextBox131 = New TextBox()
-        TextBox132 = New TextBox()
-        TextBox133 = New TextBox()
+        ovrTotalMadRm3 = New TextBox()
+        ovrTotalMadRm2 = New TextBox()
+        ovrTotalMadSar5 = New TextBox()
+        ovrTotalMadSar4 = New TextBox()
+        ovrTotalMadSar3 = New TextBox()
+        ovrTotalMadSar2 = New TextBox()
+        hotelNightsMad5 = New TextBox()
+        hotelNightsMad4 = New TextBox()
+        hotelNightsMad3 = New TextBox()
+        hotelNightsMad2 = New TextBox()
+        accTotalPriceMad5 = New TextBox()
+        accTotalPriceMad4 = New TextBox()
+        accTotalPriceMad3 = New TextBox()
+        accTotalPriceMad2 = New TextBox()
+        mealPriceMad5 = New TextBox()
+        mealPriceMad4 = New TextBox()
+        mealPriceMad3 = New TextBox()
+        mealPriceMad2 = New TextBox()
+        paxPriceMad5 = New TextBox()
+        paxPriceMad4 = New TextBox()
+        paxPriceMad3 = New TextBox()
+        paxPriceMad2 = New TextBox()
+        roomPriceMad5 = New TextBox()
+        roomPriceMad4 = New TextBox()
+        roomPriceMad3 = New TextBox()
+        roomPriceMad2 = New TextBox()
+        hotelNameMad = New TextBox()
         Label96 = New Label()
         Label97 = New Label()
         Label98 = New Label()
@@ -278,20 +278,20 @@ Partial Class Form1
         Label103 = New Label()
         Label79 = New Label()
         Panel10 = New Panel()
-        TextBox138 = New TextBox()
-        TextBox139 = New TextBox()
-        TextBox136 = New TextBox()
-        TextBox137 = New TextBox()
-        TextBox142 = New TextBox()
+        tourLeadPriceRm = New TextBox()
+        saudiArrPriceRm = New TextBox()
+        tourLeadPerPax = New TextBox()
+        saudiArrPerPaxSar = New TextBox()
+        exchgRate = New TextBox()
         Label111 = New Label()
-        TextBox140 = New TextBox()
+        tourLeadPax = New TextBox()
         Label106 = New Label()
-        TextBox141 = New TextBox()
+        tourLeadPriceSar = New TextBox()
         Label110 = New Label()
         Label104 = New Label()
         Label109 = New Label()
-        TextBox134 = New TextBox()
-        TextBox135 = New TextBox()
+        saudiArrPriceSar = New TextBox()
+        saudiArrPax = New TextBox()
         Label108 = New Label()
         Label107 = New Label()
         pkgName = New TextBox()
@@ -2010,7 +2010,7 @@ Partial Class Form1
         TabPage7.Controls.Add(roomPrice4)
         TabPage7.Controls.Add(roomPrice3)
         TabPage7.Controls.Add(roomPrice2)
-        TabPage7.Controls.Add(hotelName)
+        TabPage7.Controls.Add(hotelNameMak)
         TabPage7.Controls.Add(Label87)
         TabPage7.Controls.Add(Label86)
         TabPage7.Controls.Add(Label85)
@@ -2041,6 +2041,7 @@ Partial Class Form1
         ' 
         ovrTotalRm5.Location = New Point(547, 214)
         ovrTotalRm5.Name = "ovrTotalRm5"
+        ovrTotalRm5.ReadOnly = True
         ovrTotalRm5.Size = New Size(100, 23)
         ovrTotalRm5.TabIndex = 36
         ' 
@@ -2058,6 +2059,7 @@ Partial Class Form1
         ' 
         ovrTotalRm4.Location = New Point(419, 214)
         ovrTotalRm4.Name = "ovrTotalRm4"
+        ovrTotalRm4.ReadOnly = True
         ovrTotalRm4.Size = New Size(100, 23)
         ovrTotalRm4.TabIndex = 35
         ' 
@@ -2085,6 +2087,7 @@ Partial Class Form1
         ' 
         ovrTotalRm3.Location = New Point(289, 214)
         ovrTotalRm3.Name = "ovrTotalRm3"
+        ovrTotalRm3.ReadOnly = True
         ovrTotalRm3.Size = New Size(100, 23)
         ovrTotalRm3.TabIndex = 34
         ' 
@@ -2092,6 +2095,7 @@ Partial Class Form1
         ' 
         ovrTotalRm2.Location = New Point(158, 214)
         ovrTotalRm2.Name = "ovrTotalRm2"
+        ovrTotalRm2.ReadOnly = True
         ovrTotalRm2.Size = New Size(100, 23)
         ovrTotalRm2.TabIndex = 33
         ' 
@@ -2099,6 +2103,7 @@ Partial Class Form1
         ' 
         ovrTotalSar5.Location = New Point(547, 189)
         ovrTotalSar5.Name = "ovrTotalSar5"
+        ovrTotalSar5.ReadOnly = True
         ovrTotalSar5.Size = New Size(100, 23)
         ovrTotalSar5.TabIndex = 32
         ' 
@@ -2106,6 +2111,7 @@ Partial Class Form1
         ' 
         ovrTotalSar4.Location = New Point(419, 189)
         ovrTotalSar4.Name = "ovrTotalSar4"
+        ovrTotalSar4.ReadOnly = True
         ovrTotalSar4.Size = New Size(100, 23)
         ovrTotalSar4.TabIndex = 31
         ' 
@@ -2113,6 +2119,7 @@ Partial Class Form1
         ' 
         ovrTotalSar3.Location = New Point(289, 189)
         ovrTotalSar3.Name = "ovrTotalSar3"
+        ovrTotalSar3.ReadOnly = True
         ovrTotalSar3.Size = New Size(100, 23)
         ovrTotalSar3.TabIndex = 30
         ' 
@@ -2120,6 +2127,7 @@ Partial Class Form1
         ' 
         ovrTotalSar2.Location = New Point(158, 189)
         ovrTotalSar2.Name = "ovrTotalSar2"
+        ovrTotalSar2.ReadOnly = True
         ovrTotalSar2.Size = New Size(100, 23)
         ovrTotalSar2.TabIndex = 29
         ' 
@@ -2155,6 +2163,7 @@ Partial Class Form1
         ' 
         accTotalPrice5.Location = New Point(547, 138)
         accTotalPrice5.Name = "accTotalPrice5"
+        accTotalPrice5.ReadOnly = True
         accTotalPrice5.Size = New Size(100, 23)
         accTotalPrice5.TabIndex = 24
         ' 
@@ -2162,6 +2171,7 @@ Partial Class Form1
         ' 
         accTotalPrice4.Location = New Point(419, 138)
         accTotalPrice4.Name = "accTotalPrice4"
+        accTotalPrice4.ReadOnly = True
         accTotalPrice4.Size = New Size(100, 23)
         accTotalPrice4.TabIndex = 23
         ' 
@@ -2169,6 +2179,7 @@ Partial Class Form1
         ' 
         accTotalPrice3.Location = New Point(289, 138)
         accTotalPrice3.Name = "accTotalPrice3"
+        accTotalPrice3.ReadOnly = True
         accTotalPrice3.Size = New Size(100, 23)
         accTotalPrice3.TabIndex = 22
         ' 
@@ -2176,6 +2187,7 @@ Partial Class Form1
         ' 
         accTotalPrice2.Location = New Point(158, 138)
         accTotalPrice2.Name = "accTotalPrice2"
+        accTotalPrice2.ReadOnly = True
         accTotalPrice2.Size = New Size(100, 23)
         accTotalPrice2.TabIndex = 21
         ' 
@@ -2211,6 +2223,7 @@ Partial Class Form1
         ' 
         paxPrice5.Location = New Point(547, 88)
         paxPrice5.Name = "paxPrice5"
+        paxPrice5.ReadOnly = True
         paxPrice5.Size = New Size(100, 23)
         paxPrice5.TabIndex = 16
         ' 
@@ -2218,6 +2231,7 @@ Partial Class Form1
         ' 
         paxPrice4.Location = New Point(419, 88)
         paxPrice4.Name = "paxPrice4"
+        paxPrice4.ReadOnly = True
         paxPrice4.Size = New Size(100, 23)
         paxPrice4.TabIndex = 15
         ' 
@@ -2225,6 +2239,7 @@ Partial Class Form1
         ' 
         paxPrice3.Location = New Point(289, 88)
         paxPrice3.Name = "paxPrice3"
+        paxPrice3.ReadOnly = True
         paxPrice3.Size = New Size(100, 23)
         paxPrice3.TabIndex = 14
         ' 
@@ -2232,6 +2247,7 @@ Partial Class Form1
         ' 
         paxPrice2.Location = New Point(158, 88)
         paxPrice2.Name = "paxPrice2"
+        paxPrice2.ReadOnly = True
         paxPrice2.Size = New Size(100, 23)
         paxPrice2.TabIndex = 13
         ' 
@@ -2263,12 +2279,12 @@ Partial Class Form1
         roomPrice2.Size = New Size(100, 23)
         roomPrice2.TabIndex = 9
         ' 
-        ' hotelName
+        ' hotelNameMak
         ' 
-        hotelName.Location = New Point(97, 11)
-        hotelName.Name = "hotelName"
-        hotelName.Size = New Size(325, 23)
-        hotelName.TabIndex = 8
+        hotelNameMak.Location = New Point(97, 11)
+        hotelNameMak.Name = "hotelNameMak"
+        hotelNameMak.Size = New Size(325, 23)
+        hotelNameMak.TabIndex = 8
         ' 
         ' Label87
         ' 
@@ -2346,38 +2362,38 @@ Partial Class Form1
         ' 
         TabPage8.BorderStyle = BorderStyle.FixedSingle
         TabPage8.Controls.Add(Label92)
-        TabPage8.Controls.Add(TextBox105)
+        TabPage8.Controls.Add(ovrTotalMadRm5)
         TabPage8.Controls.Add(Label93)
-        TabPage8.Controls.Add(TextBox106)
+        TabPage8.Controls.Add(ovrTotalMadRm4)
         TabPage8.Controls.Add(Label94)
         TabPage8.Controls.Add(Label95)
-        TabPage8.Controls.Add(TextBox107)
-        TabPage8.Controls.Add(TextBox108)
-        TabPage8.Controls.Add(TextBox109)
-        TabPage8.Controls.Add(TextBox110)
-        TabPage8.Controls.Add(TextBox111)
-        TabPage8.Controls.Add(TextBox112)
-        TabPage8.Controls.Add(TextBox113)
-        TabPage8.Controls.Add(TextBox114)
-        TabPage8.Controls.Add(TextBox115)
-        TabPage8.Controls.Add(TextBox116)
-        TabPage8.Controls.Add(TextBox117)
-        TabPage8.Controls.Add(TextBox118)
-        TabPage8.Controls.Add(TextBox119)
-        TabPage8.Controls.Add(TextBox120)
-        TabPage8.Controls.Add(TextBox121)
-        TabPage8.Controls.Add(TextBox122)
-        TabPage8.Controls.Add(TextBox123)
-        TabPage8.Controls.Add(TextBox124)
-        TabPage8.Controls.Add(TextBox125)
-        TabPage8.Controls.Add(TextBox126)
-        TabPage8.Controls.Add(TextBox127)
-        TabPage8.Controls.Add(TextBox128)
-        TabPage8.Controls.Add(TextBox129)
-        TabPage8.Controls.Add(TextBox130)
-        TabPage8.Controls.Add(TextBox131)
-        TabPage8.Controls.Add(TextBox132)
-        TabPage8.Controls.Add(TextBox133)
+        TabPage8.Controls.Add(ovrTotalMadRm3)
+        TabPage8.Controls.Add(ovrTotalMadRm2)
+        TabPage8.Controls.Add(ovrTotalMadSar5)
+        TabPage8.Controls.Add(ovrTotalMadSar4)
+        TabPage8.Controls.Add(ovrTotalMadSar3)
+        TabPage8.Controls.Add(ovrTotalMadSar2)
+        TabPage8.Controls.Add(hotelNightsMad5)
+        TabPage8.Controls.Add(hotelNightsMad4)
+        TabPage8.Controls.Add(hotelNightsMad3)
+        TabPage8.Controls.Add(hotelNightsMad2)
+        TabPage8.Controls.Add(accTotalPriceMad5)
+        TabPage8.Controls.Add(accTotalPriceMad4)
+        TabPage8.Controls.Add(accTotalPriceMad3)
+        TabPage8.Controls.Add(accTotalPriceMad2)
+        TabPage8.Controls.Add(mealPriceMad5)
+        TabPage8.Controls.Add(mealPriceMad4)
+        TabPage8.Controls.Add(mealPriceMad3)
+        TabPage8.Controls.Add(mealPriceMad2)
+        TabPage8.Controls.Add(paxPriceMad5)
+        TabPage8.Controls.Add(paxPriceMad4)
+        TabPage8.Controls.Add(paxPriceMad3)
+        TabPage8.Controls.Add(paxPriceMad2)
+        TabPage8.Controls.Add(roomPriceMad5)
+        TabPage8.Controls.Add(roomPriceMad4)
+        TabPage8.Controls.Add(roomPriceMad3)
+        TabPage8.Controls.Add(roomPriceMad2)
+        TabPage8.Controls.Add(hotelNameMad)
         TabPage8.Controls.Add(Label96)
         TabPage8.Controls.Add(Label97)
         TabPage8.Controls.Add(Label98)
@@ -2404,12 +2420,13 @@ Partial Class Form1
         Label92.TabIndex = 153
         Label92.Text = "Quint"
         ' 
-        ' TextBox105
+        ' ovrTotalMadRm5
         ' 
-        TextBox105.Location = New Point(547, 214)
-        TextBox105.Name = "TextBox105"
-        TextBox105.Size = New Size(100, 23)
-        TextBox105.TabIndex = 149
+        ovrTotalMadRm5.Location = New Point(547, 214)
+        ovrTotalMadRm5.Name = "ovrTotalMadRm5"
+        ovrTotalMadRm5.ReadOnly = True
+        ovrTotalMadRm5.Size = New Size(100, 23)
+        ovrTotalMadRm5.TabIndex = 149
         ' 
         ' Label93
         ' 
@@ -2421,12 +2438,13 @@ Partial Class Form1
         Label93.TabIndex = 152
         Label93.Text = "Quad"
         ' 
-        ' TextBox106
+        ' ovrTotalMadRm4
         ' 
-        TextBox106.Location = New Point(419, 214)
-        TextBox106.Name = "TextBox106"
-        TextBox106.Size = New Size(100, 23)
-        TextBox106.TabIndex = 148
+        ovrTotalMadRm4.Location = New Point(419, 214)
+        ovrTotalMadRm4.Name = "ovrTotalMadRm4"
+        ovrTotalMadRm4.ReadOnly = True
+        ovrTotalMadRm4.Size = New Size(100, 23)
+        ovrTotalMadRm4.TabIndex = 148
         ' 
         ' Label94
         ' 
@@ -2448,194 +2466,208 @@ Partial Class Form1
         Label95.TabIndex = 150
         Label95.Text = "Double"
         ' 
-        ' TextBox107
+        ' ovrTotalMadRm3
         ' 
-        TextBox107.Location = New Point(289, 214)
-        TextBox107.Name = "TextBox107"
-        TextBox107.Size = New Size(100, 23)
-        TextBox107.TabIndex = 147
+        ovrTotalMadRm3.Location = New Point(289, 214)
+        ovrTotalMadRm3.Name = "ovrTotalMadRm3"
+        ovrTotalMadRm3.ReadOnly = True
+        ovrTotalMadRm3.Size = New Size(100, 23)
+        ovrTotalMadRm3.TabIndex = 147
         ' 
-        ' TextBox108
+        ' ovrTotalMadRm2
         ' 
-        TextBox108.Location = New Point(158, 214)
-        TextBox108.Name = "TextBox108"
-        TextBox108.Size = New Size(100, 23)
-        TextBox108.TabIndex = 146
+        ovrTotalMadRm2.Location = New Point(158, 214)
+        ovrTotalMadRm2.Name = "ovrTotalMadRm2"
+        ovrTotalMadRm2.ReadOnly = True
+        ovrTotalMadRm2.Size = New Size(100, 23)
+        ovrTotalMadRm2.TabIndex = 146
         ' 
-        ' TextBox109
+        ' ovrTotalMadSar5
         ' 
-        TextBox109.Location = New Point(547, 189)
-        TextBox109.Name = "TextBox109"
-        TextBox109.Size = New Size(100, 23)
-        TextBox109.TabIndex = 145
+        ovrTotalMadSar5.Location = New Point(547, 189)
+        ovrTotalMadSar5.Name = "ovrTotalMadSar5"
+        ovrTotalMadSar5.ReadOnly = True
+        ovrTotalMadSar5.Size = New Size(100, 23)
+        ovrTotalMadSar5.TabIndex = 145
         ' 
-        ' TextBox110
+        ' ovrTotalMadSar4
         ' 
-        TextBox110.Location = New Point(419, 189)
-        TextBox110.Name = "TextBox110"
-        TextBox110.Size = New Size(100, 23)
-        TextBox110.TabIndex = 144
+        ovrTotalMadSar4.Location = New Point(419, 189)
+        ovrTotalMadSar4.Name = "ovrTotalMadSar4"
+        ovrTotalMadSar4.ReadOnly = True
+        ovrTotalMadSar4.Size = New Size(100, 23)
+        ovrTotalMadSar4.TabIndex = 144
         ' 
-        ' TextBox111
+        ' ovrTotalMadSar3
         ' 
-        TextBox111.Location = New Point(289, 189)
-        TextBox111.Name = "TextBox111"
-        TextBox111.Size = New Size(100, 23)
-        TextBox111.TabIndex = 143
+        ovrTotalMadSar3.Location = New Point(289, 189)
+        ovrTotalMadSar3.Name = "ovrTotalMadSar3"
+        ovrTotalMadSar3.ReadOnly = True
+        ovrTotalMadSar3.Size = New Size(100, 23)
+        ovrTotalMadSar3.TabIndex = 143
         ' 
-        ' TextBox112
+        ' ovrTotalMadSar2
         ' 
-        TextBox112.Location = New Point(158, 189)
-        TextBox112.Name = "TextBox112"
-        TextBox112.Size = New Size(100, 23)
-        TextBox112.TabIndex = 142
+        ovrTotalMadSar2.Location = New Point(158, 189)
+        ovrTotalMadSar2.Name = "ovrTotalMadSar2"
+        ovrTotalMadSar2.ReadOnly = True
+        ovrTotalMadSar2.Size = New Size(100, 23)
+        ovrTotalMadSar2.TabIndex = 142
         ' 
-        ' TextBox113
+        ' hotelNightsMad5
         ' 
-        TextBox113.Location = New Point(547, 164)
-        TextBox113.Name = "TextBox113"
-        TextBox113.Size = New Size(100, 23)
-        TextBox113.TabIndex = 141
+        hotelNightsMad5.Location = New Point(547, 164)
+        hotelNightsMad5.Name = "hotelNightsMad5"
+        hotelNightsMad5.Size = New Size(100, 23)
+        hotelNightsMad5.TabIndex = 141
         ' 
-        ' TextBox114
+        ' hotelNightsMad4
         ' 
-        TextBox114.Location = New Point(419, 164)
-        TextBox114.Name = "TextBox114"
-        TextBox114.Size = New Size(100, 23)
-        TextBox114.TabIndex = 140
+        hotelNightsMad4.Location = New Point(419, 164)
+        hotelNightsMad4.Name = "hotelNightsMad4"
+        hotelNightsMad4.Size = New Size(100, 23)
+        hotelNightsMad4.TabIndex = 140
         ' 
-        ' TextBox115
+        ' hotelNightsMad3
         ' 
-        TextBox115.Location = New Point(289, 164)
-        TextBox115.Name = "TextBox115"
-        TextBox115.Size = New Size(100, 23)
-        TextBox115.TabIndex = 139
+        hotelNightsMad3.Location = New Point(289, 164)
+        hotelNightsMad3.Name = "hotelNightsMad3"
+        hotelNightsMad3.Size = New Size(100, 23)
+        hotelNightsMad3.TabIndex = 139
         ' 
-        ' TextBox116
+        ' hotelNightsMad2
         ' 
-        TextBox116.Location = New Point(158, 164)
-        TextBox116.Name = "TextBox116"
-        TextBox116.Size = New Size(100, 23)
-        TextBox116.TabIndex = 138
+        hotelNightsMad2.Location = New Point(158, 164)
+        hotelNightsMad2.Name = "hotelNightsMad2"
+        hotelNightsMad2.Size = New Size(100, 23)
+        hotelNightsMad2.TabIndex = 138
         ' 
-        ' TextBox117
+        ' accTotalPriceMad5
         ' 
-        TextBox117.Location = New Point(547, 138)
-        TextBox117.Name = "TextBox117"
-        TextBox117.Size = New Size(100, 23)
-        TextBox117.TabIndex = 137
+        accTotalPriceMad5.Location = New Point(547, 138)
+        accTotalPriceMad5.Name = "accTotalPriceMad5"
+        accTotalPriceMad5.ReadOnly = True
+        accTotalPriceMad5.Size = New Size(100, 23)
+        accTotalPriceMad5.TabIndex = 137
         ' 
-        ' TextBox118
+        ' accTotalPriceMad4
         ' 
-        TextBox118.Location = New Point(419, 138)
-        TextBox118.Name = "TextBox118"
-        TextBox118.Size = New Size(100, 23)
-        TextBox118.TabIndex = 136
+        accTotalPriceMad4.Location = New Point(419, 138)
+        accTotalPriceMad4.Name = "accTotalPriceMad4"
+        accTotalPriceMad4.ReadOnly = True
+        accTotalPriceMad4.Size = New Size(100, 23)
+        accTotalPriceMad4.TabIndex = 136
         ' 
-        ' TextBox119
+        ' accTotalPriceMad3
         ' 
-        TextBox119.Location = New Point(289, 138)
-        TextBox119.Name = "TextBox119"
-        TextBox119.Size = New Size(100, 23)
-        TextBox119.TabIndex = 135
+        accTotalPriceMad3.Location = New Point(289, 138)
+        accTotalPriceMad3.Name = "accTotalPriceMad3"
+        accTotalPriceMad3.ReadOnly = True
+        accTotalPriceMad3.Size = New Size(100, 23)
+        accTotalPriceMad3.TabIndex = 135
         ' 
-        ' TextBox120
+        ' accTotalPriceMad2
         ' 
-        TextBox120.Location = New Point(158, 138)
-        TextBox120.Name = "TextBox120"
-        TextBox120.Size = New Size(100, 23)
-        TextBox120.TabIndex = 134
+        accTotalPriceMad2.Location = New Point(158, 138)
+        accTotalPriceMad2.Name = "accTotalPriceMad2"
+        accTotalPriceMad2.ReadOnly = True
+        accTotalPriceMad2.Size = New Size(100, 23)
+        accTotalPriceMad2.TabIndex = 134
         ' 
-        ' TextBox121
+        ' mealPriceMad5
         ' 
-        TextBox121.Location = New Point(547, 113)
-        TextBox121.Name = "TextBox121"
-        TextBox121.Size = New Size(100, 23)
-        TextBox121.TabIndex = 133
+        mealPriceMad5.Location = New Point(547, 113)
+        mealPriceMad5.Name = "mealPriceMad5"
+        mealPriceMad5.Size = New Size(100, 23)
+        mealPriceMad5.TabIndex = 133
         ' 
-        ' TextBox122
+        ' mealPriceMad4
         ' 
-        TextBox122.Location = New Point(419, 113)
-        TextBox122.Name = "TextBox122"
-        TextBox122.Size = New Size(100, 23)
-        TextBox122.TabIndex = 132
+        mealPriceMad4.Location = New Point(419, 113)
+        mealPriceMad4.Name = "mealPriceMad4"
+        mealPriceMad4.Size = New Size(100, 23)
+        mealPriceMad4.TabIndex = 132
         ' 
-        ' TextBox123
+        ' mealPriceMad3
         ' 
-        TextBox123.Location = New Point(289, 113)
-        TextBox123.Name = "TextBox123"
-        TextBox123.Size = New Size(100, 23)
-        TextBox123.TabIndex = 131
+        mealPriceMad3.Location = New Point(289, 113)
+        mealPriceMad3.Name = "mealPriceMad3"
+        mealPriceMad3.Size = New Size(100, 23)
+        mealPriceMad3.TabIndex = 131
         ' 
-        ' TextBox124
+        ' mealPriceMad2
         ' 
-        TextBox124.Location = New Point(158, 113)
-        TextBox124.Name = "TextBox124"
-        TextBox124.Size = New Size(100, 23)
-        TextBox124.TabIndex = 130
+        mealPriceMad2.Location = New Point(158, 113)
+        mealPriceMad2.Name = "mealPriceMad2"
+        mealPriceMad2.Size = New Size(100, 23)
+        mealPriceMad2.TabIndex = 130
         ' 
-        ' TextBox125
+        ' paxPriceMad5
         ' 
-        TextBox125.Location = New Point(547, 88)
-        TextBox125.Name = "TextBox125"
-        TextBox125.Size = New Size(100, 23)
-        TextBox125.TabIndex = 129
+        paxPriceMad5.Location = New Point(547, 88)
+        paxPriceMad5.Name = "paxPriceMad5"
+        paxPriceMad5.ReadOnly = True
+        paxPriceMad5.Size = New Size(100, 23)
+        paxPriceMad5.TabIndex = 129
         ' 
-        ' TextBox126
+        ' paxPriceMad4
         ' 
-        TextBox126.Location = New Point(419, 88)
-        TextBox126.Name = "TextBox126"
-        TextBox126.Size = New Size(100, 23)
-        TextBox126.TabIndex = 128
+        paxPriceMad4.Location = New Point(419, 88)
+        paxPriceMad4.Name = "paxPriceMad4"
+        paxPriceMad4.ReadOnly = True
+        paxPriceMad4.Size = New Size(100, 23)
+        paxPriceMad4.TabIndex = 128
         ' 
-        ' TextBox127
+        ' paxPriceMad3
         ' 
-        TextBox127.Location = New Point(289, 88)
-        TextBox127.Name = "TextBox127"
-        TextBox127.Size = New Size(100, 23)
-        TextBox127.TabIndex = 127
+        paxPriceMad3.Location = New Point(289, 88)
+        paxPriceMad3.Name = "paxPriceMad3"
+        paxPriceMad3.ReadOnly = True
+        paxPriceMad3.Size = New Size(100, 23)
+        paxPriceMad3.TabIndex = 127
         ' 
-        ' TextBox128
+        ' paxPriceMad2
         ' 
-        TextBox128.Location = New Point(158, 88)
-        TextBox128.Name = "TextBox128"
-        TextBox128.Size = New Size(100, 23)
-        TextBox128.TabIndex = 126
+        paxPriceMad2.Location = New Point(158, 88)
+        paxPriceMad2.Name = "paxPriceMad2"
+        paxPriceMad2.ReadOnly = True
+        paxPriceMad2.Size = New Size(100, 23)
+        paxPriceMad2.TabIndex = 126
         ' 
-        ' TextBox129
+        ' roomPriceMad5
         ' 
-        TextBox129.Location = New Point(547, 62)
-        TextBox129.Name = "TextBox129"
-        TextBox129.Size = New Size(100, 23)
-        TextBox129.TabIndex = 125
+        roomPriceMad5.Location = New Point(547, 62)
+        roomPriceMad5.Name = "roomPriceMad5"
+        roomPriceMad5.Size = New Size(100, 23)
+        roomPriceMad5.TabIndex = 125
         ' 
-        ' TextBox130
+        ' roomPriceMad4
         ' 
-        TextBox130.Location = New Point(419, 62)
-        TextBox130.Name = "TextBox130"
-        TextBox130.Size = New Size(100, 23)
-        TextBox130.TabIndex = 124
+        roomPriceMad4.Location = New Point(419, 62)
+        roomPriceMad4.Name = "roomPriceMad4"
+        roomPriceMad4.Size = New Size(100, 23)
+        roomPriceMad4.TabIndex = 124
         ' 
-        ' TextBox131
+        ' roomPriceMad3
         ' 
-        TextBox131.Location = New Point(289, 62)
-        TextBox131.Name = "TextBox131"
-        TextBox131.Size = New Size(100, 23)
-        TextBox131.TabIndex = 123
+        roomPriceMad3.Location = New Point(289, 62)
+        roomPriceMad3.Name = "roomPriceMad3"
+        roomPriceMad3.Size = New Size(100, 23)
+        roomPriceMad3.TabIndex = 123
         ' 
-        ' TextBox132
+        ' roomPriceMad2
         ' 
-        TextBox132.Location = New Point(158, 62)
-        TextBox132.Name = "TextBox132"
-        TextBox132.Size = New Size(100, 23)
-        TextBox132.TabIndex = 122
+        roomPriceMad2.Location = New Point(158, 62)
+        roomPriceMad2.Name = "roomPriceMad2"
+        roomPriceMad2.Size = New Size(100, 23)
+        roomPriceMad2.TabIndex = 122
         ' 
-        ' TextBox133
+        ' hotelNameMad
         ' 
-        TextBox133.Location = New Point(97, 11)
-        TextBox133.Name = "TextBox133"
-        TextBox133.Size = New Size(325, 23)
-        TextBox133.TabIndex = 121
+        hotelNameMad.Location = New Point(97, 11)
+        hotelNameMad.Name = "hotelNameMad"
+        hotelNameMad.Size = New Size(325, 23)
+        hotelNameMad.TabIndex = 121
         ' 
         ' Label96
         ' 
@@ -2724,20 +2756,20 @@ Partial Class Form1
         ' Panel10
         ' 
         Panel10.BorderStyle = BorderStyle.FixedSingle
-        Panel10.Controls.Add(TextBox138)
-        Panel10.Controls.Add(TextBox139)
-        Panel10.Controls.Add(TextBox136)
-        Panel10.Controls.Add(TextBox137)
-        Panel10.Controls.Add(TextBox142)
+        Panel10.Controls.Add(tourLeadPriceRm)
+        Panel10.Controls.Add(saudiArrPriceRm)
+        Panel10.Controls.Add(tourLeadPerPax)
+        Panel10.Controls.Add(saudiArrPerPaxSar)
+        Panel10.Controls.Add(exchgRate)
         Panel10.Controls.Add(Label111)
-        Panel10.Controls.Add(TextBox140)
+        Panel10.Controls.Add(tourLeadPax)
         Panel10.Controls.Add(Label106)
-        Panel10.Controls.Add(TextBox141)
+        Panel10.Controls.Add(tourLeadPriceSar)
         Panel10.Controls.Add(Label110)
         Panel10.Controls.Add(Label104)
         Panel10.Controls.Add(Label109)
-        Panel10.Controls.Add(TextBox134)
-        Panel10.Controls.Add(TextBox135)
+        Panel10.Controls.Add(saudiArrPriceSar)
+        Panel10.Controls.Add(saudiArrPax)
         Panel10.Controls.Add(Label108)
         Panel10.Controls.Add(Label107)
         Panel10.Location = New Point(19, 343)
@@ -2745,40 +2777,43 @@ Partial Class Form1
         Panel10.Size = New Size(533, 132)
         Panel10.TabIndex = 167
         ' 
-        ' TextBox138
+        ' tourLeadPriceRm
         ' 
-        TextBox138.Location = New Point(419, 61)
-        TextBox138.Name = "TextBox138"
-        TextBox138.Size = New Size(67, 23)
-        TextBox138.TabIndex = 173
+        tourLeadPriceRm.Location = New Point(419, 61)
+        tourLeadPriceRm.Name = "tourLeadPriceRm"
+        tourLeadPriceRm.ReadOnly = True
+        tourLeadPriceRm.Size = New Size(67, 23)
+        tourLeadPriceRm.TabIndex = 173
         ' 
-        ' TextBox139
+        ' saudiArrPriceRm
         ' 
-        TextBox139.Location = New Point(419, 32)
-        TextBox139.Name = "TextBox139"
-        TextBox139.Size = New Size(67, 23)
-        TextBox139.TabIndex = 172
+        saudiArrPriceRm.Location = New Point(419, 32)
+        saudiArrPriceRm.Name = "saudiArrPriceRm"
+        saudiArrPriceRm.ReadOnly = True
+        saudiArrPriceRm.Size = New Size(67, 23)
+        saudiArrPriceRm.TabIndex = 172
         ' 
-        ' TextBox136
+        ' tourLeadPerPax
         ' 
-        TextBox136.Location = New Point(325, 61)
-        TextBox136.Name = "TextBox136"
-        TextBox136.Size = New Size(67, 23)
-        TextBox136.TabIndex = 171
+        tourLeadPerPax.Location = New Point(325, 61)
+        tourLeadPerPax.Name = "tourLeadPerPax"
+        tourLeadPerPax.ReadOnly = True
+        tourLeadPerPax.Size = New Size(67, 23)
+        tourLeadPerPax.TabIndex = 171
         ' 
-        ' TextBox137
+        ' saudiArrPerPaxSar
         ' 
-        TextBox137.Location = New Point(325, 32)
-        TextBox137.Name = "TextBox137"
-        TextBox137.Size = New Size(67, 23)
-        TextBox137.TabIndex = 170
+        saudiArrPerPaxSar.Location = New Point(325, 32)
+        saudiArrPerPaxSar.Name = "saudiArrPerPaxSar"
+        saudiArrPerPaxSar.Size = New Size(67, 23)
+        saudiArrPerPaxSar.TabIndex = 170
         ' 
-        ' TextBox142
+        ' exchgRate
         ' 
-        TextBox142.Location = New Point(455, 99)
-        TextBox142.Name = "TextBox142"
-        TextBox142.Size = New Size(67, 23)
-        TextBox142.TabIndex = 168
+        exchgRate.Location = New Point(455, 99)
+        exchgRate.Name = "exchgRate"
+        exchgRate.Size = New Size(67, 23)
+        exchgRate.TabIndex = 168
         ' 
         ' Label111
         ' 
@@ -2789,12 +2824,12 @@ Partial Class Form1
         Label111.TabIndex = 169
         Label111.Text = "Exchange Rate:"
         ' 
-        ' TextBox140
+        ' tourLeadPax
         ' 
-        TextBox140.Location = New Point(252, 61)
-        TextBox140.Name = "TextBox140"
-        TextBox140.Size = New Size(44, 23)
-        TextBox140.TabIndex = 164
+        tourLeadPax.Location = New Point(252, 61)
+        tourLeadPax.Name = "tourLeadPax"
+        tourLeadPax.Size = New Size(44, 23)
+        tourLeadPax.TabIndex = 164
         ' 
         ' Label106
         ' 
@@ -2806,12 +2841,12 @@ Partial Class Form1
         Label106.TabIndex = 113
         Label106.Text = "Overall Price (SAR)"
         ' 
-        ' TextBox141
+        ' tourLeadPriceSar
         ' 
-        TextBox141.Location = New Point(156, 61)
-        TextBox141.Name = "TextBox141"
-        TextBox141.Size = New Size(67, 23)
-        TextBox141.TabIndex = 162
+        tourLeadPriceSar.Location = New Point(156, 61)
+        tourLeadPriceSar.Name = "tourLeadPriceSar"
+        tourLeadPriceSar.Size = New Size(67, 23)
+        tourLeadPriceSar.TabIndex = 162
         ' 
         ' Label110
         ' 
@@ -2841,19 +2876,20 @@ Partial Class Form1
         Label109.TabIndex = 160
         Label109.Text = "Price in RM"
         ' 
-        ' TextBox134
+        ' saudiArrPriceSar
         ' 
-        TextBox134.Location = New Point(156, 32)
-        TextBox134.Name = "TextBox134"
-        TextBox134.Size = New Size(67, 23)
-        TextBox134.TabIndex = 113
+        saudiArrPriceSar.Location = New Point(156, 32)
+        saudiArrPriceSar.Name = "saudiArrPriceSar"
+        saudiArrPriceSar.ReadOnly = True
+        saudiArrPriceSar.Size = New Size(67, 23)
+        saudiArrPriceSar.TabIndex = 113
         ' 
-        ' TextBox135
+        ' saudiArrPax
         ' 
-        TextBox135.Location = New Point(252, 32)
-        TextBox135.Name = "TextBox135"
-        TextBox135.Size = New Size(44, 23)
-        TextBox135.TabIndex = 157
+        saudiArrPax.Location = New Point(252, 32)
+        saudiArrPax.Name = "saudiArrPax"
+        saudiArrPax.Size = New Size(44, 23)
+        saudiArrPax.TabIndex = 157
         ' 
         ' Label108
         ' 
@@ -2879,7 +2915,7 @@ Partial Class Form1
         ' 
         pkgName.Location = New Point(115, 14)
         pkgName.Name = "pkgName"
-        pkgName.Size = New Size(291, 23)
+        pkgName.Size = New Size(345, 23)
         pkgName.TabIndex = 11
         ' 
         ' Label3
@@ -3198,7 +3234,7 @@ Partial Class Form1
     Friend WithEvents Label80 As Label
     Friend WithEvents Label87 As Label
     Friend WithEvents Label86 As Label
-    Friend WithEvents hotelName As TextBox
+    Friend WithEvents hotelNameMak As TextBox
     Friend WithEvents Label105 As Label
     Friend WithEvents Label104 As Label
     Friend WithEvents Label88 As Label
@@ -3234,38 +3270,38 @@ Partial Class Form1
     Friend WithEvents roomPrice3 As TextBox
     Friend WithEvents roomPrice2 As TextBox
     Friend WithEvents Label92 As Label
-    Friend WithEvents TextBox105 As TextBox
+    Friend WithEvents ovrTotalMadRm5 As TextBox
     Friend WithEvents Label93 As Label
-    Friend WithEvents TextBox106 As TextBox
+    Friend WithEvents ovrTotalMadRm4 As TextBox
     Friend WithEvents Label94 As Label
     Friend WithEvents Label95 As Label
-    Friend WithEvents TextBox107 As TextBox
-    Friend WithEvents TextBox108 As TextBox
-    Friend WithEvents TextBox109 As TextBox
-    Friend WithEvents TextBox110 As TextBox
-    Friend WithEvents TextBox111 As TextBox
-    Friend WithEvents TextBox112 As TextBox
-    Friend WithEvents TextBox113 As TextBox
-    Friend WithEvents TextBox114 As TextBox
-    Friend WithEvents TextBox115 As TextBox
-    Friend WithEvents TextBox116 As TextBox
-    Friend WithEvents TextBox117 As TextBox
-    Friend WithEvents TextBox118 As TextBox
-    Friend WithEvents TextBox119 As TextBox
-    Friend WithEvents TextBox120 As TextBox
-    Friend WithEvents TextBox121 As TextBox
-    Friend WithEvents TextBox122 As TextBox
-    Friend WithEvents TextBox123 As TextBox
-    Friend WithEvents TextBox124 As TextBox
-    Friend WithEvents TextBox125 As TextBox
-    Friend WithEvents TextBox126 As TextBox
-    Friend WithEvents TextBox127 As TextBox
-    Friend WithEvents TextBox128 As TextBox
-    Friend WithEvents TextBox129 As TextBox
-    Friend WithEvents TextBox130 As TextBox
-    Friend WithEvents TextBox131 As TextBox
-    Friend WithEvents TextBox132 As TextBox
-    Friend WithEvents TextBox133 As TextBox
+    Friend WithEvents ovrTotalMadRm3 As TextBox
+    Friend WithEvents ovrTotalMadRm2 As TextBox
+    Friend WithEvents ovrTotalMadSar5 As TextBox
+    Friend WithEvents ovrTotalMadSar4 As TextBox
+    Friend WithEvents ovrTotalMadSar3 As TextBox
+    Friend WithEvents ovrTotalMadSar2 As TextBox
+    Friend WithEvents hotelNightsMad5 As TextBox
+    Friend WithEvents hotelNightsMad4 As TextBox
+    Friend WithEvents hotelNightsMad3 As TextBox
+    Friend WithEvents hotelNightsMad2 As TextBox
+    Friend WithEvents accTotalPriceMad5 As TextBox
+    Friend WithEvents accTotalPriceMad4 As TextBox
+    Friend WithEvents accTotalPriceMad3 As TextBox
+    Friend WithEvents accTotalPriceMad2 As TextBox
+    Friend WithEvents mealPriceMad5 As TextBox
+    Friend WithEvents mealPriceMad4 As TextBox
+    Friend WithEvents mealPriceMad3 As TextBox
+    Friend WithEvents mealPriceMad2 As TextBox
+    Friend WithEvents paxPriceMad5 As TextBox
+    Friend WithEvents paxPriceMad4 As TextBox
+    Friend WithEvents paxPriceMad3 As TextBox
+    Friend WithEvents paxPriceMad2 As TextBox
+    Friend WithEvents roomPriceMad5 As TextBox
+    Friend WithEvents roomPriceMad4 As TextBox
+    Friend WithEvents roomPriceMad3 As TextBox
+    Friend WithEvents roomPriceMad2 As TextBox
+    Friend WithEvents hotelNameMad As TextBox
     Friend WithEvents Label96 As Label
     Friend WithEvents Label97 As Label
     Friend WithEvents Label98 As Label
@@ -3274,21 +3310,21 @@ Partial Class Form1
     Friend WithEvents Label101 As Label
     Friend WithEvents Label102 As Label
     Friend WithEvents Label103 As Label
-    Friend WithEvents TextBox140 As TextBox
-    Friend WithEvents TextBox141 As TextBox
+    Friend WithEvents tourLeadPax As TextBox
+    Friend WithEvents tourLeadPriceSar As TextBox
     Friend WithEvents Label110 As Label
     Friend WithEvents Label109 As Label
     Friend WithEvents Label108 As Label
     Friend WithEvents Label107 As Label
-    Friend WithEvents TextBox135 As TextBox
+    Friend WithEvents saudiArrPax As TextBox
     Friend WithEvents Label106 As Label
-    Friend WithEvents TextBox134 As TextBox
+    Friend WithEvents saudiArrPriceSar As TextBox
     Friend WithEvents Panel10 As Panel
-    Friend WithEvents TextBox142 As TextBox
+    Friend WithEvents exchgRate As TextBox
     Friend WithEvents Label111 As Label
     Friend WithEvents Label112 As Label
-    Friend WithEvents TextBox138 As TextBox
-    Friend WithEvents TextBox139 As TextBox
-    Friend WithEvents TextBox136 As TextBox
-    Friend WithEvents TextBox137 As TextBox
+    Friend WithEvents tourLeadPriceRm As TextBox
+    Friend WithEvents saudiArrPriceRm As TextBox
+    Friend WithEvents tourLeadPerPax As TextBox
+    Friend WithEvents saudiArrPerPaxSar As TextBox
 End Class
