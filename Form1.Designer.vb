@@ -87,8 +87,8 @@ Partial Class Form1
         Panel1 = New Panel()
         Label42 = New Label()
         Label43 = New Label()
-        TicketPriceBus = New TextBox()
-        TicketPriceEco = New TextBox()
+        ticketPriceBus = New TextBox()
+        ticketPriceEco = New TextBox()
         TabControl2 = New TabControl()
         TabPage3 = New TabPage()
         Label48 = New Label()
@@ -914,8 +914,8 @@ Partial Class Form1
         Panel1.BorderStyle = BorderStyle.FixedSingle
         Panel1.Controls.Add(Label42)
         Panel1.Controls.Add(Label43)
-        Panel1.Controls.Add(TicketPriceBus)
-        Panel1.Controls.Add(TicketPriceEco)
+        Panel1.Controls.Add(ticketPriceBus)
+        Panel1.Controls.Add(ticketPriceEco)
         Panel1.Location = New Point(19, 236)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(190, 91)
@@ -939,19 +939,19 @@ Partial Class Form1
         Label43.TabIndex = 73
         Label43.Text = "Business"
         ' 
-        ' TicketPriceBus
+        ' ticketPriceBus
         ' 
-        TicketPriceBus.Location = New Point(101, 50)
-        TicketPriceBus.Name = "TicketPriceBus"
-        TicketPriceBus.Size = New Size(62, 23)
-        TicketPriceBus.TabIndex = 72
+        ticketPriceBus.Location = New Point(101, 50)
+        ticketPriceBus.Name = "ticketPriceBus"
+        ticketPriceBus.Size = New Size(62, 23)
+        ticketPriceBus.TabIndex = 72
         ' 
-        ' TicketPriceEco
+        ' ticketPriceEco
         ' 
-        TicketPriceEco.Location = New Point(101, 19)
-        TicketPriceEco.Name = "TicketPriceEco"
-        TicketPriceEco.Size = New Size(62, 23)
-        TicketPriceEco.TabIndex = 70
+        ticketPriceEco.Location = New Point(101, 19)
+        ticketPriceEco.Name = "ticketPriceEco"
+        ticketPriceEco.Size = New Size(62, 23)
+        ticketPriceEco.TabIndex = 70
         ' 
         ' TabControl2
         ' 
@@ -3097,8 +3097,8 @@ Partial Class Form1
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label42 As Label
     Friend WithEvents Label43 As Label
-    Friend WithEvents TicketPriceBus As TextBox
-    Friend WithEvents TicketPriceEco As TextBox
+    Friend WithEvents ticketPriceBus As TextBox
+    Friend WithEvents ticketPriceEco As TextBox
     Friend WithEvents Label44 As Label
     Friend WithEvents durationTextBox As TextBox
     Friend WithEvents Label45 As Label
