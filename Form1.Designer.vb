@@ -280,7 +280,7 @@ Partial Class Form1
         Panel10 = New Panel()
         tourLeadPriceRm = New TextBox()
         saudiArrPriceRm = New TextBox()
-        tourLeadPerPax = New TextBox()
+        tourLeadPerPaxSar = New TextBox()
         saudiArrPerPaxSar = New TextBox()
         exchgRate = New TextBox()
         Label111 = New Label()
@@ -774,11 +774,11 @@ Partial Class Form1
         ' 
         Label78.AutoSize = True
         Label78.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label78.Location = New Point(672, 115)
+        Label78.Location = New Point(629, 115)
         Label78.Name = "Label78"
-        Label78.Size = New Size(34, 15)
+        Label78.Size = New Size(81, 15)
         Label78.TabIndex = 70
-        Label78.Text = "Total"
+        Label78.Text = "Costing Total:"
         Label78.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label8
@@ -2758,7 +2758,7 @@ Partial Class Form1
         Panel10.BorderStyle = BorderStyle.FixedSingle
         Panel10.Controls.Add(tourLeadPriceRm)
         Panel10.Controls.Add(saudiArrPriceRm)
-        Panel10.Controls.Add(tourLeadPerPax)
+        Panel10.Controls.Add(tourLeadPerPaxSar)
         Panel10.Controls.Add(saudiArrPerPaxSar)
         Panel10.Controls.Add(exchgRate)
         Panel10.Controls.Add(Label111)
@@ -2793,13 +2793,13 @@ Partial Class Form1
         saudiArrPriceRm.Size = New Size(67, 23)
         saudiArrPriceRm.TabIndex = 172
         ' 
-        ' tourLeadPerPax
+        ' tourLeadPerPaxSar
         ' 
-        tourLeadPerPax.Location = New Point(325, 61)
-        tourLeadPerPax.Name = "tourLeadPerPax"
-        tourLeadPerPax.ReadOnly = True
-        tourLeadPerPax.Size = New Size(67, 23)
-        tourLeadPerPax.TabIndex = 171
+        tourLeadPerPaxSar.Location = New Point(325, 61)
+        tourLeadPerPaxSar.Name = "tourLeadPerPaxSar"
+        tourLeadPerPaxSar.ReadOnly = True
+        tourLeadPerPaxSar.Size = New Size(67, 23)
+        tourLeadPerPaxSar.TabIndex = 171
         ' 
         ' saudiArrPerPaxSar
         ' 
@@ -3325,6 +3325,6 @@ Partial Class Form1
     Friend WithEvents Label112 As Label
     Friend WithEvents tourLeadPriceRm As TextBox
     Friend WithEvents saudiArrPriceRm As TextBox
-    Friend WithEvents tourLeadPerPax As TextBox
+    Friend WithEvents tourLeadPerPaxSar As TextBox
     Friend WithEvents saudiArrPerPaxSar As TextBox
 End Class
