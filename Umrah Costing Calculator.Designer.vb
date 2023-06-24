@@ -24,6 +24,112 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
         TabControl1 = New TabControl()
+        TabPage2 = New TabPage()
+        Label112 = New Label()
+        Label105 = New Label()
+        TabControl3 = New TabControl()
+        TabPage7 = New TabPage()
+        Label88 = New Label()
+        ovrTotalRm5 = New TextBox()
+        Label89 = New Label()
+        ovrTotalRm4 = New TextBox()
+        Label90 = New Label()
+        Label91 = New Label()
+        ovrTotalRm3 = New TextBox()
+        ovrTotalRm2 = New TextBox()
+        ovrTotalSar5 = New TextBox()
+        ovrTotalSar4 = New TextBox()
+        ovrTotalSar3 = New TextBox()
+        ovrTotalSar2 = New TextBox()
+        hotelNights5 = New TextBox()
+        hotelNights4 = New TextBox()
+        hotelNights3 = New TextBox()
+        hotelNights2 = New TextBox()
+        accTotalPrice5 = New TextBox()
+        accTotalPrice4 = New TextBox()
+        accTotalPrice3 = New TextBox()
+        accTotalPrice2 = New TextBox()
+        mealPrice5 = New TextBox()
+        mealPrice4 = New TextBox()
+        mealPrice3 = New TextBox()
+        mealPrice2 = New TextBox()
+        paxPrice5 = New TextBox()
+        paxPrice4 = New TextBox()
+        paxPrice3 = New TextBox()
+        paxPrice2 = New TextBox()
+        roomPrice5 = New TextBox()
+        roomPrice4 = New TextBox()
+        roomPrice3 = New TextBox()
+        roomPrice2 = New TextBox()
+        hotelNameMak = New TextBox()
+        Label87 = New Label()
+        Label86 = New Label()
+        Label85 = New Label()
+        Label84 = New Label()
+        Label82 = New Label()
+        Label83 = New Label()
+        Label81 = New Label()
+        Label80 = New Label()
+        TabPage8 = New TabPage()
+        Label92 = New Label()
+        ovrTotalMadRm5 = New TextBox()
+        Label93 = New Label()
+        ovrTotalMadRm4 = New TextBox()
+        Label94 = New Label()
+        Label95 = New Label()
+        ovrTotalMadRm3 = New TextBox()
+        ovrTotalMadRm2 = New TextBox()
+        ovrTotalMadSar5 = New TextBox()
+        ovrTotalMadSar4 = New TextBox()
+        ovrTotalMadSar3 = New TextBox()
+        ovrTotalMadSar2 = New TextBox()
+        hotelNightsMad5 = New TextBox()
+        hotelNightsMad4 = New TextBox()
+        hotelNightsMad3 = New TextBox()
+        hotelNightsMad2 = New TextBox()
+        accTotalPriceMad5 = New TextBox()
+        accTotalPriceMad4 = New TextBox()
+        accTotalPriceMad3 = New TextBox()
+        accTotalPriceMad2 = New TextBox()
+        mealPriceMad5 = New TextBox()
+        mealPriceMad4 = New TextBox()
+        mealPriceMad3 = New TextBox()
+        mealPriceMad2 = New TextBox()
+        paxPriceMad5 = New TextBox()
+        paxPriceMad4 = New TextBox()
+        paxPriceMad3 = New TextBox()
+        paxPriceMad2 = New TextBox()
+        roomPriceMad5 = New TextBox()
+        roomPriceMad4 = New TextBox()
+        roomPriceMad3 = New TextBox()
+        roomPriceMad2 = New TextBox()
+        hotelNameMad = New TextBox()
+        Label96 = New Label()
+        Label97 = New Label()
+        Label98 = New Label()
+        Label99 = New Label()
+        Label100 = New Label()
+        Label101 = New Label()
+        Label102 = New Label()
+        Label103 = New Label()
+        Label79 = New Label()
+        Panel10 = New Panel()
+        tourLeadPriceRm = New TextBox()
+        saudiArrPriceRm = New TextBox()
+        tourLeadPerPaxSar = New TextBox()
+        saudiArrPerPaxSar = New TextBox()
+        exchgRate = New TextBox()
+        Label111 = New Label()
+        tourLeadPax = New TextBox()
+        Label106 = New Label()
+        tourLeadPriceSar = New TextBox()
+        Label110 = New Label()
+        Label104 = New Label()
+        Label109 = New Label()
+        saudiArrPriceSar = New TextBox()
+        saudiArrPax = New TextBox()
+        Label108 = New Label()
+        Label107 = New Label()
         TabPage1 = New TabPage()
         Label71 = New Label()
         Panel5 = New Panel()
@@ -43,14 +149,13 @@ Partial Class Form1
         Label73 = New Label()
         Label52 = New Label()
         Panel4 = New Panel()
+        Button1 = New Button()
         Label115 = New Label()
         Label114 = New Label()
         Label113 = New Label()
         Panel8 = New Panel()
         Panel7 = New Panel()
         Panel6 = New Panel()
-        costingTotalPrice = New TextBox()
-        Label78 = New Label()
         Label41 = New Label()
         Label37 = New Label()
         Panel3 = New Panel()
@@ -64,6 +169,8 @@ Partial Class Form1
         childwoPolicy = New TextBox()
         Label16 = New Label()
         Panel2 = New Panel()
+        miscPrice2 = New TextBox()
+        Label116 = New Label()
         agentComm = New TextBox()
         officePrice = New TextBox()
         miscPrice1 = New TextBox()
@@ -190,113 +297,6 @@ Partial Class Form1
         Label70 = New Label()
         Label21 = New Label()
         Panel9 = New Panel()
-        Button1 = New Button()
-        TabPage2 = New TabPage()
-        Label112 = New Label()
-        Label105 = New Label()
-        TabControl3 = New TabControl()
-        TabPage7 = New TabPage()
-        Label88 = New Label()
-        ovrTotalRm5 = New TextBox()
-        Label89 = New Label()
-        ovrTotalRm4 = New TextBox()
-        Label90 = New Label()
-        Label91 = New Label()
-        ovrTotalRm3 = New TextBox()
-        ovrTotalRm2 = New TextBox()
-        ovrTotalSar5 = New TextBox()
-        ovrTotalSar4 = New TextBox()
-        ovrTotalSar3 = New TextBox()
-        ovrTotalSar2 = New TextBox()
-        hotelNights5 = New TextBox()
-        hotelNights4 = New TextBox()
-        hotelNights3 = New TextBox()
-        hotelNights2 = New TextBox()
-        accTotalPrice5 = New TextBox()
-        accTotalPrice4 = New TextBox()
-        accTotalPrice3 = New TextBox()
-        accTotalPrice2 = New TextBox()
-        mealPrice5 = New TextBox()
-        mealPrice4 = New TextBox()
-        mealPrice3 = New TextBox()
-        mealPrice2 = New TextBox()
-        paxPrice5 = New TextBox()
-        paxPrice4 = New TextBox()
-        paxPrice3 = New TextBox()
-        paxPrice2 = New TextBox()
-        roomPrice5 = New TextBox()
-        roomPrice4 = New TextBox()
-        roomPrice3 = New TextBox()
-        roomPrice2 = New TextBox()
-        hotelNameMak = New TextBox()
-        Label87 = New Label()
-        Label86 = New Label()
-        Label85 = New Label()
-        Label84 = New Label()
-        Label82 = New Label()
-        Label83 = New Label()
-        Label81 = New Label()
-        Label80 = New Label()
-        TabPage8 = New TabPage()
-        Label92 = New Label()
-        ovrTotalMadRm5 = New TextBox()
-        Label93 = New Label()
-        ovrTotalMadRm4 = New TextBox()
-        Label94 = New Label()
-        Label95 = New Label()
-        ovrTotalMadRm3 = New TextBox()
-        ovrTotalMadRm2 = New TextBox()
-        ovrTotalMadSar5 = New TextBox()
-        ovrTotalMadSar4 = New TextBox()
-        ovrTotalMadSar3 = New TextBox()
-        ovrTotalMadSar2 = New TextBox()
-        hotelNightsMad5 = New TextBox()
-        hotelNightsMad4 = New TextBox()
-        hotelNightsMad3 = New TextBox()
-        hotelNightsMad2 = New TextBox()
-        accTotalPriceMad5 = New TextBox()
-        accTotalPriceMad4 = New TextBox()
-        accTotalPriceMad3 = New TextBox()
-        accTotalPriceMad2 = New TextBox()
-        mealPriceMad5 = New TextBox()
-        mealPriceMad4 = New TextBox()
-        mealPriceMad3 = New TextBox()
-        mealPriceMad2 = New TextBox()
-        paxPriceMad5 = New TextBox()
-        paxPriceMad4 = New TextBox()
-        paxPriceMad3 = New TextBox()
-        paxPriceMad2 = New TextBox()
-        roomPriceMad5 = New TextBox()
-        roomPriceMad4 = New TextBox()
-        roomPriceMad3 = New TextBox()
-        roomPriceMad2 = New TextBox()
-        hotelNameMad = New TextBox()
-        Label96 = New Label()
-        Label97 = New Label()
-        Label98 = New Label()
-        Label99 = New Label()
-        Label100 = New Label()
-        Label101 = New Label()
-        Label102 = New Label()
-        Label103 = New Label()
-        Label79 = New Label()
-        Panel10 = New Panel()
-        tourLeadPriceRm = New TextBox()
-        saudiArrPriceRm = New TextBox()
-        tourLeadPerPaxSar = New TextBox()
-        saudiArrPerPaxSar = New TextBox()
-        exchgRate = New TextBox()
-        Label111 = New Label()
-        tourLeadPax = New TextBox()
-        Label106 = New Label()
-        tourLeadPriceSar = New TextBox()
-        Label110 = New Label()
-        Label104 = New Label()
-        Label109 = New Label()
-        saudiArrPriceSar = New TextBox()
-        saudiArrPax = New TextBox()
-        Label108 = New Label()
-        Label107 = New Label()
         pkgName = New TextBox()
         Label3 = New Label()
         Label2 = New Label()
@@ -306,9 +306,12 @@ Partial Class Form1
         Label44 = New Label()
         durationTextBox = New TextBox()
         TableLayoutPanel2 = New TableLayoutPanel()
-        miscPrice2 = New TextBox()
-        Label116 = New Label()
         TabControl1.SuspendLayout()
+        TabPage2.SuspendLayout()
+        TabControl3.SuspendLayout()
+        TabPage7.SuspendLayout()
+        TabPage8.SuspendLayout()
+        Panel10.SuspendLayout()
         TabPage1.SuspendLayout()
         Panel5.SuspendLayout()
         Panel4.SuspendLayout()
@@ -320,23 +323,1002 @@ Partial Class Form1
         TabPage4.SuspendLayout()
         TabPage5.SuspendLayout()
         TabPage6.SuspendLayout()
-        TabPage2.SuspendLayout()
-        TabControl3.SuspendLayout()
-        TabPage7.SuspendLayout()
-        TabPage8.SuspendLayout()
-        Panel10.SuspendLayout()
         SuspendLayout()
         ' 
         ' TabControl1
         ' 
         TabControl1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        TabControl1.Controls.Add(TabPage1)
         TabControl1.Controls.Add(TabPage2)
+        TabControl1.Controls.Add(TabPage1)
         TabControl1.Location = New Point(12, 172)
         TabControl1.Name = "TabControl1"
         TabControl1.SelectedIndex = 0
         TabControl1.Size = New Size(867, 525)
         TabControl1.TabIndex = 0
+        ' 
+        ' TabPage2
+        ' 
+        TabPage2.Controls.Add(Label112)
+        TabPage2.Controls.Add(Label105)
+        TabPage2.Controls.Add(TabControl3)
+        TabPage2.Controls.Add(Label79)
+        TabPage2.Controls.Add(Panel10)
+        TabPage2.Location = New Point(4, 24)
+        TabPage2.Name = "TabPage2"
+        TabPage2.Padding = New Padding(3)
+        TabPage2.Size = New Size(859, 497)
+        TabPage2.TabIndex = 1
+        TabPage2.Text = "Accommodations Cost"
+        TabPage2.UseVisualStyleBackColor = True
+        ' 
+        ' Label112
+        ' 
+        Label112.AutoEllipsis = True
+        Label112.Font = New Font("SimSun", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label112.Location = New Point(566, 416)
+        Label112.Name = "Label112"
+        Label112.Size = New Size(252, 58)
+        Label112.TabIndex = 168
+        Label112.Text = "Saudi Arrangement Include:" & vbCrLf & "1. Service Manager" & vbCrLf & "2. Transportation & Ziarah Thaif" & vbCrLf & "3. Mutawif & Mutawifah for Makkah/Madinah" & vbCrLf & "4. Porter" & vbCrLf
+        Label112.UseMnemonic = False
+        ' 
+        ' Label105
+        ' 
+        Label105.AutoEllipsis = True
+        Label105.AutoSize = True
+        Label105.Font = New Font("AcmeFont", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label105.Location = New Point(26, 336)
+        Label105.Name = "Label105"
+        Label105.Size = New Size(150, 15)
+        Label105.TabIndex = 155
+        Label105.Text = "SAUDI ARRANGEMENTS"
+        Label105.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' TabControl3
+        ' 
+        TabControl3.Controls.Add(TabPage7)
+        TabControl3.Controls.Add(TabPage8)
+        TabControl3.Location = New Point(15, 37)
+        TabControl3.Name = "TabControl3"
+        TabControl3.SelectedIndex = 0
+        TabControl3.Size = New Size(703, 282)
+        TabControl3.TabIndex = 54
+        ' 
+        ' TabPage7
+        ' 
+        TabPage7.BorderStyle = BorderStyle.FixedSingle
+        TabPage7.Controls.Add(Label88)
+        TabPage7.Controls.Add(ovrTotalRm5)
+        TabPage7.Controls.Add(Label89)
+        TabPage7.Controls.Add(ovrTotalRm4)
+        TabPage7.Controls.Add(Label90)
+        TabPage7.Controls.Add(Label91)
+        TabPage7.Controls.Add(ovrTotalRm3)
+        TabPage7.Controls.Add(ovrTotalRm2)
+        TabPage7.Controls.Add(ovrTotalSar5)
+        TabPage7.Controls.Add(ovrTotalSar4)
+        TabPage7.Controls.Add(ovrTotalSar3)
+        TabPage7.Controls.Add(ovrTotalSar2)
+        TabPage7.Controls.Add(hotelNights5)
+        TabPage7.Controls.Add(hotelNights4)
+        TabPage7.Controls.Add(hotelNights3)
+        TabPage7.Controls.Add(hotelNights2)
+        TabPage7.Controls.Add(accTotalPrice5)
+        TabPage7.Controls.Add(accTotalPrice4)
+        TabPage7.Controls.Add(accTotalPrice3)
+        TabPage7.Controls.Add(accTotalPrice2)
+        TabPage7.Controls.Add(mealPrice5)
+        TabPage7.Controls.Add(mealPrice4)
+        TabPage7.Controls.Add(mealPrice3)
+        TabPage7.Controls.Add(mealPrice2)
+        TabPage7.Controls.Add(paxPrice5)
+        TabPage7.Controls.Add(paxPrice4)
+        TabPage7.Controls.Add(paxPrice3)
+        TabPage7.Controls.Add(paxPrice2)
+        TabPage7.Controls.Add(roomPrice5)
+        TabPage7.Controls.Add(roomPrice4)
+        TabPage7.Controls.Add(roomPrice3)
+        TabPage7.Controls.Add(roomPrice2)
+        TabPage7.Controls.Add(hotelNameMak)
+        TabPage7.Controls.Add(Label87)
+        TabPage7.Controls.Add(Label86)
+        TabPage7.Controls.Add(Label85)
+        TabPage7.Controls.Add(Label84)
+        TabPage7.Controls.Add(Label82)
+        TabPage7.Controls.Add(Label83)
+        TabPage7.Controls.Add(Label81)
+        TabPage7.Controls.Add(Label80)
+        TabPage7.Location = New Point(4, 24)
+        TabPage7.Name = "TabPage7"
+        TabPage7.Padding = New Padding(3)
+        TabPage7.Size = New Size(695, 254)
+        TabPage7.TabIndex = 0
+        TabPage7.Text = "Makkah"
+        TabPage7.UseVisualStyleBackColor = True
+        ' 
+        ' Label88
+        ' 
+        Label88.AutoSize = True
+        Label88.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label88.Location = New Point(582, 46)
+        Label88.Name = "Label88"
+        Label88.Size = New Size(32, 13)
+        Label88.TabIndex = 112
+        Label88.Text = "Quint"
+        ' 
+        ' ovrTotalRm5
+        ' 
+        ovrTotalRm5.Location = New Point(547, 214)
+        ovrTotalRm5.Name = "ovrTotalRm5"
+        ovrTotalRm5.ReadOnly = True
+        ovrTotalRm5.Size = New Size(100, 23)
+        ovrTotalRm5.TabIndex = 36
+        ' 
+        ' Label89
+        ' 
+        Label89.AutoSize = True
+        Label89.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label89.Location = New Point(455, 46)
+        Label89.Name = "Label89"
+        Label89.Size = New Size(32, 13)
+        Label89.TabIndex = 111
+        Label89.Text = "Quad"
+        ' 
+        ' ovrTotalRm4
+        ' 
+        ovrTotalRm4.Location = New Point(419, 214)
+        ovrTotalRm4.Name = "ovrTotalRm4"
+        ovrTotalRm4.ReadOnly = True
+        ovrTotalRm4.Size = New Size(100, 23)
+        ovrTotalRm4.TabIndex = 35
+        ' 
+        ' Label90
+        ' 
+        Label90.AutoSize = True
+        Label90.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label90.Location = New Point(325, 46)
+        Label90.Name = "Label90"
+        Label90.Size = New Size(32, 13)
+        Label90.TabIndex = 110
+        Label90.Text = "Triple"
+        ' 
+        ' Label91
+        ' 
+        Label91.AutoSize = True
+        Label91.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label91.Location = New Point(185, 46)
+        Label91.Name = "Label91"
+        Label91.Size = New Size(40, 13)
+        Label91.TabIndex = 109
+        Label91.Text = "Double"
+        ' 
+        ' ovrTotalRm3
+        ' 
+        ovrTotalRm3.Location = New Point(289, 214)
+        ovrTotalRm3.Name = "ovrTotalRm3"
+        ovrTotalRm3.ReadOnly = True
+        ovrTotalRm3.Size = New Size(100, 23)
+        ovrTotalRm3.TabIndex = 34
+        ' 
+        ' ovrTotalRm2
+        ' 
+        ovrTotalRm2.Location = New Point(158, 214)
+        ovrTotalRm2.Name = "ovrTotalRm2"
+        ovrTotalRm2.ReadOnly = True
+        ovrTotalRm2.Size = New Size(100, 23)
+        ovrTotalRm2.TabIndex = 33
+        ' 
+        ' ovrTotalSar5
+        ' 
+        ovrTotalSar5.Location = New Point(547, 189)
+        ovrTotalSar5.Name = "ovrTotalSar5"
+        ovrTotalSar5.ReadOnly = True
+        ovrTotalSar5.Size = New Size(100, 23)
+        ovrTotalSar5.TabIndex = 32
+        ' 
+        ' ovrTotalSar4
+        ' 
+        ovrTotalSar4.Location = New Point(419, 189)
+        ovrTotalSar4.Name = "ovrTotalSar4"
+        ovrTotalSar4.ReadOnly = True
+        ovrTotalSar4.Size = New Size(100, 23)
+        ovrTotalSar4.TabIndex = 31
+        ' 
+        ' ovrTotalSar3
+        ' 
+        ovrTotalSar3.Location = New Point(289, 189)
+        ovrTotalSar3.Name = "ovrTotalSar3"
+        ovrTotalSar3.ReadOnly = True
+        ovrTotalSar3.Size = New Size(100, 23)
+        ovrTotalSar3.TabIndex = 30
+        ' 
+        ' ovrTotalSar2
+        ' 
+        ovrTotalSar2.Location = New Point(158, 189)
+        ovrTotalSar2.Name = "ovrTotalSar2"
+        ovrTotalSar2.ReadOnly = True
+        ovrTotalSar2.Size = New Size(100, 23)
+        ovrTotalSar2.TabIndex = 29
+        ' 
+        ' hotelNights5
+        ' 
+        hotelNights5.Location = New Point(547, 164)
+        hotelNights5.Name = "hotelNights5"
+        hotelNights5.Size = New Size(100, 23)
+        hotelNights5.TabIndex = 28
+        ' 
+        ' hotelNights4
+        ' 
+        hotelNights4.Location = New Point(419, 164)
+        hotelNights4.Name = "hotelNights4"
+        hotelNights4.Size = New Size(100, 23)
+        hotelNights4.TabIndex = 27
+        ' 
+        ' hotelNights3
+        ' 
+        hotelNights3.Location = New Point(289, 164)
+        hotelNights3.Name = "hotelNights3"
+        hotelNights3.Size = New Size(100, 23)
+        hotelNights3.TabIndex = 26
+        ' 
+        ' hotelNights2
+        ' 
+        hotelNights2.Location = New Point(158, 164)
+        hotelNights2.Name = "hotelNights2"
+        hotelNights2.Size = New Size(100, 23)
+        hotelNights2.TabIndex = 25
+        ' 
+        ' accTotalPrice5
+        ' 
+        accTotalPrice5.Location = New Point(547, 138)
+        accTotalPrice5.Name = "accTotalPrice5"
+        accTotalPrice5.ReadOnly = True
+        accTotalPrice5.Size = New Size(100, 23)
+        accTotalPrice5.TabIndex = 24
+        ' 
+        ' accTotalPrice4
+        ' 
+        accTotalPrice4.Location = New Point(419, 138)
+        accTotalPrice4.Name = "accTotalPrice4"
+        accTotalPrice4.ReadOnly = True
+        accTotalPrice4.Size = New Size(100, 23)
+        accTotalPrice4.TabIndex = 23
+        ' 
+        ' accTotalPrice3
+        ' 
+        accTotalPrice3.Location = New Point(289, 138)
+        accTotalPrice3.Name = "accTotalPrice3"
+        accTotalPrice3.ReadOnly = True
+        accTotalPrice3.Size = New Size(100, 23)
+        accTotalPrice3.TabIndex = 22
+        ' 
+        ' accTotalPrice2
+        ' 
+        accTotalPrice2.Location = New Point(158, 138)
+        accTotalPrice2.Name = "accTotalPrice2"
+        accTotalPrice2.ReadOnly = True
+        accTotalPrice2.Size = New Size(100, 23)
+        accTotalPrice2.TabIndex = 21
+        ' 
+        ' mealPrice5
+        ' 
+        mealPrice5.Location = New Point(547, 113)
+        mealPrice5.Name = "mealPrice5"
+        mealPrice5.Size = New Size(100, 23)
+        mealPrice5.TabIndex = 20
+        ' 
+        ' mealPrice4
+        ' 
+        mealPrice4.Location = New Point(419, 113)
+        mealPrice4.Name = "mealPrice4"
+        mealPrice4.Size = New Size(100, 23)
+        mealPrice4.TabIndex = 19
+        ' 
+        ' mealPrice3
+        ' 
+        mealPrice3.Location = New Point(289, 113)
+        mealPrice3.Name = "mealPrice3"
+        mealPrice3.Size = New Size(100, 23)
+        mealPrice3.TabIndex = 18
+        ' 
+        ' mealPrice2
+        ' 
+        mealPrice2.Location = New Point(158, 113)
+        mealPrice2.Name = "mealPrice2"
+        mealPrice2.Size = New Size(100, 23)
+        mealPrice2.TabIndex = 17
+        ' 
+        ' paxPrice5
+        ' 
+        paxPrice5.Location = New Point(547, 88)
+        paxPrice5.Name = "paxPrice5"
+        paxPrice5.ReadOnly = True
+        paxPrice5.Size = New Size(100, 23)
+        paxPrice5.TabIndex = 16
+        ' 
+        ' paxPrice4
+        ' 
+        paxPrice4.Location = New Point(419, 88)
+        paxPrice4.Name = "paxPrice4"
+        paxPrice4.ReadOnly = True
+        paxPrice4.Size = New Size(100, 23)
+        paxPrice4.TabIndex = 15
+        ' 
+        ' paxPrice3
+        ' 
+        paxPrice3.Location = New Point(289, 88)
+        paxPrice3.Name = "paxPrice3"
+        paxPrice3.ReadOnly = True
+        paxPrice3.Size = New Size(100, 23)
+        paxPrice3.TabIndex = 14
+        ' 
+        ' paxPrice2
+        ' 
+        paxPrice2.Location = New Point(158, 88)
+        paxPrice2.Name = "paxPrice2"
+        paxPrice2.ReadOnly = True
+        paxPrice2.Size = New Size(100, 23)
+        paxPrice2.TabIndex = 13
+        ' 
+        ' roomPrice5
+        ' 
+        roomPrice5.Location = New Point(547, 62)
+        roomPrice5.Name = "roomPrice5"
+        roomPrice5.Size = New Size(100, 23)
+        roomPrice5.TabIndex = 12
+        ' 
+        ' roomPrice4
+        ' 
+        roomPrice4.Location = New Point(419, 62)
+        roomPrice4.Name = "roomPrice4"
+        roomPrice4.Size = New Size(100, 23)
+        roomPrice4.TabIndex = 11
+        ' 
+        ' roomPrice3
+        ' 
+        roomPrice3.Location = New Point(289, 62)
+        roomPrice3.Name = "roomPrice3"
+        roomPrice3.Size = New Size(100, 23)
+        roomPrice3.TabIndex = 10
+        ' 
+        ' roomPrice2
+        ' 
+        roomPrice2.Location = New Point(158, 62)
+        roomPrice2.Name = "roomPrice2"
+        roomPrice2.Size = New Size(100, 23)
+        roomPrice2.TabIndex = 9
+        ' 
+        ' hotelNameMak
+        ' 
+        hotelNameMak.Location = New Point(97, 11)
+        hotelNameMak.Name = "hotelNameMak"
+        hotelNameMak.Size = New Size(325, 23)
+        hotelNameMak.TabIndex = 8
+        ' 
+        ' Label87
+        ' 
+        Label87.AutoSize = True
+        Label87.Location = New Point(18, 217)
+        Label87.Name = "Label87"
+        Label87.Size = New Size(101, 15)
+        Label87.TabIndex = 7
+        Label87.Text = "Overall Total (RM)"
+        ' 
+        ' Label86
+        ' 
+        Label86.AutoSize = True
+        Label86.Location = New Point(18, 192)
+        Label86.Name = "Label86"
+        Label86.Size = New Size(104, 15)
+        Label86.TabIndex = 6
+        Label86.Text = "Overall Total (SAR)"
+        ' 
+        ' Label85
+        ' 
+        Label85.AutoSize = True
+        Label85.Location = New Point(18, 167)
+        Label85.Name = "Label85"
+        Label85.Size = New Size(66, 15)
+        Label85.TabIndex = 5
+        Label85.Text = "# of Nights"
+        ' 
+        ' Label84
+        ' 
+        Label84.AutoSize = True
+        Label84.Location = New Point(18, 141)
+        Label84.Name = "Label84"
+        Label84.Size = New Size(64, 15)
+        Label84.TabIndex = 4
+        Label84.Text = "Total (SAR)"
+        ' 
+        ' Label82
+        ' 
+        Label82.AutoSize = True
+        Label82.Location = New Point(18, 116)
+        Label82.Name = "Label82"
+        Label82.Size = New Size(70, 15)
+        Label82.TabIndex = 3
+        Label82.Text = "Meals (SAR)"
+        ' 
+        ' Label83
+        ' 
+        Label83.AutoSize = True
+        Label83.Location = New Point(18, 91)
+        Label83.Name = "Label83"
+        Label83.Size = New Size(87, 15)
+        Label83.TabIndex = 2
+        Label83.Text = "Pax Price (SAR)"
+        ' 
+        ' Label81
+        ' 
+        Label81.AutoSize = True
+        Label81.Location = New Point(18, 65)
+        Label81.Name = "Label81"
+        Label81.Size = New Size(100, 15)
+        Label81.TabIndex = 1
+        Label81.Text = "Room Price (SAR)"
+        ' 
+        ' Label80
+        ' 
+        Label80.AutoSize = True
+        Label80.Location = New Point(18, 19)
+        Label80.Name = "Label80"
+        Label80.Size = New Size(71, 15)
+        Label80.TabIndex = 0
+        Label80.Text = "Hotel Name"
+        ' 
+        ' TabPage8
+        ' 
+        TabPage8.BorderStyle = BorderStyle.FixedSingle
+        TabPage8.Controls.Add(Label92)
+        TabPage8.Controls.Add(ovrTotalMadRm5)
+        TabPage8.Controls.Add(Label93)
+        TabPage8.Controls.Add(ovrTotalMadRm4)
+        TabPage8.Controls.Add(Label94)
+        TabPage8.Controls.Add(Label95)
+        TabPage8.Controls.Add(ovrTotalMadRm3)
+        TabPage8.Controls.Add(ovrTotalMadRm2)
+        TabPage8.Controls.Add(ovrTotalMadSar5)
+        TabPage8.Controls.Add(ovrTotalMadSar4)
+        TabPage8.Controls.Add(ovrTotalMadSar3)
+        TabPage8.Controls.Add(ovrTotalMadSar2)
+        TabPage8.Controls.Add(hotelNightsMad5)
+        TabPage8.Controls.Add(hotelNightsMad4)
+        TabPage8.Controls.Add(hotelNightsMad3)
+        TabPage8.Controls.Add(hotelNightsMad2)
+        TabPage8.Controls.Add(accTotalPriceMad5)
+        TabPage8.Controls.Add(accTotalPriceMad4)
+        TabPage8.Controls.Add(accTotalPriceMad3)
+        TabPage8.Controls.Add(accTotalPriceMad2)
+        TabPage8.Controls.Add(mealPriceMad5)
+        TabPage8.Controls.Add(mealPriceMad4)
+        TabPage8.Controls.Add(mealPriceMad3)
+        TabPage8.Controls.Add(mealPriceMad2)
+        TabPage8.Controls.Add(paxPriceMad5)
+        TabPage8.Controls.Add(paxPriceMad4)
+        TabPage8.Controls.Add(paxPriceMad3)
+        TabPage8.Controls.Add(paxPriceMad2)
+        TabPage8.Controls.Add(roomPriceMad5)
+        TabPage8.Controls.Add(roomPriceMad4)
+        TabPage8.Controls.Add(roomPriceMad3)
+        TabPage8.Controls.Add(roomPriceMad2)
+        TabPage8.Controls.Add(hotelNameMad)
+        TabPage8.Controls.Add(Label96)
+        TabPage8.Controls.Add(Label97)
+        TabPage8.Controls.Add(Label98)
+        TabPage8.Controls.Add(Label99)
+        TabPage8.Controls.Add(Label100)
+        TabPage8.Controls.Add(Label101)
+        TabPage8.Controls.Add(Label102)
+        TabPage8.Controls.Add(Label103)
+        TabPage8.Location = New Point(4, 24)
+        TabPage8.Name = "TabPage8"
+        TabPage8.Padding = New Padding(3)
+        TabPage8.Size = New Size(695, 254)
+        TabPage8.TabIndex = 1
+        TabPage8.Text = "Madinah"
+        TabPage8.UseVisualStyleBackColor = True
+        ' 
+        ' Label92
+        ' 
+        Label92.AutoSize = True
+        Label92.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label92.Location = New Point(582, 46)
+        Label92.Name = "Label92"
+        Label92.Size = New Size(32, 13)
+        Label92.TabIndex = 153
+        Label92.Text = "Quint"
+        ' 
+        ' ovrTotalMadRm5
+        ' 
+        ovrTotalMadRm5.Location = New Point(547, 214)
+        ovrTotalMadRm5.Name = "ovrTotalMadRm5"
+        ovrTotalMadRm5.ReadOnly = True
+        ovrTotalMadRm5.Size = New Size(100, 23)
+        ovrTotalMadRm5.TabIndex = 149
+        ' 
+        ' Label93
+        ' 
+        Label93.AutoSize = True
+        Label93.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label93.Location = New Point(455, 46)
+        Label93.Name = "Label93"
+        Label93.Size = New Size(32, 13)
+        Label93.TabIndex = 152
+        Label93.Text = "Quad"
+        ' 
+        ' ovrTotalMadRm4
+        ' 
+        ovrTotalMadRm4.Location = New Point(419, 214)
+        ovrTotalMadRm4.Name = "ovrTotalMadRm4"
+        ovrTotalMadRm4.ReadOnly = True
+        ovrTotalMadRm4.Size = New Size(100, 23)
+        ovrTotalMadRm4.TabIndex = 148
+        ' 
+        ' Label94
+        ' 
+        Label94.AutoSize = True
+        Label94.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label94.Location = New Point(325, 46)
+        Label94.Name = "Label94"
+        Label94.Size = New Size(32, 13)
+        Label94.TabIndex = 151
+        Label94.Text = "Triple"
+        ' 
+        ' Label95
+        ' 
+        Label95.AutoSize = True
+        Label95.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label95.Location = New Point(185, 46)
+        Label95.Name = "Label95"
+        Label95.Size = New Size(40, 13)
+        Label95.TabIndex = 150
+        Label95.Text = "Double"
+        ' 
+        ' ovrTotalMadRm3
+        ' 
+        ovrTotalMadRm3.Location = New Point(289, 214)
+        ovrTotalMadRm3.Name = "ovrTotalMadRm3"
+        ovrTotalMadRm3.ReadOnly = True
+        ovrTotalMadRm3.Size = New Size(100, 23)
+        ovrTotalMadRm3.TabIndex = 147
+        ' 
+        ' ovrTotalMadRm2
+        ' 
+        ovrTotalMadRm2.Location = New Point(158, 214)
+        ovrTotalMadRm2.Name = "ovrTotalMadRm2"
+        ovrTotalMadRm2.ReadOnly = True
+        ovrTotalMadRm2.Size = New Size(100, 23)
+        ovrTotalMadRm2.TabIndex = 146
+        ' 
+        ' ovrTotalMadSar5
+        ' 
+        ovrTotalMadSar5.Location = New Point(547, 189)
+        ovrTotalMadSar5.Name = "ovrTotalMadSar5"
+        ovrTotalMadSar5.ReadOnly = True
+        ovrTotalMadSar5.Size = New Size(100, 23)
+        ovrTotalMadSar5.TabIndex = 145
+        ' 
+        ' ovrTotalMadSar4
+        ' 
+        ovrTotalMadSar4.Location = New Point(419, 189)
+        ovrTotalMadSar4.Name = "ovrTotalMadSar4"
+        ovrTotalMadSar4.ReadOnly = True
+        ovrTotalMadSar4.Size = New Size(100, 23)
+        ovrTotalMadSar4.TabIndex = 144
+        ' 
+        ' ovrTotalMadSar3
+        ' 
+        ovrTotalMadSar3.Location = New Point(289, 189)
+        ovrTotalMadSar3.Name = "ovrTotalMadSar3"
+        ovrTotalMadSar3.ReadOnly = True
+        ovrTotalMadSar3.Size = New Size(100, 23)
+        ovrTotalMadSar3.TabIndex = 143
+        ' 
+        ' ovrTotalMadSar2
+        ' 
+        ovrTotalMadSar2.Location = New Point(158, 189)
+        ovrTotalMadSar2.Name = "ovrTotalMadSar2"
+        ovrTotalMadSar2.ReadOnly = True
+        ovrTotalMadSar2.Size = New Size(100, 23)
+        ovrTotalMadSar2.TabIndex = 142
+        ' 
+        ' hotelNightsMad5
+        ' 
+        hotelNightsMad5.Location = New Point(547, 164)
+        hotelNightsMad5.Name = "hotelNightsMad5"
+        hotelNightsMad5.Size = New Size(100, 23)
+        hotelNightsMad5.TabIndex = 141
+        ' 
+        ' hotelNightsMad4
+        ' 
+        hotelNightsMad4.Location = New Point(419, 164)
+        hotelNightsMad4.Name = "hotelNightsMad4"
+        hotelNightsMad4.Size = New Size(100, 23)
+        hotelNightsMad4.TabIndex = 140
+        ' 
+        ' hotelNightsMad3
+        ' 
+        hotelNightsMad3.Location = New Point(289, 164)
+        hotelNightsMad3.Name = "hotelNightsMad3"
+        hotelNightsMad3.Size = New Size(100, 23)
+        hotelNightsMad3.TabIndex = 139
+        ' 
+        ' hotelNightsMad2
+        ' 
+        hotelNightsMad2.Location = New Point(158, 164)
+        hotelNightsMad2.Name = "hotelNightsMad2"
+        hotelNightsMad2.Size = New Size(100, 23)
+        hotelNightsMad2.TabIndex = 138
+        ' 
+        ' accTotalPriceMad5
+        ' 
+        accTotalPriceMad5.Location = New Point(547, 138)
+        accTotalPriceMad5.Name = "accTotalPriceMad5"
+        accTotalPriceMad5.ReadOnly = True
+        accTotalPriceMad5.Size = New Size(100, 23)
+        accTotalPriceMad5.TabIndex = 137
+        ' 
+        ' accTotalPriceMad4
+        ' 
+        accTotalPriceMad4.Location = New Point(419, 138)
+        accTotalPriceMad4.Name = "accTotalPriceMad4"
+        accTotalPriceMad4.ReadOnly = True
+        accTotalPriceMad4.Size = New Size(100, 23)
+        accTotalPriceMad4.TabIndex = 136
+        ' 
+        ' accTotalPriceMad3
+        ' 
+        accTotalPriceMad3.Location = New Point(289, 138)
+        accTotalPriceMad3.Name = "accTotalPriceMad3"
+        accTotalPriceMad3.ReadOnly = True
+        accTotalPriceMad3.Size = New Size(100, 23)
+        accTotalPriceMad3.TabIndex = 135
+        ' 
+        ' accTotalPriceMad2
+        ' 
+        accTotalPriceMad2.Location = New Point(158, 138)
+        accTotalPriceMad2.Name = "accTotalPriceMad2"
+        accTotalPriceMad2.ReadOnly = True
+        accTotalPriceMad2.Size = New Size(100, 23)
+        accTotalPriceMad2.TabIndex = 134
+        ' 
+        ' mealPriceMad5
+        ' 
+        mealPriceMad5.Location = New Point(547, 113)
+        mealPriceMad5.Name = "mealPriceMad5"
+        mealPriceMad5.Size = New Size(100, 23)
+        mealPriceMad5.TabIndex = 133
+        ' 
+        ' mealPriceMad4
+        ' 
+        mealPriceMad4.Location = New Point(419, 113)
+        mealPriceMad4.Name = "mealPriceMad4"
+        mealPriceMad4.Size = New Size(100, 23)
+        mealPriceMad4.TabIndex = 132
+        ' 
+        ' mealPriceMad3
+        ' 
+        mealPriceMad3.Location = New Point(289, 113)
+        mealPriceMad3.Name = "mealPriceMad3"
+        mealPriceMad3.Size = New Size(100, 23)
+        mealPriceMad3.TabIndex = 131
+        ' 
+        ' mealPriceMad2
+        ' 
+        mealPriceMad2.Location = New Point(158, 113)
+        mealPriceMad2.Name = "mealPriceMad2"
+        mealPriceMad2.Size = New Size(100, 23)
+        mealPriceMad2.TabIndex = 130
+        ' 
+        ' paxPriceMad5
+        ' 
+        paxPriceMad5.Location = New Point(547, 88)
+        paxPriceMad5.Name = "paxPriceMad5"
+        paxPriceMad5.ReadOnly = True
+        paxPriceMad5.Size = New Size(100, 23)
+        paxPriceMad5.TabIndex = 129
+        ' 
+        ' paxPriceMad4
+        ' 
+        paxPriceMad4.Location = New Point(419, 88)
+        paxPriceMad4.Name = "paxPriceMad4"
+        paxPriceMad4.ReadOnly = True
+        paxPriceMad4.Size = New Size(100, 23)
+        paxPriceMad4.TabIndex = 128
+        ' 
+        ' paxPriceMad3
+        ' 
+        paxPriceMad3.Location = New Point(289, 88)
+        paxPriceMad3.Name = "paxPriceMad3"
+        paxPriceMad3.ReadOnly = True
+        paxPriceMad3.Size = New Size(100, 23)
+        paxPriceMad3.TabIndex = 127
+        ' 
+        ' paxPriceMad2
+        ' 
+        paxPriceMad2.Location = New Point(158, 88)
+        paxPriceMad2.Name = "paxPriceMad2"
+        paxPriceMad2.ReadOnly = True
+        paxPriceMad2.Size = New Size(100, 23)
+        paxPriceMad2.TabIndex = 126
+        ' 
+        ' roomPriceMad5
+        ' 
+        roomPriceMad5.Location = New Point(547, 62)
+        roomPriceMad5.Name = "roomPriceMad5"
+        roomPriceMad5.Size = New Size(100, 23)
+        roomPriceMad5.TabIndex = 125
+        ' 
+        ' roomPriceMad4
+        ' 
+        roomPriceMad4.Location = New Point(419, 62)
+        roomPriceMad4.Name = "roomPriceMad4"
+        roomPriceMad4.Size = New Size(100, 23)
+        roomPriceMad4.TabIndex = 124
+        ' 
+        ' roomPriceMad3
+        ' 
+        roomPriceMad3.Location = New Point(289, 62)
+        roomPriceMad3.Name = "roomPriceMad3"
+        roomPriceMad3.Size = New Size(100, 23)
+        roomPriceMad3.TabIndex = 123
+        ' 
+        ' roomPriceMad2
+        ' 
+        roomPriceMad2.Location = New Point(158, 62)
+        roomPriceMad2.Name = "roomPriceMad2"
+        roomPriceMad2.Size = New Size(100, 23)
+        roomPriceMad2.TabIndex = 122
+        ' 
+        ' hotelNameMad
+        ' 
+        hotelNameMad.Location = New Point(97, 11)
+        hotelNameMad.Name = "hotelNameMad"
+        hotelNameMad.Size = New Size(325, 23)
+        hotelNameMad.TabIndex = 121
+        ' 
+        ' Label96
+        ' 
+        Label96.AutoSize = True
+        Label96.Location = New Point(18, 217)
+        Label96.Name = "Label96"
+        Label96.Size = New Size(101, 15)
+        Label96.TabIndex = 120
+        Label96.Text = "Overall Total (RM)"
+        ' 
+        ' Label97
+        ' 
+        Label97.AutoSize = True
+        Label97.Location = New Point(18, 192)
+        Label97.Name = "Label97"
+        Label97.Size = New Size(104, 15)
+        Label97.TabIndex = 119
+        Label97.Text = "Overall Total (SAR)"
+        ' 
+        ' Label98
+        ' 
+        Label98.AutoSize = True
+        Label98.Location = New Point(18, 167)
+        Label98.Name = "Label98"
+        Label98.Size = New Size(66, 15)
+        Label98.TabIndex = 118
+        Label98.Text = "# of Nights"
+        ' 
+        ' Label99
+        ' 
+        Label99.AutoSize = True
+        Label99.Location = New Point(18, 141)
+        Label99.Name = "Label99"
+        Label99.Size = New Size(64, 15)
+        Label99.TabIndex = 117
+        Label99.Text = "Total (SAR)"
+        ' 
+        ' Label100
+        ' 
+        Label100.AutoSize = True
+        Label100.Location = New Point(18, 116)
+        Label100.Name = "Label100"
+        Label100.Size = New Size(70, 15)
+        Label100.TabIndex = 116
+        Label100.Text = "Meals (SAR)"
+        ' 
+        ' Label101
+        ' 
+        Label101.AutoSize = True
+        Label101.Location = New Point(18, 91)
+        Label101.Name = "Label101"
+        Label101.Size = New Size(87, 15)
+        Label101.TabIndex = 115
+        Label101.Text = "Pax Price (SAR)"
+        ' 
+        ' Label102
+        ' 
+        Label102.AutoSize = True
+        Label102.Location = New Point(18, 65)
+        Label102.Name = "Label102"
+        Label102.Size = New Size(100, 15)
+        Label102.TabIndex = 114
+        Label102.Text = "Room Price (SAR)"
+        ' 
+        ' Label103
+        ' 
+        Label103.AutoSize = True
+        Label103.Location = New Point(18, 19)
+        Label103.Name = "Label103"
+        Label103.Size = New Size(71, 15)
+        Label103.TabIndex = 113
+        Label103.Text = "Hotel Name"
+        ' 
+        ' Label79
+        ' 
+        Label79.AutoEllipsis = True
+        Label79.AutoSize = True
+        Label79.Font = New Font("AcmeFont", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label79.Location = New Point(28, 11)
+        Label79.Name = "Label79"
+        Label79.Size = New Size(122, 15)
+        Label79.TabIndex = 53
+        Label79.Text = "ACCOMMODATIONS"
+        Label79.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Panel10
+        ' 
+        Panel10.BorderStyle = BorderStyle.FixedSingle
+        Panel10.Controls.Add(tourLeadPriceRm)
+        Panel10.Controls.Add(saudiArrPriceRm)
+        Panel10.Controls.Add(tourLeadPerPaxSar)
+        Panel10.Controls.Add(saudiArrPerPaxSar)
+        Panel10.Controls.Add(exchgRate)
+        Panel10.Controls.Add(Label111)
+        Panel10.Controls.Add(tourLeadPax)
+        Panel10.Controls.Add(Label106)
+        Panel10.Controls.Add(tourLeadPriceSar)
+        Panel10.Controls.Add(Label110)
+        Panel10.Controls.Add(Label104)
+        Panel10.Controls.Add(Label109)
+        Panel10.Controls.Add(saudiArrPriceSar)
+        Panel10.Controls.Add(saudiArrPax)
+        Panel10.Controls.Add(Label108)
+        Panel10.Controls.Add(Label107)
+        Panel10.Location = New Point(19, 343)
+        Panel10.Name = "Panel10"
+        Panel10.Size = New Size(533, 132)
+        Panel10.TabIndex = 167
+        ' 
+        ' tourLeadPriceRm
+        ' 
+        tourLeadPriceRm.Location = New Point(419, 61)
+        tourLeadPriceRm.Name = "tourLeadPriceRm"
+        tourLeadPriceRm.ReadOnly = True
+        tourLeadPriceRm.Size = New Size(67, 23)
+        tourLeadPriceRm.TabIndex = 173
+        ' 
+        ' saudiArrPriceRm
+        ' 
+        saudiArrPriceRm.Location = New Point(419, 32)
+        saudiArrPriceRm.Name = "saudiArrPriceRm"
+        saudiArrPriceRm.ReadOnly = True
+        saudiArrPriceRm.Size = New Size(67, 23)
+        saudiArrPriceRm.TabIndex = 172
+        ' 
+        ' tourLeadPerPaxSar
+        ' 
+        tourLeadPerPaxSar.Location = New Point(325, 61)
+        tourLeadPerPaxSar.Name = "tourLeadPerPaxSar"
+        tourLeadPerPaxSar.ReadOnly = True
+        tourLeadPerPaxSar.Size = New Size(67, 23)
+        tourLeadPerPaxSar.TabIndex = 171
+        ' 
+        ' saudiArrPerPaxSar
+        ' 
+        saudiArrPerPaxSar.Location = New Point(325, 32)
+        saudiArrPerPaxSar.Name = "saudiArrPerPaxSar"
+        saudiArrPerPaxSar.Size = New Size(67, 23)
+        saudiArrPerPaxSar.TabIndex = 170
+        ' 
+        ' exchgRate
+        ' 
+        exchgRate.Location = New Point(455, 99)
+        exchgRate.Name = "exchgRate"
+        exchgRate.Size = New Size(67, 23)
+        exchgRate.TabIndex = 168
+        ' 
+        ' Label111
+        ' 
+        Label111.AutoSize = True
+        Label111.Location = New Point(366, 103)
+        Label111.Name = "Label111"
+        Label111.Size = New Size(87, 15)
+        Label111.TabIndex = 169
+        Label111.Text = "Exchange Rate:"
+        ' 
+        ' tourLeadPax
+        ' 
+        tourLeadPax.Location = New Point(252, 61)
+        tourLeadPax.Name = "tourLeadPax"
+        tourLeadPax.Size = New Size(44, 23)
+        tourLeadPax.TabIndex = 164
+        ' 
+        ' Label106
+        ' 
+        Label106.AutoSize = True
+        Label106.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label106.Location = New Point(147, 17)
+        Label106.Name = "Label106"
+        Label106.Size = New Size(92, 13)
+        Label106.TabIndex = 113
+        Label106.Text = "Overall Price (SAR)"
+        ' 
+        ' tourLeadPriceSar
+        ' 
+        tourLeadPriceSar.Location = New Point(156, 61)
+        tourLeadPriceSar.Name = "tourLeadPriceSar"
+        tourLeadPriceSar.Size = New Size(67, 23)
+        tourLeadPriceSar.TabIndex = 162
+        ' 
+        ' Label110
+        ' 
+        Label110.AutoSize = True
+        Label110.Location = New Point(16, 64)
+        Label110.Name = "Label110"
+        Label110.Size = New Size(100, 15)
+        Label110.TabIndex = 163
+        Label110.Text = "Tour Leader Saudi"
+        ' 
+        ' Label104
+        ' 
+        Label104.AutoSize = True
+        Label104.Location = New Point(16, 35)
+        Label104.Name = "Label104"
+        Label104.Size = New Size(109, 15)
+        Label104.TabIndex = 154
+        Label104.Text = "Saudi Arrangement"
+        ' 
+        ' Label109
+        ' 
+        Label109.AutoSize = True
+        Label109.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label109.Location = New Point(423, 16)
+        Label109.Name = "Label109"
+        Label109.Size = New Size(59, 13)
+        Label109.TabIndex = 160
+        Label109.Text = "Price in RM"
+        ' 
+        ' saudiArrPriceSar
+        ' 
+        saudiArrPriceSar.Location = New Point(156, 32)
+        saudiArrPriceSar.Name = "saudiArrPriceSar"
+        saudiArrPriceSar.ReadOnly = True
+        saudiArrPriceSar.Size = New Size(67, 23)
+        saudiArrPriceSar.TabIndex = 113
+        ' 
+        ' saudiArrPax
+        ' 
+        saudiArrPax.Location = New Point(252, 32)
+        saudiArrPax.Name = "saudiArrPax"
+        saudiArrPax.Size = New Size(44, 23)
+        saudiArrPax.TabIndex = 157
+        ' 
+        ' Label108
+        ' 
+        Label108.AutoSize = True
+        Label108.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label108.Location = New Point(324, 17)
+        Label108.Name = "Label108"
+        Label108.Size = New Size(70, 13)
+        Label108.TabIndex = 158
+        Label108.Text = "Price SAR/Pax"
+        ' 
+        ' Label107
+        ' 
+        Label107.AutoSize = True
+        Label107.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label107.Location = New Point(262, 16)
+        Label107.Name = "Label107"
+        Label107.Size = New Size(22, 13)
+        Label107.TabIndex = 156
+        Label107.Text = "Pax"
         ' 
         ' TabPage1
         ' 
@@ -364,7 +1346,7 @@ Partial Class Form1
         ' Label71
         ' 
         Label71.AutoSize = True
-        Label71.Font = New Font("AcmeFont", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Label71.Font = New Font("AcmeFont", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label71.Location = New Point(520, 230)
         Label71.Name = "Label71"
         Label71.Size = New Size(93, 15)
@@ -397,7 +1379,7 @@ Partial Class Form1
         ' Label77
         ' 
         Label77.AutoSize = True
-        Label77.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label77.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label77.Location = New Point(254, 10)
         Label77.Name = "Label77"
         Label77.Size = New Size(32, 13)
@@ -456,7 +1438,7 @@ Partial Class Form1
         ' Label76
         ' 
         Label76.AutoSize = True
-        Label76.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label76.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label76.Location = New Point(201, 10)
         Label76.Name = "Label76"
         Label76.Size = New Size(32, 13)
@@ -473,7 +1455,7 @@ Partial Class Form1
         ' Label75
         ' 
         Label75.AutoSize = True
-        Label75.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label75.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label75.Location = New Point(147, 10)
         Label75.Name = "Label75"
         Label75.Size = New Size(32, 13)
@@ -483,7 +1465,7 @@ Partial Class Form1
         ' Label74
         ' 
         Label74.AutoSize = True
-        Label74.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label74.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label74.Location = New Point(90, 10)
         Label74.Name = "Label74"
         Label74.Size = New Size(40, 13)
@@ -511,7 +1493,7 @@ Partial Class Form1
         ' Label52
         ' 
         Label52.AutoSize = True
-        Label52.Font = New Font("AcmeFont", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Label52.Font = New Font("AcmeFont", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label52.Location = New Point(434, 20)
         Label52.Name = "Label52"
         Label52.Size = New Size(60, 15)
@@ -529,44 +1511,51 @@ Partial Class Form1
         Panel4.Controls.Add(Panel8)
         Panel4.Controls.Add(Panel7)
         Panel4.Controls.Add(Panel6)
-        Panel4.Controls.Add(costingTotalPrice)
-        Panel4.Controls.Add(Label78)
         Panel4.Location = New Point(424, 28)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(411, 188)
         Panel4.TabIndex = 97
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(298, 16)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 23)
+        Button1.TabIndex = 0
+        Button1.Text = "Refresh"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' Label115
         ' 
         Label115.AutoSize = True
-        Label115.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Label115.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label115.Location = New Point(21, 150)
         Label115.Name = "Label115"
-        Label115.Size = New Size(109, 15)
+        Label115.Size = New Size(138, 15)
         Label115.TabIndex = 74
-        Label115.Text = "Profit Grand Total:"
+        Label115.Text = "Grand Total Cost/Profit:"
         Label115.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label114
         ' 
         Label114.AutoSize = True
-        Label114.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Label114.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label114.Location = New Point(20, 104)
         Label114.Name = "Label114"
-        Label114.Size = New Size(121, 15)
+        Label114.Size = New Size(150, 15)
         Label114.TabIndex = 73
-        Label114.Text = "Business Class Profit:"
+        Label114.Text = "Business Class Cost/Profit:"
         Label114.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label113
         ' 
         Label113.AutoSize = True
-        Label113.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Label113.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label113.Location = New Point(20, 58)
         Label113.Name = "Label113"
-        Label113.Size = New Size(124, 15)
+        Label113.Size = New Size(153, 15)
         Label113.TabIndex = 72
-        Label113.Text = "Economy Class Profit:"
+        Label113.Text = "Economy Class Cost/Profit:"
         Label113.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Panel8
@@ -574,9 +1563,9 @@ Partial Class Form1
         Panel8.BackColor = SystemColors.Info
         Panel8.BorderStyle = BorderStyle.Fixed3D
         Panel8.ForeColor = SystemColors.ActiveCaptionText
-        Panel8.Location = New Point(163, 139)
+        Panel8.Location = New Point(179, 139)
         Panel8.Name = "Panel8"
-        Panel8.Size = New Size(215, 36)
+        Panel8.Size = New Size(199, 36)
         Panel8.TabIndex = 2
         ' 
         ' Panel7
@@ -584,9 +1573,9 @@ Partial Class Form1
         Panel7.BackColor = SystemColors.Info
         Panel7.BorderStyle = BorderStyle.Fixed3D
         Panel7.ForeColor = SystemColors.ActiveCaptionText
-        Panel7.Location = New Point(163, 91)
+        Panel7.Location = New Point(179, 91)
         Panel7.Name = "Panel7"
-        Panel7.Size = New Size(215, 36)
+        Panel7.Size = New Size(199, 36)
         Panel7.TabIndex = 2
         ' 
         ' Panel6
@@ -594,45 +1583,26 @@ Partial Class Form1
         Panel6.BackColor = SystemColors.Info
         Panel6.BorderStyle = BorderStyle.Fixed3D
         Panel6.ForeColor = SystemColors.ActiveCaptionText
-        Panel6.Location = New Point(163, 45)
+        Panel6.Location = New Point(179, 45)
         Panel6.Name = "Panel6"
-        Panel6.Size = New Size(215, 36)
+        Panel6.Size = New Size(199, 36)
         Panel6.TabIndex = 1
-        ' 
-        ' costingTotalPrice
-        ' 
-        costingTotalPrice.Location = New Point(281, 10)
-        costingTotalPrice.Name = "costingTotalPrice"
-        costingTotalPrice.ReadOnly = True
-        costingTotalPrice.Size = New Size(98, 23)
-        costingTotalPrice.TabIndex = 71
-        ' 
-        ' Label78
-        ' 
-        Label78.AutoSize = True
-        Label78.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label78.Location = New Point(216, 15)
-        Label78.Name = "Label78"
-        Label78.Size = New Size(64, 15)
-        Label78.TabIndex = 70
-        Label78.Text = "Cost Total:"
-        Label78.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label41
         ' 
         Label41.AutoSize = True
-        Label41.Font = New Font("AcmeFont", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Label41.Font = New Font("AcmeFont", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label41.Location = New Point(28, 229)
         Label41.Name = "Label41"
-        Label41.Size = New Size(92, 15)
+        Label41.Size = New Size(88, 15)
         Label41.TabIndex = 71
-        Label41.Text = "TICKET PRICE"
+        Label41.Text = "TICKET COST"
         Label41.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' Label37
         ' 
         Label37.AutoSize = True
-        Label37.Font = New Font("AcmeFont", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Label37.Font = New Font("AcmeFont", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label37.Location = New Point(226, 229)
         Label37.Name = "Label37"
         Label37.Size = New Size(90, 15)
@@ -726,12 +1696,12 @@ Partial Class Form1
         ' 
         Label16.AutoEllipsis = True
         Label16.AutoSize = True
-        Label16.Font = New Font("AcmeFont", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Label16.Font = New Font("AcmeFont", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label16.Location = New Point(27, 339)
         Label16.Name = "Label16"
-        Label16.Size = New Size(182, 15)
+        Label16.Size = New Size(178, 15)
         Label16.TabIndex = 44
-        Label16.Text = "TRAVEL NECESSITIES PRICE"
+        Label16.Text = "TRAVEL NECESSITIES COST"
         Label16.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Panel2
@@ -765,6 +1735,22 @@ Partial Class Form1
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(816, 141)
         Panel2.TabIndex = 70
+        ' 
+        ' miscPrice2
+        ' 
+        miscPrice2.Location = New Point(530, 107)
+        miscPrice2.Name = "miscPrice2"
+        miscPrice2.Size = New Size(72, 23)
+        miscPrice2.TabIndex = 80
+        ' 
+        ' Label116
+        ' 
+        Label116.AutoSize = True
+        Label116.Location = New Point(415, 112)
+        Label116.Name = "Label116"
+        Label116.Size = New Size(41, 15)
+        Label116.TabIndex = 79
+        Label116.Text = "Misc II"
         ' 
         ' agentComm
         ' 
@@ -1192,7 +2178,7 @@ Partial Class Form1
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label5.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label5.Location = New Point(159, 9)
         Label5.Name = "Label5"
         Label5.Size = New Size(31, 13)
@@ -1209,7 +2195,7 @@ Partial Class Form1
         ' Label20
         ' 
         Label20.AutoSize = True
-        Label20.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label20.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label20.Location = New Point(280, 9)
         Label20.Name = "Label20"
         Label20.Size = New Size(71, 13)
@@ -1228,7 +2214,7 @@ Partial Class Form1
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label6.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label6.Location = New Point(213, 9)
         Label6.Name = "Label6"
         Label6.Size = New Size(65, 13)
@@ -1428,7 +2414,7 @@ Partial Class Form1
         ' Label29
         ' 
         Label29.AutoSize = True
-        Label29.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label29.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label29.Location = New Point(159, 9)
         Label29.Name = "Label29"
         Label29.Size = New Size(31, 13)
@@ -1445,7 +2431,7 @@ Partial Class Form1
         ' Label30
         ' 
         Label30.AutoSize = True
-        Label30.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label30.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label30.Location = New Point(280, 9)
         Label30.Name = "Label30"
         Label30.Size = New Size(71, 13)
@@ -1464,7 +2450,7 @@ Partial Class Form1
         ' Label32
         ' 
         Label32.AutoSize = True
-        Label32.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label32.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label32.Location = New Point(213, 9)
         Label32.Name = "Label32"
         Label32.Size = New Size(65, 13)
@@ -1663,7 +2649,7 @@ Partial Class Form1
         ' Label56
         ' 
         Label56.AutoSize = True
-        Label56.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label56.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label56.Location = New Point(159, 9)
         Label56.Name = "Label56"
         Label56.Size = New Size(31, 13)
@@ -1680,7 +2666,7 @@ Partial Class Form1
         ' Label57
         ' 
         Label57.AutoSize = True
-        Label57.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label57.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label57.Location = New Point(280, 9)
         Label57.Name = "Label57"
         Label57.Size = New Size(71, 13)
@@ -1699,7 +2685,7 @@ Partial Class Form1
         ' Label59
         ' 
         Label59.AutoSize = True
-        Label59.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label59.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label59.Location = New Point(213, 9)
         Label59.Name = "Label59"
         Label59.Size = New Size(65, 13)
@@ -1898,7 +2884,7 @@ Partial Class Form1
         ' Label67
         ' 
         Label67.AutoSize = True
-        Label67.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label67.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label67.Location = New Point(159, 9)
         Label67.Name = "Label67"
         Label67.Size = New Size(31, 13)
@@ -1915,7 +2901,7 @@ Partial Class Form1
         ' Label68
         ' 
         Label68.AutoSize = True
-        Label68.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label68.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label68.Location = New Point(280, 9)
         Label68.Name = "Label68"
         Label68.Size = New Size(71, 13)
@@ -1934,7 +2920,7 @@ Partial Class Form1
         ' Label70
         ' 
         Label70.AutoSize = True
-        Label70.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label70.Font = New Font("Segoe UI Light", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label70.Location = New Point(213, 9)
         Label70.Name = "Label70"
         Label70.Size = New Size(65, 13)
@@ -1945,7 +2931,7 @@ Partial Class Form1
         ' 
         Label21.AutoEllipsis = True
         Label21.AutoSize = True
-        Label21.Font = New Font("AcmeFont", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Label21.Font = New Font("AcmeFont", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label21.Location = New Point(28, 11)
         Label21.Name = "Label21"
         Label21.Size = New Size(102, 15)
@@ -1960,999 +2946,6 @@ Partial Class Form1
         Panel9.Name = "Panel9"
         Panel9.Size = New Size(847, 485)
         Panel9.TabIndex = 100
-        ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(9, 11)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
-        Button1.TabIndex = 0
-        Button1.Text = "Refresh"
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' TabPage2
-        ' 
-        TabPage2.Controls.Add(Label112)
-        TabPage2.Controls.Add(Label105)
-        TabPage2.Controls.Add(TabControl3)
-        TabPage2.Controls.Add(Label79)
-        TabPage2.Controls.Add(Panel10)
-        TabPage2.Location = New Point(4, 24)
-        TabPage2.Name = "TabPage2"
-        TabPage2.Padding = New Padding(3)
-        TabPage2.Size = New Size(859, 497)
-        TabPage2.TabIndex = 1
-        TabPage2.Text = "Accommodations Cost"
-        TabPage2.UseVisualStyleBackColor = True
-        ' 
-        ' Label112
-        ' 
-        Label112.AutoEllipsis = True
-        Label112.Font = New Font("SimSun", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label112.Location = New Point(566, 416)
-        Label112.Name = "Label112"
-        Label112.Size = New Size(252, 58)
-        Label112.TabIndex = 168
-        Label112.Text = "Saudi Arrangement Include:" & vbCrLf & "1. Service Manager" & vbCrLf & "2. Transportation & Ziarah Thaif" & vbCrLf & "3. Mutawif & Mutawifah for Makkah/Madinah" & vbCrLf & "4. Porter" & vbCrLf
-        Label112.UseMnemonic = False
-        ' 
-        ' Label105
-        ' 
-        Label105.AutoEllipsis = True
-        Label105.AutoSize = True
-        Label105.Font = New Font("AcmeFont", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label105.Location = New Point(26, 336)
-        Label105.Name = "Label105"
-        Label105.Size = New Size(150, 15)
-        Label105.TabIndex = 155
-        Label105.Text = "SAUDI ARRANGEMENTS"
-        Label105.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' TabControl3
-        ' 
-        TabControl3.Controls.Add(TabPage7)
-        TabControl3.Controls.Add(TabPage8)
-        TabControl3.Location = New Point(15, 37)
-        TabControl3.Name = "TabControl3"
-        TabControl3.SelectedIndex = 0
-        TabControl3.Size = New Size(703, 282)
-        TabControl3.TabIndex = 54
-        ' 
-        ' TabPage7
-        ' 
-        TabPage7.BorderStyle = BorderStyle.FixedSingle
-        TabPage7.Controls.Add(Label88)
-        TabPage7.Controls.Add(ovrTotalRm5)
-        TabPage7.Controls.Add(Label89)
-        TabPage7.Controls.Add(ovrTotalRm4)
-        TabPage7.Controls.Add(Label90)
-        TabPage7.Controls.Add(Label91)
-        TabPage7.Controls.Add(ovrTotalRm3)
-        TabPage7.Controls.Add(ovrTotalRm2)
-        TabPage7.Controls.Add(ovrTotalSar5)
-        TabPage7.Controls.Add(ovrTotalSar4)
-        TabPage7.Controls.Add(ovrTotalSar3)
-        TabPage7.Controls.Add(ovrTotalSar2)
-        TabPage7.Controls.Add(hotelNights5)
-        TabPage7.Controls.Add(hotelNights4)
-        TabPage7.Controls.Add(hotelNights3)
-        TabPage7.Controls.Add(hotelNights2)
-        TabPage7.Controls.Add(accTotalPrice5)
-        TabPage7.Controls.Add(accTotalPrice4)
-        TabPage7.Controls.Add(accTotalPrice3)
-        TabPage7.Controls.Add(accTotalPrice2)
-        TabPage7.Controls.Add(mealPrice5)
-        TabPage7.Controls.Add(mealPrice4)
-        TabPage7.Controls.Add(mealPrice3)
-        TabPage7.Controls.Add(mealPrice2)
-        TabPage7.Controls.Add(paxPrice5)
-        TabPage7.Controls.Add(paxPrice4)
-        TabPage7.Controls.Add(paxPrice3)
-        TabPage7.Controls.Add(paxPrice2)
-        TabPage7.Controls.Add(roomPrice5)
-        TabPage7.Controls.Add(roomPrice4)
-        TabPage7.Controls.Add(roomPrice3)
-        TabPage7.Controls.Add(roomPrice2)
-        TabPage7.Controls.Add(hotelNameMak)
-        TabPage7.Controls.Add(Label87)
-        TabPage7.Controls.Add(Label86)
-        TabPage7.Controls.Add(Label85)
-        TabPage7.Controls.Add(Label84)
-        TabPage7.Controls.Add(Label82)
-        TabPage7.Controls.Add(Label83)
-        TabPage7.Controls.Add(Label81)
-        TabPage7.Controls.Add(Label80)
-        TabPage7.Location = New Point(4, 24)
-        TabPage7.Name = "TabPage7"
-        TabPage7.Padding = New Padding(3)
-        TabPage7.Size = New Size(695, 254)
-        TabPage7.TabIndex = 0
-        TabPage7.Text = "Makkah"
-        TabPage7.UseVisualStyleBackColor = True
-        ' 
-        ' Label88
-        ' 
-        Label88.AutoSize = True
-        Label88.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        Label88.Location = New Point(582, 46)
-        Label88.Name = "Label88"
-        Label88.Size = New Size(32, 13)
-        Label88.TabIndex = 112
-        Label88.Text = "Quint"
-        ' 
-        ' ovrTotalRm5
-        ' 
-        ovrTotalRm5.Location = New Point(547, 214)
-        ovrTotalRm5.Name = "ovrTotalRm5"
-        ovrTotalRm5.ReadOnly = True
-        ovrTotalRm5.Size = New Size(100, 23)
-        ovrTotalRm5.TabIndex = 36
-        ' 
-        ' Label89
-        ' 
-        Label89.AutoSize = True
-        Label89.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        Label89.Location = New Point(455, 46)
-        Label89.Name = "Label89"
-        Label89.Size = New Size(32, 13)
-        Label89.TabIndex = 111
-        Label89.Text = "Quad"
-        ' 
-        ' ovrTotalRm4
-        ' 
-        ovrTotalRm4.Location = New Point(419, 214)
-        ovrTotalRm4.Name = "ovrTotalRm4"
-        ovrTotalRm4.ReadOnly = True
-        ovrTotalRm4.Size = New Size(100, 23)
-        ovrTotalRm4.TabIndex = 35
-        ' 
-        ' Label90
-        ' 
-        Label90.AutoSize = True
-        Label90.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        Label90.Location = New Point(325, 46)
-        Label90.Name = "Label90"
-        Label90.Size = New Size(32, 13)
-        Label90.TabIndex = 110
-        Label90.Text = "Triple"
-        ' 
-        ' Label91
-        ' 
-        Label91.AutoSize = True
-        Label91.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        Label91.Location = New Point(185, 46)
-        Label91.Name = "Label91"
-        Label91.Size = New Size(40, 13)
-        Label91.TabIndex = 109
-        Label91.Text = "Double"
-        ' 
-        ' ovrTotalRm3
-        ' 
-        ovrTotalRm3.Location = New Point(289, 214)
-        ovrTotalRm3.Name = "ovrTotalRm3"
-        ovrTotalRm3.ReadOnly = True
-        ovrTotalRm3.Size = New Size(100, 23)
-        ovrTotalRm3.TabIndex = 34
-        ' 
-        ' ovrTotalRm2
-        ' 
-        ovrTotalRm2.Location = New Point(158, 214)
-        ovrTotalRm2.Name = "ovrTotalRm2"
-        ovrTotalRm2.ReadOnly = True
-        ovrTotalRm2.Size = New Size(100, 23)
-        ovrTotalRm2.TabIndex = 33
-        ' 
-        ' ovrTotalSar5
-        ' 
-        ovrTotalSar5.Location = New Point(547, 189)
-        ovrTotalSar5.Name = "ovrTotalSar5"
-        ovrTotalSar5.ReadOnly = True
-        ovrTotalSar5.Size = New Size(100, 23)
-        ovrTotalSar5.TabIndex = 32
-        ' 
-        ' ovrTotalSar4
-        ' 
-        ovrTotalSar4.Location = New Point(419, 189)
-        ovrTotalSar4.Name = "ovrTotalSar4"
-        ovrTotalSar4.ReadOnly = True
-        ovrTotalSar4.Size = New Size(100, 23)
-        ovrTotalSar4.TabIndex = 31
-        ' 
-        ' ovrTotalSar3
-        ' 
-        ovrTotalSar3.Location = New Point(289, 189)
-        ovrTotalSar3.Name = "ovrTotalSar3"
-        ovrTotalSar3.ReadOnly = True
-        ovrTotalSar3.Size = New Size(100, 23)
-        ovrTotalSar3.TabIndex = 30
-        ' 
-        ' ovrTotalSar2
-        ' 
-        ovrTotalSar2.Location = New Point(158, 189)
-        ovrTotalSar2.Name = "ovrTotalSar2"
-        ovrTotalSar2.ReadOnly = True
-        ovrTotalSar2.Size = New Size(100, 23)
-        ovrTotalSar2.TabIndex = 29
-        ' 
-        ' hotelNights5
-        ' 
-        hotelNights5.Location = New Point(547, 164)
-        hotelNights5.Name = "hotelNights5"
-        hotelNights5.Size = New Size(100, 23)
-        hotelNights5.TabIndex = 28
-        ' 
-        ' hotelNights4
-        ' 
-        hotelNights4.Location = New Point(419, 164)
-        hotelNights4.Name = "hotelNights4"
-        hotelNights4.Size = New Size(100, 23)
-        hotelNights4.TabIndex = 27
-        ' 
-        ' hotelNights3
-        ' 
-        hotelNights3.Location = New Point(289, 164)
-        hotelNights3.Name = "hotelNights3"
-        hotelNights3.Size = New Size(100, 23)
-        hotelNights3.TabIndex = 26
-        ' 
-        ' hotelNights2
-        ' 
-        hotelNights2.Location = New Point(158, 164)
-        hotelNights2.Name = "hotelNights2"
-        hotelNights2.Size = New Size(100, 23)
-        hotelNights2.TabIndex = 25
-        ' 
-        ' accTotalPrice5
-        ' 
-        accTotalPrice5.Location = New Point(547, 138)
-        accTotalPrice5.Name = "accTotalPrice5"
-        accTotalPrice5.ReadOnly = True
-        accTotalPrice5.Size = New Size(100, 23)
-        accTotalPrice5.TabIndex = 24
-        ' 
-        ' accTotalPrice4
-        ' 
-        accTotalPrice4.Location = New Point(419, 138)
-        accTotalPrice4.Name = "accTotalPrice4"
-        accTotalPrice4.ReadOnly = True
-        accTotalPrice4.Size = New Size(100, 23)
-        accTotalPrice4.TabIndex = 23
-        ' 
-        ' accTotalPrice3
-        ' 
-        accTotalPrice3.Location = New Point(289, 138)
-        accTotalPrice3.Name = "accTotalPrice3"
-        accTotalPrice3.ReadOnly = True
-        accTotalPrice3.Size = New Size(100, 23)
-        accTotalPrice3.TabIndex = 22
-        ' 
-        ' accTotalPrice2
-        ' 
-        accTotalPrice2.Location = New Point(158, 138)
-        accTotalPrice2.Name = "accTotalPrice2"
-        accTotalPrice2.ReadOnly = True
-        accTotalPrice2.Size = New Size(100, 23)
-        accTotalPrice2.TabIndex = 21
-        ' 
-        ' mealPrice5
-        ' 
-        mealPrice5.Location = New Point(547, 113)
-        mealPrice5.Name = "mealPrice5"
-        mealPrice5.Size = New Size(100, 23)
-        mealPrice5.TabIndex = 20
-        ' 
-        ' mealPrice4
-        ' 
-        mealPrice4.Location = New Point(419, 113)
-        mealPrice4.Name = "mealPrice4"
-        mealPrice4.Size = New Size(100, 23)
-        mealPrice4.TabIndex = 19
-        ' 
-        ' mealPrice3
-        ' 
-        mealPrice3.Location = New Point(289, 113)
-        mealPrice3.Name = "mealPrice3"
-        mealPrice3.Size = New Size(100, 23)
-        mealPrice3.TabIndex = 18
-        ' 
-        ' mealPrice2
-        ' 
-        mealPrice2.Location = New Point(158, 113)
-        mealPrice2.Name = "mealPrice2"
-        mealPrice2.Size = New Size(100, 23)
-        mealPrice2.TabIndex = 17
-        ' 
-        ' paxPrice5
-        ' 
-        paxPrice5.Location = New Point(547, 88)
-        paxPrice5.Name = "paxPrice5"
-        paxPrice5.ReadOnly = True
-        paxPrice5.Size = New Size(100, 23)
-        paxPrice5.TabIndex = 16
-        ' 
-        ' paxPrice4
-        ' 
-        paxPrice4.Location = New Point(419, 88)
-        paxPrice4.Name = "paxPrice4"
-        paxPrice4.ReadOnly = True
-        paxPrice4.Size = New Size(100, 23)
-        paxPrice4.TabIndex = 15
-        ' 
-        ' paxPrice3
-        ' 
-        paxPrice3.Location = New Point(289, 88)
-        paxPrice3.Name = "paxPrice3"
-        paxPrice3.ReadOnly = True
-        paxPrice3.Size = New Size(100, 23)
-        paxPrice3.TabIndex = 14
-        ' 
-        ' paxPrice2
-        ' 
-        paxPrice2.Location = New Point(158, 88)
-        paxPrice2.Name = "paxPrice2"
-        paxPrice2.ReadOnly = True
-        paxPrice2.Size = New Size(100, 23)
-        paxPrice2.TabIndex = 13
-        ' 
-        ' roomPrice5
-        ' 
-        roomPrice5.Location = New Point(547, 62)
-        roomPrice5.Name = "roomPrice5"
-        roomPrice5.Size = New Size(100, 23)
-        roomPrice5.TabIndex = 12
-        ' 
-        ' roomPrice4
-        ' 
-        roomPrice4.Location = New Point(419, 62)
-        roomPrice4.Name = "roomPrice4"
-        roomPrice4.Size = New Size(100, 23)
-        roomPrice4.TabIndex = 11
-        ' 
-        ' roomPrice3
-        ' 
-        roomPrice3.Location = New Point(289, 62)
-        roomPrice3.Name = "roomPrice3"
-        roomPrice3.Size = New Size(100, 23)
-        roomPrice3.TabIndex = 10
-        ' 
-        ' roomPrice2
-        ' 
-        roomPrice2.Location = New Point(158, 62)
-        roomPrice2.Name = "roomPrice2"
-        roomPrice2.Size = New Size(100, 23)
-        roomPrice2.TabIndex = 9
-        ' 
-        ' hotelNameMak
-        ' 
-        hotelNameMak.Location = New Point(97, 11)
-        hotelNameMak.Name = "hotelNameMak"
-        hotelNameMak.Size = New Size(325, 23)
-        hotelNameMak.TabIndex = 8
-        ' 
-        ' Label87
-        ' 
-        Label87.AutoSize = True
-        Label87.Location = New Point(18, 217)
-        Label87.Name = "Label87"
-        Label87.Size = New Size(101, 15)
-        Label87.TabIndex = 7
-        Label87.Text = "Overall Total (RM)"
-        ' 
-        ' Label86
-        ' 
-        Label86.AutoSize = True
-        Label86.Location = New Point(18, 192)
-        Label86.Name = "Label86"
-        Label86.Size = New Size(104, 15)
-        Label86.TabIndex = 6
-        Label86.Text = "Overall Total (SAR)"
-        ' 
-        ' Label85
-        ' 
-        Label85.AutoSize = True
-        Label85.Location = New Point(18, 167)
-        Label85.Name = "Label85"
-        Label85.Size = New Size(66, 15)
-        Label85.TabIndex = 5
-        Label85.Text = "# of Nights"
-        ' 
-        ' Label84
-        ' 
-        Label84.AutoSize = True
-        Label84.Location = New Point(18, 141)
-        Label84.Name = "Label84"
-        Label84.Size = New Size(64, 15)
-        Label84.TabIndex = 4
-        Label84.Text = "Total (SAR)"
-        ' 
-        ' Label82
-        ' 
-        Label82.AutoSize = True
-        Label82.Location = New Point(18, 116)
-        Label82.Name = "Label82"
-        Label82.Size = New Size(70, 15)
-        Label82.TabIndex = 3
-        Label82.Text = "Meals (SAR)"
-        ' 
-        ' Label83
-        ' 
-        Label83.AutoSize = True
-        Label83.Location = New Point(18, 91)
-        Label83.Name = "Label83"
-        Label83.Size = New Size(87, 15)
-        Label83.TabIndex = 2
-        Label83.Text = "Pax Price (SAR)"
-        ' 
-        ' Label81
-        ' 
-        Label81.AutoSize = True
-        Label81.Location = New Point(18, 65)
-        Label81.Name = "Label81"
-        Label81.Size = New Size(100, 15)
-        Label81.TabIndex = 1
-        Label81.Text = "Room Price (SAR)"
-        ' 
-        ' Label80
-        ' 
-        Label80.AutoSize = True
-        Label80.Location = New Point(18, 19)
-        Label80.Name = "Label80"
-        Label80.Size = New Size(71, 15)
-        Label80.TabIndex = 0
-        Label80.Text = "Hotel Name"
-        ' 
-        ' TabPage8
-        ' 
-        TabPage8.BorderStyle = BorderStyle.FixedSingle
-        TabPage8.Controls.Add(Label92)
-        TabPage8.Controls.Add(ovrTotalMadRm5)
-        TabPage8.Controls.Add(Label93)
-        TabPage8.Controls.Add(ovrTotalMadRm4)
-        TabPage8.Controls.Add(Label94)
-        TabPage8.Controls.Add(Label95)
-        TabPage8.Controls.Add(ovrTotalMadRm3)
-        TabPage8.Controls.Add(ovrTotalMadRm2)
-        TabPage8.Controls.Add(ovrTotalMadSar5)
-        TabPage8.Controls.Add(ovrTotalMadSar4)
-        TabPage8.Controls.Add(ovrTotalMadSar3)
-        TabPage8.Controls.Add(ovrTotalMadSar2)
-        TabPage8.Controls.Add(hotelNightsMad5)
-        TabPage8.Controls.Add(hotelNightsMad4)
-        TabPage8.Controls.Add(hotelNightsMad3)
-        TabPage8.Controls.Add(hotelNightsMad2)
-        TabPage8.Controls.Add(accTotalPriceMad5)
-        TabPage8.Controls.Add(accTotalPriceMad4)
-        TabPage8.Controls.Add(accTotalPriceMad3)
-        TabPage8.Controls.Add(accTotalPriceMad2)
-        TabPage8.Controls.Add(mealPriceMad5)
-        TabPage8.Controls.Add(mealPriceMad4)
-        TabPage8.Controls.Add(mealPriceMad3)
-        TabPage8.Controls.Add(mealPriceMad2)
-        TabPage8.Controls.Add(paxPriceMad5)
-        TabPage8.Controls.Add(paxPriceMad4)
-        TabPage8.Controls.Add(paxPriceMad3)
-        TabPage8.Controls.Add(paxPriceMad2)
-        TabPage8.Controls.Add(roomPriceMad5)
-        TabPage8.Controls.Add(roomPriceMad4)
-        TabPage8.Controls.Add(roomPriceMad3)
-        TabPage8.Controls.Add(roomPriceMad2)
-        TabPage8.Controls.Add(hotelNameMad)
-        TabPage8.Controls.Add(Label96)
-        TabPage8.Controls.Add(Label97)
-        TabPage8.Controls.Add(Label98)
-        TabPage8.Controls.Add(Label99)
-        TabPage8.Controls.Add(Label100)
-        TabPage8.Controls.Add(Label101)
-        TabPage8.Controls.Add(Label102)
-        TabPage8.Controls.Add(Label103)
-        TabPage8.Location = New Point(4, 24)
-        TabPage8.Name = "TabPage8"
-        TabPage8.Padding = New Padding(3)
-        TabPage8.Size = New Size(695, 254)
-        TabPage8.TabIndex = 1
-        TabPage8.Text = "Madinah"
-        TabPage8.UseVisualStyleBackColor = True
-        ' 
-        ' Label92
-        ' 
-        Label92.AutoSize = True
-        Label92.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        Label92.Location = New Point(582, 46)
-        Label92.Name = "Label92"
-        Label92.Size = New Size(32, 13)
-        Label92.TabIndex = 153
-        Label92.Text = "Quint"
-        ' 
-        ' ovrTotalMadRm5
-        ' 
-        ovrTotalMadRm5.Location = New Point(547, 214)
-        ovrTotalMadRm5.Name = "ovrTotalMadRm5"
-        ovrTotalMadRm5.ReadOnly = True
-        ovrTotalMadRm5.Size = New Size(100, 23)
-        ovrTotalMadRm5.TabIndex = 149
-        ' 
-        ' Label93
-        ' 
-        Label93.AutoSize = True
-        Label93.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        Label93.Location = New Point(455, 46)
-        Label93.Name = "Label93"
-        Label93.Size = New Size(32, 13)
-        Label93.TabIndex = 152
-        Label93.Text = "Quad"
-        ' 
-        ' ovrTotalMadRm4
-        ' 
-        ovrTotalMadRm4.Location = New Point(419, 214)
-        ovrTotalMadRm4.Name = "ovrTotalMadRm4"
-        ovrTotalMadRm4.ReadOnly = True
-        ovrTotalMadRm4.Size = New Size(100, 23)
-        ovrTotalMadRm4.TabIndex = 148
-        ' 
-        ' Label94
-        ' 
-        Label94.AutoSize = True
-        Label94.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        Label94.Location = New Point(325, 46)
-        Label94.Name = "Label94"
-        Label94.Size = New Size(32, 13)
-        Label94.TabIndex = 151
-        Label94.Text = "Triple"
-        ' 
-        ' Label95
-        ' 
-        Label95.AutoSize = True
-        Label95.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        Label95.Location = New Point(185, 46)
-        Label95.Name = "Label95"
-        Label95.Size = New Size(40, 13)
-        Label95.TabIndex = 150
-        Label95.Text = "Double"
-        ' 
-        ' ovrTotalMadRm3
-        ' 
-        ovrTotalMadRm3.Location = New Point(289, 214)
-        ovrTotalMadRm3.Name = "ovrTotalMadRm3"
-        ovrTotalMadRm3.ReadOnly = True
-        ovrTotalMadRm3.Size = New Size(100, 23)
-        ovrTotalMadRm3.TabIndex = 147
-        ' 
-        ' ovrTotalMadRm2
-        ' 
-        ovrTotalMadRm2.Location = New Point(158, 214)
-        ovrTotalMadRm2.Name = "ovrTotalMadRm2"
-        ovrTotalMadRm2.ReadOnly = True
-        ovrTotalMadRm2.Size = New Size(100, 23)
-        ovrTotalMadRm2.TabIndex = 146
-        ' 
-        ' ovrTotalMadSar5
-        ' 
-        ovrTotalMadSar5.Location = New Point(547, 189)
-        ovrTotalMadSar5.Name = "ovrTotalMadSar5"
-        ovrTotalMadSar5.ReadOnly = True
-        ovrTotalMadSar5.Size = New Size(100, 23)
-        ovrTotalMadSar5.TabIndex = 145
-        ' 
-        ' ovrTotalMadSar4
-        ' 
-        ovrTotalMadSar4.Location = New Point(419, 189)
-        ovrTotalMadSar4.Name = "ovrTotalMadSar4"
-        ovrTotalMadSar4.ReadOnly = True
-        ovrTotalMadSar4.Size = New Size(100, 23)
-        ovrTotalMadSar4.TabIndex = 144
-        ' 
-        ' ovrTotalMadSar3
-        ' 
-        ovrTotalMadSar3.Location = New Point(289, 189)
-        ovrTotalMadSar3.Name = "ovrTotalMadSar3"
-        ovrTotalMadSar3.ReadOnly = True
-        ovrTotalMadSar3.Size = New Size(100, 23)
-        ovrTotalMadSar3.TabIndex = 143
-        ' 
-        ' ovrTotalMadSar2
-        ' 
-        ovrTotalMadSar2.Location = New Point(158, 189)
-        ovrTotalMadSar2.Name = "ovrTotalMadSar2"
-        ovrTotalMadSar2.ReadOnly = True
-        ovrTotalMadSar2.Size = New Size(100, 23)
-        ovrTotalMadSar2.TabIndex = 142
-        ' 
-        ' hotelNightsMad5
-        ' 
-        hotelNightsMad5.Location = New Point(547, 164)
-        hotelNightsMad5.Name = "hotelNightsMad5"
-        hotelNightsMad5.Size = New Size(100, 23)
-        hotelNightsMad5.TabIndex = 141
-        ' 
-        ' hotelNightsMad4
-        ' 
-        hotelNightsMad4.Location = New Point(419, 164)
-        hotelNightsMad4.Name = "hotelNightsMad4"
-        hotelNightsMad4.Size = New Size(100, 23)
-        hotelNightsMad4.TabIndex = 140
-        ' 
-        ' hotelNightsMad3
-        ' 
-        hotelNightsMad3.Location = New Point(289, 164)
-        hotelNightsMad3.Name = "hotelNightsMad3"
-        hotelNightsMad3.Size = New Size(100, 23)
-        hotelNightsMad3.TabIndex = 139
-        ' 
-        ' hotelNightsMad2
-        ' 
-        hotelNightsMad2.Location = New Point(158, 164)
-        hotelNightsMad2.Name = "hotelNightsMad2"
-        hotelNightsMad2.Size = New Size(100, 23)
-        hotelNightsMad2.TabIndex = 138
-        ' 
-        ' accTotalPriceMad5
-        ' 
-        accTotalPriceMad5.Location = New Point(547, 138)
-        accTotalPriceMad5.Name = "accTotalPriceMad5"
-        accTotalPriceMad5.ReadOnly = True
-        accTotalPriceMad5.Size = New Size(100, 23)
-        accTotalPriceMad5.TabIndex = 137
-        ' 
-        ' accTotalPriceMad4
-        ' 
-        accTotalPriceMad4.Location = New Point(419, 138)
-        accTotalPriceMad4.Name = "accTotalPriceMad4"
-        accTotalPriceMad4.ReadOnly = True
-        accTotalPriceMad4.Size = New Size(100, 23)
-        accTotalPriceMad4.TabIndex = 136
-        ' 
-        ' accTotalPriceMad3
-        ' 
-        accTotalPriceMad3.Location = New Point(289, 138)
-        accTotalPriceMad3.Name = "accTotalPriceMad3"
-        accTotalPriceMad3.ReadOnly = True
-        accTotalPriceMad3.Size = New Size(100, 23)
-        accTotalPriceMad3.TabIndex = 135
-        ' 
-        ' accTotalPriceMad2
-        ' 
-        accTotalPriceMad2.Location = New Point(158, 138)
-        accTotalPriceMad2.Name = "accTotalPriceMad2"
-        accTotalPriceMad2.ReadOnly = True
-        accTotalPriceMad2.Size = New Size(100, 23)
-        accTotalPriceMad2.TabIndex = 134
-        ' 
-        ' mealPriceMad5
-        ' 
-        mealPriceMad5.Location = New Point(547, 113)
-        mealPriceMad5.Name = "mealPriceMad5"
-        mealPriceMad5.Size = New Size(100, 23)
-        mealPriceMad5.TabIndex = 133
-        ' 
-        ' mealPriceMad4
-        ' 
-        mealPriceMad4.Location = New Point(419, 113)
-        mealPriceMad4.Name = "mealPriceMad4"
-        mealPriceMad4.Size = New Size(100, 23)
-        mealPriceMad4.TabIndex = 132
-        ' 
-        ' mealPriceMad3
-        ' 
-        mealPriceMad3.Location = New Point(289, 113)
-        mealPriceMad3.Name = "mealPriceMad3"
-        mealPriceMad3.Size = New Size(100, 23)
-        mealPriceMad3.TabIndex = 131
-        ' 
-        ' mealPriceMad2
-        ' 
-        mealPriceMad2.Location = New Point(158, 113)
-        mealPriceMad2.Name = "mealPriceMad2"
-        mealPriceMad2.Size = New Size(100, 23)
-        mealPriceMad2.TabIndex = 130
-        ' 
-        ' paxPriceMad5
-        ' 
-        paxPriceMad5.Location = New Point(547, 88)
-        paxPriceMad5.Name = "paxPriceMad5"
-        paxPriceMad5.ReadOnly = True
-        paxPriceMad5.Size = New Size(100, 23)
-        paxPriceMad5.TabIndex = 129
-        ' 
-        ' paxPriceMad4
-        ' 
-        paxPriceMad4.Location = New Point(419, 88)
-        paxPriceMad4.Name = "paxPriceMad4"
-        paxPriceMad4.ReadOnly = True
-        paxPriceMad4.Size = New Size(100, 23)
-        paxPriceMad4.TabIndex = 128
-        ' 
-        ' paxPriceMad3
-        ' 
-        paxPriceMad3.Location = New Point(289, 88)
-        paxPriceMad3.Name = "paxPriceMad3"
-        paxPriceMad3.ReadOnly = True
-        paxPriceMad3.Size = New Size(100, 23)
-        paxPriceMad3.TabIndex = 127
-        ' 
-        ' paxPriceMad2
-        ' 
-        paxPriceMad2.Location = New Point(158, 88)
-        paxPriceMad2.Name = "paxPriceMad2"
-        paxPriceMad2.ReadOnly = True
-        paxPriceMad2.Size = New Size(100, 23)
-        paxPriceMad2.TabIndex = 126
-        ' 
-        ' roomPriceMad5
-        ' 
-        roomPriceMad5.Location = New Point(547, 62)
-        roomPriceMad5.Name = "roomPriceMad5"
-        roomPriceMad5.Size = New Size(100, 23)
-        roomPriceMad5.TabIndex = 125
-        ' 
-        ' roomPriceMad4
-        ' 
-        roomPriceMad4.Location = New Point(419, 62)
-        roomPriceMad4.Name = "roomPriceMad4"
-        roomPriceMad4.Size = New Size(100, 23)
-        roomPriceMad4.TabIndex = 124
-        ' 
-        ' roomPriceMad3
-        ' 
-        roomPriceMad3.Location = New Point(289, 62)
-        roomPriceMad3.Name = "roomPriceMad3"
-        roomPriceMad3.Size = New Size(100, 23)
-        roomPriceMad3.TabIndex = 123
-        ' 
-        ' roomPriceMad2
-        ' 
-        roomPriceMad2.Location = New Point(158, 62)
-        roomPriceMad2.Name = "roomPriceMad2"
-        roomPriceMad2.Size = New Size(100, 23)
-        roomPriceMad2.TabIndex = 122
-        ' 
-        ' hotelNameMad
-        ' 
-        hotelNameMad.Location = New Point(97, 11)
-        hotelNameMad.Name = "hotelNameMad"
-        hotelNameMad.Size = New Size(325, 23)
-        hotelNameMad.TabIndex = 121
-        ' 
-        ' Label96
-        ' 
-        Label96.AutoSize = True
-        Label96.Location = New Point(18, 217)
-        Label96.Name = "Label96"
-        Label96.Size = New Size(101, 15)
-        Label96.TabIndex = 120
-        Label96.Text = "Overall Total (RM)"
-        ' 
-        ' Label97
-        ' 
-        Label97.AutoSize = True
-        Label97.Location = New Point(18, 192)
-        Label97.Name = "Label97"
-        Label97.Size = New Size(104, 15)
-        Label97.TabIndex = 119
-        Label97.Text = "Overall Total (SAR)"
-        ' 
-        ' Label98
-        ' 
-        Label98.AutoSize = True
-        Label98.Location = New Point(18, 167)
-        Label98.Name = "Label98"
-        Label98.Size = New Size(66, 15)
-        Label98.TabIndex = 118
-        Label98.Text = "# of Nights"
-        ' 
-        ' Label99
-        ' 
-        Label99.AutoSize = True
-        Label99.Location = New Point(18, 141)
-        Label99.Name = "Label99"
-        Label99.Size = New Size(64, 15)
-        Label99.TabIndex = 117
-        Label99.Text = "Total (SAR)"
-        ' 
-        ' Label100
-        ' 
-        Label100.AutoSize = True
-        Label100.Location = New Point(18, 116)
-        Label100.Name = "Label100"
-        Label100.Size = New Size(70, 15)
-        Label100.TabIndex = 116
-        Label100.Text = "Meals (SAR)"
-        ' 
-        ' Label101
-        ' 
-        Label101.AutoSize = True
-        Label101.Location = New Point(18, 91)
-        Label101.Name = "Label101"
-        Label101.Size = New Size(87, 15)
-        Label101.TabIndex = 115
-        Label101.Text = "Pax Price (SAR)"
-        ' 
-        ' Label102
-        ' 
-        Label102.AutoSize = True
-        Label102.Location = New Point(18, 65)
-        Label102.Name = "Label102"
-        Label102.Size = New Size(100, 15)
-        Label102.TabIndex = 114
-        Label102.Text = "Room Price (SAR)"
-        ' 
-        ' Label103
-        ' 
-        Label103.AutoSize = True
-        Label103.Location = New Point(18, 19)
-        Label103.Name = "Label103"
-        Label103.Size = New Size(71, 15)
-        Label103.TabIndex = 113
-        Label103.Text = "Hotel Name"
-        ' 
-        ' Label79
-        ' 
-        Label79.AutoEllipsis = True
-        Label79.AutoSize = True
-        Label79.Font = New Font("AcmeFont", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label79.Location = New Point(28, 11)
-        Label79.Name = "Label79"
-        Label79.Size = New Size(122, 15)
-        Label79.TabIndex = 53
-        Label79.Text = "ACCOMMODATIONS"
-        Label79.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Panel10
-        ' 
-        Panel10.BorderStyle = BorderStyle.FixedSingle
-        Panel10.Controls.Add(tourLeadPriceRm)
-        Panel10.Controls.Add(saudiArrPriceRm)
-        Panel10.Controls.Add(tourLeadPerPaxSar)
-        Panel10.Controls.Add(saudiArrPerPaxSar)
-        Panel10.Controls.Add(exchgRate)
-        Panel10.Controls.Add(Label111)
-        Panel10.Controls.Add(tourLeadPax)
-        Panel10.Controls.Add(Label106)
-        Panel10.Controls.Add(tourLeadPriceSar)
-        Panel10.Controls.Add(Label110)
-        Panel10.Controls.Add(Label104)
-        Panel10.Controls.Add(Label109)
-        Panel10.Controls.Add(saudiArrPriceSar)
-        Panel10.Controls.Add(saudiArrPax)
-        Panel10.Controls.Add(Label108)
-        Panel10.Controls.Add(Label107)
-        Panel10.Location = New Point(19, 343)
-        Panel10.Name = "Panel10"
-        Panel10.Size = New Size(533, 132)
-        Panel10.TabIndex = 167
-        ' 
-        ' tourLeadPriceRm
-        ' 
-        tourLeadPriceRm.Location = New Point(419, 61)
-        tourLeadPriceRm.Name = "tourLeadPriceRm"
-        tourLeadPriceRm.ReadOnly = True
-        tourLeadPriceRm.Size = New Size(67, 23)
-        tourLeadPriceRm.TabIndex = 173
-        ' 
-        ' saudiArrPriceRm
-        ' 
-        saudiArrPriceRm.Location = New Point(419, 32)
-        saudiArrPriceRm.Name = "saudiArrPriceRm"
-        saudiArrPriceRm.ReadOnly = True
-        saudiArrPriceRm.Size = New Size(67, 23)
-        saudiArrPriceRm.TabIndex = 172
-        ' 
-        ' tourLeadPerPaxSar
-        ' 
-        tourLeadPerPaxSar.Location = New Point(325, 61)
-        tourLeadPerPaxSar.Name = "tourLeadPerPaxSar"
-        tourLeadPerPaxSar.ReadOnly = True
-        tourLeadPerPaxSar.Size = New Size(67, 23)
-        tourLeadPerPaxSar.TabIndex = 171
-        ' 
-        ' saudiArrPerPaxSar
-        ' 
-        saudiArrPerPaxSar.Location = New Point(325, 32)
-        saudiArrPerPaxSar.Name = "saudiArrPerPaxSar"
-        saudiArrPerPaxSar.Size = New Size(67, 23)
-        saudiArrPerPaxSar.TabIndex = 170
-        ' 
-        ' exchgRate
-        ' 
-        exchgRate.Location = New Point(455, 99)
-        exchgRate.Name = "exchgRate"
-        exchgRate.Size = New Size(67, 23)
-        exchgRate.TabIndex = 168
-        ' 
-        ' Label111
-        ' 
-        Label111.AutoSize = True
-        Label111.Location = New Point(366, 103)
-        Label111.Name = "Label111"
-        Label111.Size = New Size(87, 15)
-        Label111.TabIndex = 169
-        Label111.Text = "Exchange Rate:"
-        ' 
-        ' tourLeadPax
-        ' 
-        tourLeadPax.Location = New Point(252, 61)
-        tourLeadPax.Name = "tourLeadPax"
-        tourLeadPax.Size = New Size(44, 23)
-        tourLeadPax.TabIndex = 164
-        ' 
-        ' Label106
-        ' 
-        Label106.AutoSize = True
-        Label106.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        Label106.Location = New Point(147, 17)
-        Label106.Name = "Label106"
-        Label106.Size = New Size(92, 13)
-        Label106.TabIndex = 113
-        Label106.Text = "Overall Price (SAR)"
-        ' 
-        ' tourLeadPriceSar
-        ' 
-        tourLeadPriceSar.Location = New Point(156, 61)
-        tourLeadPriceSar.Name = "tourLeadPriceSar"
-        tourLeadPriceSar.Size = New Size(67, 23)
-        tourLeadPriceSar.TabIndex = 162
-        ' 
-        ' Label110
-        ' 
-        Label110.AutoSize = True
-        Label110.Location = New Point(16, 64)
-        Label110.Name = "Label110"
-        Label110.Size = New Size(100, 15)
-        Label110.TabIndex = 163
-        Label110.Text = "Tour Leader Saudi"
-        ' 
-        ' Label104
-        ' 
-        Label104.AutoSize = True
-        Label104.Location = New Point(16, 35)
-        Label104.Name = "Label104"
-        Label104.Size = New Size(109, 15)
-        Label104.TabIndex = 154
-        Label104.Text = "Saudi Arrangement"
-        ' 
-        ' Label109
-        ' 
-        Label109.AutoSize = True
-        Label109.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        Label109.Location = New Point(423, 16)
-        Label109.Name = "Label109"
-        Label109.Size = New Size(59, 13)
-        Label109.TabIndex = 160
-        Label109.Text = "Price in RM"
-        ' 
-        ' saudiArrPriceSar
-        ' 
-        saudiArrPriceSar.Location = New Point(156, 32)
-        saudiArrPriceSar.Name = "saudiArrPriceSar"
-        saudiArrPriceSar.ReadOnly = True
-        saudiArrPriceSar.Size = New Size(67, 23)
-        saudiArrPriceSar.TabIndex = 113
-        ' 
-        ' saudiArrPax
-        ' 
-        saudiArrPax.Location = New Point(252, 32)
-        saudiArrPax.Name = "saudiArrPax"
-        saudiArrPax.Size = New Size(44, 23)
-        saudiArrPax.TabIndex = 157
-        ' 
-        ' Label108
-        ' 
-        Label108.AutoSize = True
-        Label108.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        Label108.Location = New Point(324, 17)
-        Label108.Name = "Label108"
-        Label108.Size = New Size(70, 13)
-        Label108.TabIndex = 158
-        Label108.Text = "Price SAR/Pax"
-        ' 
-        ' Label107
-        ' 
-        Label107.AutoSize = True
-        Label107.Font = New Font("Segoe UI Light", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        Label107.Location = New Point(262, 16)
-        Label107.Name = "Label107"
-        Label107.Size = New Size(22, 13)
-        Label107.TabIndex = 156
-        Label107.Text = "Pax"
         ' 
         ' pkgName
         ' 
@@ -3036,25 +3029,9 @@ Partial Class Form1
         TableLayoutPanel2.Size = New Size(200, 100)
         TableLayoutPanel2.TabIndex = 0
         ' 
-        ' miscPrice2
-        ' 
-        miscPrice2.Location = New Point(530, 107)
-        miscPrice2.Name = "miscPrice2"
-        miscPrice2.Size = New Size(72, 23)
-        miscPrice2.TabIndex = 80
-        ' 
-        ' Label116
-        ' 
-        Label116.AutoSize = True
-        Label116.Location = New Point(415, 112)
-        Label116.Name = "Label116"
-        Label116.Size = New Size(41, 15)
-        Label116.TabIndex = 79
-        Label116.Text = "Misc II"
-        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
         ClientSize = New Size(891, 700)
@@ -3071,8 +3048,17 @@ Partial Class Form1
         MaximizeBox = False
         Name = "Form1"
         SizeGripStyle = SizeGripStyle.Hide
-        Text = "Form1"
+        Text = "DTTISB Umrah Cost Calculator"
         TabControl1.ResumeLayout(False)
+        TabPage2.ResumeLayout(False)
+        TabPage2.PerformLayout()
+        TabControl3.ResumeLayout(False)
+        TabPage7.ResumeLayout(False)
+        TabPage7.PerformLayout()
+        TabPage8.ResumeLayout(False)
+        TabPage8.PerformLayout()
+        Panel10.ResumeLayout(False)
+        Panel10.PerformLayout()
         TabPage1.ResumeLayout(False)
         TabPage1.PerformLayout()
         Panel5.ResumeLayout(False)
@@ -3094,15 +3080,6 @@ Partial Class Form1
         TabPage5.PerformLayout()
         TabPage6.ResumeLayout(False)
         TabPage6.PerformLayout()
-        TabPage2.ResumeLayout(False)
-        TabPage2.PerformLayout()
-        TabControl3.ResumeLayout(False)
-        TabPage7.ResumeLayout(False)
-        TabPage7.PerformLayout()
-        TabPage8.ResumeLayout(False)
-        TabPage8.PerformLayout()
-        Panel10.ResumeLayout(False)
-        Panel10.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -3272,8 +3249,6 @@ Partial Class Form1
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents costingTotalPrice As TextBox
-    Friend WithEvents Label78 As Label
     Friend WithEvents agentComm As TextBox
     Friend WithEvents officePrice As TextBox
     Friend WithEvents miscPrice1 As TextBox
