@@ -37,7 +37,32 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Any_TextChanged(sender As Object, e As EventArgs) Handles saudiArrPerPaxSar.TextChanged, exchgRate.TextChanged, tourLeadPax.TextChanged, tourLeadPriceSar.TextChanged, saudiArrPax.TextChanged, ovrTotalRm5.TextChanged, ovrTotalRm4.TextChanged, ovrTotalRm3.TextChanged, ovrTotalRm2.TextChanged, ovrTotalSar5.TextChanged, ovrTotalSar4.TextChanged, ovrTotalSar3.TextChanged, ovrTotalSar2.TextChanged, hotelNights5.TextChanged, hotelNights4.TextChanged, hotelNights3.TextChanged, hotelNights2.TextChanged, accTotalPrice5.TextChanged, accTotalPrice4.TextChanged, accTotalPrice3.TextChanged, accTotalPrice2.TextChanged, mealPrice5.TextChanged, mealPrice4.TextChanged, mealPrice3.TextChanged, mealPrice2.TextChanged, paxPrice5.TextChanged, paxPrice4.TextChanged, paxPrice3.TextChanged, paxPrice2.TextChanged, roomPrice5.TextChanged, roomPrice4.TextChanged, roomPrice3.TextChanged, roomPrice2.TextChanged, ovrTotalMadRm5.TextChanged, ovrTotalMadRm4.TextChanged, ovrTotalMadRm3.TextChanged, ovrTotalMadRm2.TextChanged, ovrTotalMadSar5.TextChanged, ovrTotalMadSar4.TextChanged, ovrTotalMadSar3.TextChanged, ovrTotalMadSar2.TextChanged, hotelNightsMad5.TextChanged, hotelNightsMad4.TextChanged, hotelNightsMad3.TextChanged, hotelNightsMad2.TextChanged, accTotalPriceMad5.TextChanged, accTotalPriceMad4.TextChanged, accTotalPriceMad3.TextChanged, accTotalPriceMad2.TextChanged, mealPriceMad5.TextChanged, mealPriceMad4.TextChanged, mealPriceMad3.TextChanged, mealPriceMad2.TextChanged, paxPriceMad5.TextChanged, paxPriceMad4.TextChanged, paxPriceMad3.TextChanged, paxPriceMad2.TextChanged, roomPriceMad5.TextChanged, roomPriceMad4.TextChanged, roomPriceMad3.TextChanged, roomPriceMad2.TextChanged, tourLeadPriceRm.TextChanged, saudiArrPriceRm.TextChanged, tourLeadPerPaxSar.TextChanged, saudiArrPriceSar.TextChanged, agentComm.TextChanged, officePrice.TextChanged, miscPrice.TextChanged, tagLanyard.TextChanged, mutawifMy.TextChanged, tourLeaderMy.TextChanged, zamZam.TextChanged, necessTotalPrice.TextChanged, visaPrice.TextChanged, bulletTrain.TextChanged, luggagePrice.TextChanged, bukuUmrah.TextChanged, peakEco5.TextChanged, peakBus5.TextChanged, peakEco4.TextChanged, peakBus4.TextChanged, peakEco3.TextChanged, peakBus3.TextChanged, peakEco2.TextChanged, peakBus2.TextChanged, babyPax.TextChanged, babyPolicy.TextChanged, childwPolicy.TextChanged, childwoPolicy.TextChanged, ticketPriceBus.TextChanged, ticketPriceEco.TextChanged, childwoBedPriceBus2.TextChanged, childwBedPriceBus2.TextChanged, childwoBedPaxBus2.TextChanged, childwBedPaxBus2.TextChanged, adultPaxBus2.TextChanged, adultPriceBus2.TextChanged, childwoBedPriceEco2.TextChanged, childwBedPriceEco2.TextChanged, childwoBedPaxEco2.TextChanged, childwBedPaxEco2.TextChanged, adultPaxEco2.TextChanged, adultPriceEco2.TextChanged, TabPage4.TextChanged, childwoBedPriceBus3.TextChanged, childwBedPriceBus3.TextChanged, childwoBedPaxBus3.TextChanged, childwBedPaxBus3.TextChanged, adultPaxBus3.TextChanged, adultPriceBus3.TextChanged, childwoBedPriceEco3.TextChanged, childwBedPriceEco3.TextChanged, childwoBedPaxEco3.TextChanged, childwBedPaxEco3.TextChanged, adultPaxEco3.TextChanged, adultPriceEco3.TextChanged, childwoBedPriceBus4.TextChanged, childwBedPriceBus4.TextChanged, childwoBedPaxBus4.TextChanged, childwBedPaxBus4.TextChanged, adultPaxBus4.TextChanged, adultPriceBus4.TextChanged, childwoBedPriceEco4.TextChanged, childwBedPriceEco4.TextChanged, childwoBedPaxEco4.TextChanged, childwBedPaxEco4.TextChanged, adultPaxEco4.TextChanged, adultPriceEco4.TextChanged, childwoBedPriceBus5.TextChanged, childwBedPriceBus5.TextChanged, childwoBedPaxBus5.TextChanged, childwBedPaxBus5.TextChanged, adultPaxBus5.TextChanged, adultPriceBus5.TextChanged, childwoBedPriceEco5.TextChanged, childwBedPriceEco5.TextChanged, childwoBedPaxEco5.TextChanged, childwBedPaxEco5.TextChanged, adultPaxEco5.TextChanged, adultPriceEco5.TextChanged
+    Private Sub Any_TextChanged(sender As Object, e As EventArgs) Handles saudiArrPerPaxSar.TextChanged, exchgRate.TextChanged, tourLeadPax.TextChanged, tourLeadPriceSar.TextChanged,
+        saudiArrPax.TextChanged, ovrTotalRm5.TextChanged, ovrTotalRm4.TextChanged, ovrTotalRm3.TextChanged, ovrTotalRm2.TextChanged, ovrTotalSar5.TextChanged, ovrTotalSar4.TextChanged,
+        ovrTotalSar3.TextChanged, ovrTotalSar2.TextChanged, hotelNights5.TextChanged, hotelNights4.TextChanged, hotelNights3.TextChanged, hotelNights2.TextChanged,
+        accTotalPrice5.TextChanged, accTotalPrice4.TextChanged, accTotalPrice3.TextChanged, accTotalPrice2.TextChanged, mealPrice5.TextChanged, mealPrice4.TextChanged,
+        mealPrice3.TextChanged, mealPrice2.TextChanged, paxPrice5.TextChanged, paxPrice4.TextChanged, paxPrice3.TextChanged, paxPrice2.TextChanged, roomPrice5.TextChanged,
+        roomPrice4.TextChanged, roomPrice3.TextChanged, roomPrice2.TextChanged, ovrTotalMadRm5.TextChanged, ovrTotalMadRm4.TextChanged, ovrTotalMadRm3.TextChanged,
+        ovrTotalMadRm2.TextChanged, ovrTotalMadSar5.TextChanged, ovrTotalMadSar4.TextChanged, ovrTotalMadSar3.TextChanged, ovrTotalMadSar2.TextChanged, hotelNightsMad5.TextChanged,
+        hotelNightsMad4.TextChanged, hotelNightsMad3.TextChanged, hotelNightsMad2.TextChanged, accTotalPriceMad5.TextChanged, accTotalPriceMad4.TextChanged,
+        accTotalPriceMad3.TextChanged, accTotalPriceMad2.TextChanged, mealPriceMad5.TextChanged, mealPriceMad4.TextChanged, mealPriceMad3.TextChanged, mealPriceMad2.TextChanged,
+        paxPriceMad5.TextChanged, paxPriceMad4.TextChanged, paxPriceMad3.TextChanged, paxPriceMad2.TextChanged, roomPriceMad5.TextChanged, roomPriceMad4.TextChanged,
+        roomPriceMad3.TextChanged, roomPriceMad2.TextChanged, tourLeadPriceRm.TextChanged, saudiArrPriceRm.TextChanged, tourLeadPerPaxSar.TextChanged, saudiArrPriceSar.TextChanged,
+        agentComm.TextChanged, officePrice.TextChanged, miscPrice1.TextChanged, tagLanyard.TextChanged, mutawifMy.TextChanged, tourLeaderMy.TextChanged, zamZam.TextChanged,
+        costingTotalPrice.TextChanged, visaPrice.TextChanged, bulletTrain.TextChanged, luggagePrice.TextChanged, bukuUmrah.TextChanged, peakEco5.TextChanged, peakBus5.TextChanged,
+        peakEco4.TextChanged, peakBus4.TextChanged, peakEco3.TextChanged, peakBus3.TextChanged, peakEco2.TextChanged, peakBus2.TextChanged, babyPax.TextChanged, babyPolicy.TextChanged,
+        childwPolicy.TextChanged, childwoPolicy.TextChanged, ticketPriceBus.TextChanged, ticketPriceEco.TextChanged, childwoBedPriceBus2.TextChanged, childwBedPriceBus2.TextChanged,
+        childwoBedPaxBus2.TextChanged, childwBedPaxBus2.TextChanged, adultPaxBus2.TextChanged, adultPriceBus2.TextChanged, childwoBedPriceEco2.TextChanged,
+        childwBedPriceEco2.TextChanged, childwoBedPaxEco2.TextChanged, childwBedPaxEco2.TextChanged, adultPaxEco2.TextChanged, adultPriceEco2.TextChanged, TabPage4.TextChanged,
+        childwoBedPriceBus3.TextChanged, childwBedPriceBus3.TextChanged, childwoBedPaxBus3.TextChanged, childwBedPaxBus3.TextChanged, adultPaxBus3.TextChanged,
+        adultPriceBus3.TextChanged, childwoBedPriceEco3.TextChanged, childwBedPriceEco3.TextChanged, childwoBedPaxEco3.TextChanged, childwBedPaxEco3.TextChanged,
+        adultPaxEco3.TextChanged, adultPriceEco3.TextChanged, childwoBedPriceBus4.TextChanged, childwBedPriceBus4.TextChanged, childwoBedPaxBus4.TextChanged,
+        childwBedPaxBus4.TextChanged, adultPaxBus4.TextChanged, adultPriceBus4.TextChanged, childwoBedPriceEco4.TextChanged, childwBedPriceEco4.TextChanged,
+        childwoBedPaxEco4.TextChanged, childwBedPaxEco4.TextChanged, adultPaxEco4.TextChanged, adultPriceEco4.TextChanged, childwoBedPriceBus5.TextChanged,
+        childwBedPriceBus5.TextChanged, childwoBedPaxBus5.TextChanged, childwBedPaxBus5.TextChanged, adultPaxBus5.TextChanged, adultPriceBus5.TextChanged,
+        childwoBedPriceEco5.TextChanged, childwBedPriceEco5.TextChanged, childwoBedPaxEco5.TextChanged, childwBedPaxEco5.TextChanged, adultPaxEco5.TextChanged,
+        adultPriceEco5.TextChanged, miscPrice2.TextChanged
+
         Update_SaudiArrangements()
         Update_Accommodations()
         Update_Costing()
@@ -90,33 +115,24 @@ Public Class Form1
 
         For Each textbox As TextBox In roomPriceTextbox
             Dim indexOfRoomPrice As Integer = Array.IndexOf(roomPriceTextbox, textbox)
-            Dim roomPriceText As String = textbox.Text.Trim()
 
-            If Not String.IsNullOrEmpty(roomPriceText) Then
-                If Double.TryParse(textbox.Text, doubleRoomPriceSar) AndAlso doubleRoomPriceSar >= 0 Then
-                    doublePaxPriceSar = doubleRoomPriceSar / 2
-                    paxPriceTextbox(indexOfRoomPrice).Text = doublePaxPriceSar.ToString("0.00")
-                Else
-                    paxPriceTextbox(indexOfRoomPrice).Text = "0.00"
-                End If
+            If Double.TryParse(textbox.Text, doubleRoomPriceSar) AndAlso doubleRoomPriceSar >= 0 Then
+                doublePaxPriceSar = doubleRoomPriceSar / 2
+                paxPriceTextbox(indexOfRoomPrice).Text = doublePaxPriceSar.ToString("0.00")
             Else
-                textbox.Text = "0.00"
+                paxPriceTextbox(indexOfRoomPrice).Text = ""
             End If
+
         Next
 
         For Each textbox As TextBox In mealPriceTextbox
             Dim indexOfMealPrice As Integer = Array.IndexOf(mealPriceTextbox, textbox)
-            Dim mealPriceText As String = textbox.Text.Trim()
 
-            If Not String.IsNullOrEmpty(mealPriceText) Then
-                If Double.TryParse(textbox.Text, doubleMealPriceSar) AndAlso Double.TryParse(paxPriceTextbox(indexOfMealPrice).Text, doublePaxPriceSar) AndAlso doubleMealPriceSar >= 0 Then
-                    doubleTotalPriceSar = doubleMealPriceSar + doublePaxPriceSar
-                    totalPriceTextbox(indexOfMealPrice).Text = doubleTotalPriceSar.ToString("0.00")
-                Else
-                    totalPriceTextbox(indexOfMealPrice).Text = "0.00"
-                End If
+            If Double.TryParse(textbox.Text, doubleMealPriceSar) AndAlso Double.TryParse(paxPriceTextbox(indexOfMealPrice).Text, doublePaxPriceSar) AndAlso doubleMealPriceSar >= 0 Then
+                doubleTotalPriceSar = doubleMealPriceSar + doublePaxPriceSar
+                totalPriceTextbox(indexOfMealPrice).Text = doubleTotalPriceSar.ToString("0.00")
             Else
-                textbox.Text = "0.00"
+                totalPriceTextbox(indexOfMealPrice).Text = ""
             End If
         Next
 
@@ -125,27 +141,62 @@ Public Class Form1
             Dim accNightsText As String = textbox.Text.Trim()
             Double.TryParse(exchgRate.Text, doubleExcRate)
 
-            If Not String.IsNullOrEmpty(accNightsText) Then
-                If Integer.TryParse(textbox.Text, intAccNights) AndAlso Double.TryParse(totalPriceTextbox(indexOfAccNights).Text, doubleTotalPriceSar) AndAlso intAccNights >= 0 Then
-                    Dim accOvrPriceSar As Double = intAccNights * doubleTotalPriceSar
-                    Dim accOvrPriceRm As Double = accOvrPriceSar * doubleExcRate
-                    accOvrPriceSarTextbox(indexOfAccNights).Text = accOvrPriceSar.ToString("0.00")
-                    accOvrPriceRmTextbox(indexOfAccNights).Text = accOvrPriceRm.ToString("0.00")
-                Else
-                    accOvrPriceSarTextbox(indexOfAccNights).Text = "0.00"
-                End If
+            If Integer.TryParse(textbox.Text, intAccNights) AndAlso Double.TryParse(totalPriceTextbox(indexOfAccNights).Text, doubleTotalPriceSar) AndAlso intAccNights >= 0 Then
+                Dim accOvrPriceSar As Double = intAccNights * doubleTotalPriceSar
+                Dim accOvrPriceRm As Double = accOvrPriceSar * doubleExcRate
+                accOvrPriceSarTextbox(indexOfAccNights).Text = accOvrPriceSar.ToString("0.00")
+                accOvrPriceRmTextbox(indexOfAccNights).Text = accOvrPriceRm.ToString("0.00")
             Else
-                textbox.Text = "0"
+                accOvrPriceSarTextbox(indexOfAccNights).Text = ""
+                accOvrPriceRmTextbox(indexOfAccNights).Text = ""
             End If
         Next
 
     End Sub
 
     Private Sub Update_Costing()
-        Dim travalNecessitiesTextBox() As TextBox = {visaPrice, bulletTrain, luggagePrice, bukuUmrah, tagLanyard, mutawifMy, tourLeaderMy, zamZam, agentComm, officePrice, miscPrice}
+        Dim travelNecessitiesTextBox() As TextBox = {visaPrice, bulletTrain, luggagePrice, bukuUmrah, tagLanyard, mutawifMy, tourLeaderMy,
+            zamZam, agentComm, officePrice, miscPrice1, miscPrice2}
+        Dim adultPaxEcoTextbox() As TextBox = {adultPaxEco2, adultPaxEco3, adultPaxEco4, adultPaxEco5}
+        Dim adultPaxBusTextbox() As TextBox = {adultPaxBus2, adultPaxBus3, adultPaxBus4, adultPaxBus5}
+        Dim childwBedPaxEcoTextbox() As TextBox = {childwBedPaxEco2, childwBedPaxEco3, childwBedPaxEco4, childwBedPaxEco5}
+        Dim childwBedPaxBusTextbox() As TextBox = {childwBedPaxBus2, childwBedPaxBus3, childwBedPaxBus4, childwBedPaxBus5}
+        Dim childwoBedPaxEcoTextbox() As TextBox = {childwoBedPaxEco2, childwoBedPaxEco3, childwoBedPaxEco4, childwoBedPaxEco5}
+        Dim childwoBedPaxBusTextbox() As TextBox = {childwoBedPaxBus2, childwoBedPaxBus3, childwoBedPaxBus4, childwoBedPaxBus5}
         Dim peakSeasonEcoTextBox() As TextBox = {peakEco2, peakEco3, peakEco4, peakEco5}
         Dim peakSeasonBusTextBox() As TextBox = {peakBus2, peakBus3, peakBus4, peakBus5}
-        Dim totalPrice, costingGrandTotal, doubleTicketPriceEco, doubleTicketPriceBus As Double
+        Dim costingGrandTotal, doubleTicketPriceEco, doubleTicketPriceBus, totalCostAdultPaxEco, totalCostAdultPaxBus, totalCostChildwBedPaxEco, totalCostChildwBedPaxBus,
+            totalCostChildwoBedPaxEco, totalCostChildwoBedPaxBus, totalEcoClassCost, totalBusClassCost As Double
+        Dim totalNecessPrice As Double = 0
+        Dim costingTotal As Double = 0
+
+        For Each textbox As TextBox In travelNecessitiesTextBox
+            Dim strTravelNec As String = textbox.Text.Trim()
+
+            If Not String.IsNullOrEmpty(strTravelNec) Then
+                Dim doubleTravelNec As Double
+
+                If Double.TryParse(textbox.Text, doubleTravelNec) Then
+                    totalNecessPrice += doubleTravelNec
+                End If
+            End If
+        Next
+
+        Dim doubleSaudiArrRm As Double
+        Double.TryParse(saudiArrPriceRm.Text, doubleSaudiArrRm)
+        Dim doubleTourLeadRm As Double
+        Double.TryParse(tourLeadPriceRm.Text, doubleTourLeadRm)
+
+        costingTotal = totalNecessPrice + doubleSaudiArrRm + doubleTourLeadRm
+
+        For Each textbox As TextBox In adultPaxEcoTextbox
+            Dim indexOfAdultPaxEco As Integer = Array.IndexOf(adultPaxEcoTextbox, textbox)
+
+        Next
+
+        costingTotalPrice.Text = costingTotal.ToString("0.00")
+
+
 
     End Sub
 
@@ -177,6 +228,7 @@ Public Class Form1
                         childwBedPriceEcoTextBox(indexOfadultPriceEco).Text = "0.00"
                     End If
                 Else
+                    textbox.BackColor = Color.Pink
                     textbox.Text = "0.00"
                 End If
             End If

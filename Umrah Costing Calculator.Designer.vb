@@ -43,10 +43,14 @@ Partial Class Form1
         Label73 = New Label()
         Label52 = New Label()
         Panel4 = New Panel()
+        Label115 = New Label()
+        Label114 = New Label()
+        Label113 = New Label()
         Panel8 = New Panel()
         Panel7 = New Panel()
         Panel6 = New Panel()
-        Button1 = New Button()
+        costingTotalPrice = New TextBox()
+        Label78 = New Label()
         Label41 = New Label()
         Label37 = New Label()
         Panel3 = New Panel()
@@ -62,13 +66,11 @@ Partial Class Form1
         Panel2 = New Panel()
         agentComm = New TextBox()
         officePrice = New TextBox()
-        miscPrice = New TextBox()
+        miscPrice1 = New TextBox()
         tagLanyard = New TextBox()
         mutawifMy = New TextBox()
         tourLeaderMy = New TextBox()
         zamZam = New TextBox()
-        necessTotalPrice = New TextBox()
-        Label78 = New Label()
         Label8 = New Label()
         Label9 = New Label()
         Label17 = New Label()
@@ -188,6 +190,7 @@ Partial Class Form1
         Label70 = New Label()
         Label21 = New Label()
         Panel9 = New Panel()
+        Button1 = New Button()
         TabPage2 = New TabPage()
         Label112 = New Label()
         Label105 = New Label()
@@ -303,6 +306,8 @@ Partial Class Form1
         Label44 = New Label()
         durationTextBox = New TextBox()
         TableLayoutPanel2 = New TableLayoutPanel()
+        miscPrice2 = New TextBox()
+        Label116 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         Panel5.SuspendLayout()
@@ -517,23 +522,61 @@ Partial Class Form1
         ' Panel4
         ' 
         Panel4.BorderStyle = BorderStyle.FixedSingle
+        Panel4.Controls.Add(Button1)
+        Panel4.Controls.Add(Label115)
+        Panel4.Controls.Add(Label114)
+        Panel4.Controls.Add(Label113)
         Panel4.Controls.Add(Panel8)
         Panel4.Controls.Add(Panel7)
         Panel4.Controls.Add(Panel6)
-        Panel4.Controls.Add(Button1)
+        Panel4.Controls.Add(costingTotalPrice)
+        Panel4.Controls.Add(Label78)
         Panel4.Location = New Point(424, 28)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(411, 188)
         Panel4.TabIndex = 97
+        ' 
+        ' Label115
+        ' 
+        Label115.AutoSize = True
+        Label115.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Label115.Location = New Point(21, 150)
+        Label115.Name = "Label115"
+        Label115.Size = New Size(109, 15)
+        Label115.TabIndex = 74
+        Label115.Text = "Profit Grand Total:"
+        Label115.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Label114
+        ' 
+        Label114.AutoSize = True
+        Label114.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Label114.Location = New Point(20, 104)
+        Label114.Name = "Label114"
+        Label114.Size = New Size(121, 15)
+        Label114.TabIndex = 73
+        Label114.Text = "Business Class Profit:"
+        Label114.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Label113
+        ' 
+        Label113.AutoSize = True
+        Label113.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Label113.Location = New Point(20, 58)
+        Label113.Name = "Label113"
+        Label113.Size = New Size(124, 15)
+        Label113.TabIndex = 72
+        Label113.Text = "Economy Class Profit:"
+        Label113.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Panel8
         ' 
         Panel8.BackColor = SystemColors.Info
         Panel8.BorderStyle = BorderStyle.Fixed3D
         Panel8.ForeColor = SystemColors.ActiveCaptionText
-        Panel8.Location = New Point(32, 111)
+        Panel8.Location = New Point(163, 139)
         Panel8.Name = "Panel8"
-        Panel8.Size = New Size(348, 36)
+        Panel8.Size = New Size(215, 36)
         Panel8.TabIndex = 2
         ' 
         ' Panel7
@@ -541,9 +584,9 @@ Partial Class Form1
         Panel7.BackColor = SystemColors.Info
         Panel7.BorderStyle = BorderStyle.Fixed3D
         Panel7.ForeColor = SystemColors.ActiveCaptionText
-        Panel7.Location = New Point(32, 63)
+        Panel7.Location = New Point(163, 91)
         Panel7.Name = "Panel7"
-        Panel7.Size = New Size(348, 36)
+        Panel7.Size = New Size(215, 36)
         Panel7.TabIndex = 2
         ' 
         ' Panel6
@@ -551,19 +594,29 @@ Partial Class Form1
         Panel6.BackColor = SystemColors.Info
         Panel6.BorderStyle = BorderStyle.Fixed3D
         Panel6.ForeColor = SystemColors.ActiveCaptionText
-        Panel6.Location = New Point(32, 17)
+        Panel6.Location = New Point(163, 45)
         Panel6.Name = "Panel6"
-        Panel6.Size = New Size(348, 36)
+        Panel6.Size = New Size(215, 36)
         Panel6.TabIndex = 1
         ' 
-        ' Button1
+        ' costingTotalPrice
         ' 
-        Button1.Location = New Point(166, 154)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
-        Button1.TabIndex = 0
-        Button1.Text = "Calculate"
-        Button1.UseVisualStyleBackColor = True
+        costingTotalPrice.Location = New Point(281, 10)
+        costingTotalPrice.Name = "costingTotalPrice"
+        costingTotalPrice.ReadOnly = True
+        costingTotalPrice.Size = New Size(98, 23)
+        costingTotalPrice.TabIndex = 71
+        ' 
+        ' Label78
+        ' 
+        Label78.AutoSize = True
+        Label78.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Label78.Location = New Point(216, 15)
+        Label78.Name = "Label78"
+        Label78.Size = New Size(64, 15)
+        Label78.TabIndex = 70
+        Label78.Text = "Cost Total:"
+        Label78.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label41
         ' 
@@ -684,15 +737,15 @@ Partial Class Form1
         ' Panel2
         ' 
         Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.Controls.Add(miscPrice2)
+        Panel2.Controls.Add(Label116)
         Panel2.Controls.Add(agentComm)
         Panel2.Controls.Add(officePrice)
-        Panel2.Controls.Add(miscPrice)
+        Panel2.Controls.Add(miscPrice1)
         Panel2.Controls.Add(tagLanyard)
         Panel2.Controls.Add(mutawifMy)
         Panel2.Controls.Add(tourLeaderMy)
         Panel2.Controls.Add(zamZam)
-        Panel2.Controls.Add(necessTotalPrice)
-        Panel2.Controls.Add(Label78)
         Panel2.Controls.Add(Label8)
         Panel2.Controls.Add(Label9)
         Panel2.Controls.Add(Label17)
@@ -727,12 +780,12 @@ Partial Class Form1
         officePrice.Size = New Size(72, 23)
         officePrice.TabIndex = 77
         ' 
-        ' miscPrice
+        ' miscPrice1
         ' 
-        miscPrice.Location = New Point(530, 76)
-        miscPrice.Name = "miscPrice"
-        miscPrice.Size = New Size(72, 23)
-        miscPrice.TabIndex = 78
+        miscPrice1.Location = New Point(530, 76)
+        miscPrice1.Name = "miscPrice1"
+        miscPrice1.Size = New Size(72, 23)
+        miscPrice1.TabIndex = 78
         ' 
         ' tagLanyard
         ' 
@@ -762,25 +815,6 @@ Partial Class Form1
         zamZam.Size = New Size(72, 23)
         zamZam.TabIndex = 75
         ' 
-        ' necessTotalPrice
-        ' 
-        necessTotalPrice.Location = New Point(710, 110)
-        necessTotalPrice.Name = "necessTotalPrice"
-        necessTotalPrice.ReadOnly = True
-        necessTotalPrice.Size = New Size(98, 23)
-        necessTotalPrice.TabIndex = 71
-        ' 
-        ' Label78
-        ' 
-        Label78.AutoSize = True
-        Label78.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label78.Location = New Point(629, 115)
-        Label78.Name = "Label78"
-        Label78.Size = New Size(81, 15)
-        Label78.TabIndex = 70
-        Label78.Text = "Costing Total:"
-        Label78.TextAlign = ContentAlignment.MiddleCenter
-        ' 
         ' Label8
         ' 
         Label8.AutoSize = True
@@ -804,9 +838,9 @@ Partial Class Form1
         Label17.AutoSize = True
         Label17.Location = New Point(415, 81)
         Label17.Name = "Label17"
-        Label17.Size = New Size(32, 15)
+        Label17.Size = New Size(38, 15)
         Label17.TabIndex = 62
-        Label17.Text = "Misc"
+        Label17.Text = "Misc I"
         ' 
         ' Label11
         ' 
@@ -1927,6 +1961,15 @@ Partial Class Form1
         Panel9.Size = New Size(847, 485)
         Panel9.TabIndex = 100
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(9, 11)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 23)
+        Button1.TabIndex = 0
+        Button1.Text = "Refresh"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' TabPage2
         ' 
         TabPage2.Controls.Add(Label112)
@@ -2993,6 +3036,22 @@ Partial Class Form1
         TableLayoutPanel2.Size = New Size(200, 100)
         TableLayoutPanel2.TabIndex = 0
         ' 
+        ' miscPrice2
+        ' 
+        miscPrice2.Location = New Point(530, 107)
+        miscPrice2.Name = "miscPrice2"
+        miscPrice2.Size = New Size(72, 23)
+        miscPrice2.TabIndex = 80
+        ' 
+        ' Label116
+        ' 
+        Label116.AutoSize = True
+        Label116.Location = New Point(415, 112)
+        Label116.Name = "Label116"
+        Label116.Size = New Size(41, 15)
+        Label116.TabIndex = 79
+        Label116.Text = "Misc II"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -3019,6 +3078,7 @@ Partial Class Form1
         Panel5.ResumeLayout(False)
         Panel5.PerformLayout()
         Panel4.ResumeLayout(False)
+        Panel4.PerformLayout()
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
         Panel2.ResumeLayout(False)
@@ -3212,11 +3272,11 @@ Partial Class Form1
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents necessTotalPrice As TextBox
+    Friend WithEvents costingTotalPrice As TextBox
     Friend WithEvents Label78 As Label
     Friend WithEvents agentComm As TextBox
     Friend WithEvents officePrice As TextBox
-    Friend WithEvents miscPrice As TextBox
+    Friend WithEvents miscPrice1 As TextBox
     Friend WithEvents tagLanyard As TextBox
     Friend WithEvents mutawifMy As TextBox
     Friend WithEvents tourLeaderMy As TextBox
@@ -3327,4 +3387,9 @@ Partial Class Form1
     Friend WithEvents saudiArrPriceRm As TextBox
     Friend WithEvents tourLeadPerPaxSar As TextBox
     Friend WithEvents saudiArrPerPaxSar As TextBox
+    Friend WithEvents Label115 As Label
+    Friend WithEvents Label114 As Label
+    Friend WithEvents Label113 As Label
+    Friend WithEvents miscPrice2 As TextBox
+    Friend WithEvents Label116 As Label
 End Class
