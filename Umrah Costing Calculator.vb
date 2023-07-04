@@ -1,4 +1,7 @@
-﻿Imports System.Runtime.Intrinsics.X86
+﻿Imports System.Drawing.Imaging
+Imports System.Reflection.Emit
+Imports System.Runtime.InteropServices.JavaScript.JSType
+Imports System.Runtime.Intrinsics.X86
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -11,15 +14,12 @@ Public Class Form1
         returnDate.Format = DateTimePickerFormat.Custom
         returnDate.CustomFormat = "dd MMM yyyy"
     End Sub
-
     Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles departDate.ValueChanged
         CalculateDuration()
     End Sub
-
     Private Sub DateTimePicker2_ValueChanged(sender As Object, e As EventArgs) Handles returnDate.ValueChanged
         CalculateDuration()
     End Sub
-
     Private Sub CalculateDuration()
         Dim departureDate As DateTime = departDate.Value
         Dim returnDate As Date = Me.returnDate.Value
@@ -34,9 +34,7 @@ Public Class Form1
             durationTextBox.Text = $"{totalDays}D {nights}N"
             durationTextBox.BackColor = SystemColors.Window
         End If
-
     End Sub
-
     Private Sub Any_TextChanged(sender As Object, e As EventArgs) Handles saudiArrPerPaxSar.TextChanged, exchgRate.TextChanged, tourLeadPax.TextChanged, tourLeadPriceSar.TextChanged,
         saudiArrPax.TextChanged, ovrTotalRm5.TextChanged, ovrTotalRm4.TextChanged, ovrTotalRm3.TextChanged, ovrTotalRm2.TextChanged, ovrTotalSar5.TextChanged, ovrTotalSar4.TextChanged,
         ovrTotalSar3.TextChanged, ovrTotalSar2.TextChanged, hotelNights5.TextChanged, hotelNights4.TextChanged, hotelNights3.TextChanged, hotelNights2.TextChanged,
@@ -64,14 +62,12 @@ Public Class Form1
 
         Update_SaudiArrangements()
         Update_Accommodations()
-        Update_Costing()
         Update_Package_Price()
+        Update_Profit_Costing()
     End Sub
-
     Private Sub Update_SaudiArrangements()
         Dim saudiArrPerPaxPrice, tourLeadPerPaxPrice, tourLeadOvrValue, excRate, SaudiArrOvrValue As Double
         Dim tourLeadPaxValue, saudiArrPaxValue As Integer
-
 
         If Integer.TryParse(saudiArrPax.Text, saudiArrPaxValue) AndAlso Double.TryParse(saudiArrPerPaxSar.Text, saudiArrPerPaxPrice) AndAlso saudiArrPaxValue > 0 Then
             SaudiArrOvrValue = saudiArrPaxValue * saudiArrPerPaxPrice
@@ -100,7 +96,6 @@ Public Class Form1
             saudiArrPriceRm.Text = String.Empty
         End If
     End Sub
-
     Private Sub Update_Accommodations()
         Dim roomPriceTextbox() As TextBox = {roomPrice2, roomPrice3, roomPrice4, roomPrice5, roomPriceMad2, roomPriceMad3, roomPriceMad4, roomPriceMad5}
         Dim paxPriceTextbox() As TextBox = {paxPrice2, paxPrice3, paxPrice4, paxPrice5, paxPriceMad2, paxPriceMad3, paxPriceMad4, paxPriceMad5}
@@ -150,98 +145,7 @@ Public Class Form1
                 accOvrPriceRmTextbox(indexOfAccNights).Text = ""
             End If
         Next
-
     End Sub
-
-    Private Sub Update_Costing()
-        Dim travelNecessitiesTextBox() As TextBox = {visaPrice, bulletTrain, luggagePrice, bukuUmrah, tagLanyard, mutawifMy, tourLeaderMy,
-            zamZam, agentComm, officePrice, miscPrice1, miscPrice2}
-        Dim makAccOvrPriceRmTextbox() As TextBox = {ovrTotalRm2, ovrTotalRm3, ovrTotalRm4, ovrTotalRm5}
-        Dim madAccOvrPriceRmTextbox() As TextBox = {ovrTotalMadRm2, ovrTotalMadRm3, ovrTotalMadRm4, ovrTotalMadRm5}
-        Dim paxEcoTextBox() As TextBox = {adultPaxEco2, childwBedPaxEco2, childwoBedPaxEco2, adultPaxEco3, childwBedPaxEco3, childwoBedPaxEco3, adultPaxEco4, childwBedPaxEco4,
-            childwoBedPaxEco4, adultPaxEco5, childwBedPaxEco5, childwoBedPaxEco5}
-        Dim paxBusTextBox() As TextBox = {adultPaxBus2, childwBedPaxBus2, childwoBedPaxBus2, adultPaxBus3, childwBedPaxBus3, childwoBedPaxBus3, adultPaxBus4, childwBedPaxBus4,
-            childwoBedPaxBus4, adultPaxBus5, childwBedPaxBus5, childwoBedPaxBus5}
-        Dim totalCostEcoTextBox() As TextBox = {}
-        Dim totalCostBusTextBox() As TextBox = {}
-        Dim peakSeasonEcoTextBox() As TextBox = {peakEco2, peakEco3, peakEco4, peakEco5}
-        Dim peakSeasonBusTextBox() As TextBox = {peakBus2, peakBus3, peakBus4, peakBus5}
-        Dim doubleTicketPriceEco, doubleTicketPriceBus, doubleSaudiArrRm, doubleTourLeadRm As Double
-        Dim totalNecessPrice As Double = 0
-        Dim costingTotal As Double = 0
-        Dim costingTotalEco As Double = 0
-        Dim costingTotalBus As Double = 0
-
-        For Each textbox As TextBox In travelNecessitiesTextBox
-            Dim strTravelNec As String = textbox.Text.Trim()
-
-            If Not String.IsNullOrEmpty(strTravelNec) Then
-                Dim doubleTravelNec As Double
-
-                If Double.TryParse(textbox.Text, doubleTravelNec) Then
-                    totalNecessPrice += doubleTravelNec
-                End If
-            End If
-        Next
-
-        Double.TryParse(ovrTotalRm2.Text, doubleSaudiArrRm)
-        Double.TryParse(saudiArrPriceRm.Text, doubleSaudiArrRm)
-        Double.TryParse(saudiArrPriceRm.Text, doubleSaudiArrRm)
-        Double.TryParse(tourLeadPriceRm.Text, doubleTourLeadRm)
-        Double.TryParse(ticketPriceEco.Text, doubleTicketPriceEco)
-        Double.TryParse(ticketPriceBus.Text, doubleTicketPriceBus)
-
-        costingTotal = totalNecessPrice + doubleSaudiArrRm + doubleTourLeadRm
-        costingTotalEco = costingTotal + doubleTicketPriceEco
-        costingTotalBus = costingTotal + doubleTicketPriceBus
-
-        For Each textbox As TextBox In paxEcoTextBox
-            Dim indexOfPaxEco As Integer = Array.IndexOf(paxEcoTextBox, textbox)
-            Dim strPaxEco As String = textbox.Text.Trim()
-            Dim doublePaxEco As Integer
-            Dim doublemakAccPrice, doublemadAccPrice As Double
-            Dim arrayCoord As Integer = indexOfPaxEco \ 3
-
-            If Not String.IsNullOrEmpty(strPaxEco) Then
-                If indexOfPaxEco >= 0 AndAlso indexOfPaxEco <= 2 Then
-                    If Integer.TryParse(textbox.Text, doublePaxEco) AndAlso Double.TryParse(makAccOvrPriceRmTextbox(arrayCoord).Text, doublemakAccPrice) AndAlso Double.TryParse(madAccOvrPriceRmTextbox(arrayCoord).Text, doublemadAccPrice) Then
-                        costingTotalEco += doublePaxEco * costingTotalEco + (doublemadAccPrice + doublemakAccPrice)
-                        totalCostEcoTextBox(indexOfPaxEco).Text = costingTotalEco.ToString("0.00")
-                    End If
-                End If
-
-            End If
-        Next
-
-        For Each textbox As TextBox In paxBusTextBox
-            Dim indexOfPaxBus As Integer = Array.IndexOf(paxBusTextBox, textbox)
-            Dim strPaxBus As String = textbox.Text.Trim()
-            Dim doublePaxBus As Integer
-            Dim doublemakAccPrice, doublemadAccPrice As Double
-            Dim arrayCoord As Integer = indexOfPaxBus \ 3
-
-            If Not String.IsNullOrEmpty(strPaxBus) Then
-                If Integer.TryParse(textbox.Text, doublePaxBus) AndAlso Double.TryParse(makAccOvrPriceRmTextbox(arrayCoord).Text, doublemakAccPrice) AndAlso Double.TryParse(madAccOvrPriceRmTextbox(arrayCoord).Text, doublemadAccPrice) Then
-                    costingTotalBus += doublePaxBus * costingTotalBus + (doublemadAccPrice + doublemakAccPrice)
-                    totalCostBusTextBox(indexOfPaxBus).Text = costingTotalBus.ToString("0.00")
-                End If
-            End If
-        Next
-
-        For Each textbox As TextBox In totalCostEcoTextBox
-            Dim strTotalCostEco As String = textbox.Text.Trim()
-
-            If Not String.IsNullOrEmpty(strTotalCostEco) Then
-                Dim doubleTotalCostEco As Double
-
-                If Double.TryParse(textbox.Text, doubleTotalCostEco) Then
-                    costingTotalEco += doubleTotalCostEco
-                End If
-            End If
-        Next
-
-    End Sub
-
     Private Sub Update_Package_Price()
         Dim adultPriceEcoTextBox() As TextBox = {adultPriceEco2, adultPriceEco3, adultPriceEco4, adultPriceEco5}
         Dim adultPriceBusTextBox() As TextBox = {adultPriceBus2, adultPriceBus3, adultPriceBus4, adultPriceBus5}
@@ -252,57 +156,239 @@ Public Class Form1
         Dim doubleChildwPolicy, doubleChildwoPolicy, doubleAdultPriceEco, doubleAdultPriceBus As Double
 
         For Each textbox As TextBox In adultPriceEcoTextBox
-            Dim indexOfadultPriceEco As Integer = Array.IndexOf(adultPriceEcoTextBox, textbox)
             Dim strAdultPriceEco As String = textbox.Text.Trim()
 
-            If Not String.IsNullOrEmpty(strAdultPriceEco) Then
-                If Double.TryParse(textbox.Text, doubleAdultPriceEco) AndAlso doubleAdultPriceEco > 0 Then
-                    textbox.BackColor = SystemColors.Window
-                    If Double.TryParse(childwPolicy.Text, doubleChildwPolicy) AndAlso doubleChildwPolicy < 0 Then
-                        Dim doubleChildwPolicyPrice As Double = doubleAdultPriceEco + doubleChildwPolicy
-                        childwBedPriceEcoTextBox(indexOfadultPriceEco).Text = doubleChildwPolicyPrice.ToString("0.00")
-                        If Double.TryParse(childwoPolicy.Text, doubleChildwoPolicy) AndAlso doubleChildwoPolicy < 0 Then
-                            Dim doubleChildwoPolicyPrice As Double = doubleAdultPriceEco + doubleChildwoPolicy
-                            childwoBedPriceEcoTextBox(indexOfadultPriceEco).Text = doubleChildwoPolicyPrice.ToString("0.00")
-                        Else
-                            childwoBedPriceEcoTextBox(indexOfadultPriceEco).Text = "0"
-                        End If
-                    Else
-                        childwBedPriceEcoTextBox(indexOfadultPriceEco).Text = "0"
-                    End If
-                End If
-            Else
-                textbox.BackColor = Color.Pink
+            If String.IsNullOrEmpty(strAdultPriceEco) Then
                 textbox.Text = "0"
+                Continue For
+            End If
+
+            If Not Double.TryParse(textbox.Text, doubleAdultPriceEco) Then
+                Continue For
+            End If
+
+            Dim indexOfadultPriceEco As Integer = Array.IndexOf(adultPriceEcoTextBox, textbox)
+
+            If Double.TryParse(childwPolicy.Text, doubleChildwPolicy) Then
+                If doubleChildwPolicy < 0 AndAlso Double.TryParse(textbox.Text, doubleAdultPriceEco) AndAlso doubleAdultPriceEco > 0 Then
+                    Dim doubleChildwPolicyPrice As Double = doubleAdultPriceEco + doubleChildwPolicy
+                    childwBedPriceEcoTextBox(indexOfadultPriceEco).Text = doubleChildwPolicyPrice.ToString("0.00")
+                ElseIf Double.TryParse(textbox.Text, doubleAdultPriceEco) AndAlso doubleAdultPriceEco = 0 Then
+                    childwBedPriceEcoTextBox(indexOfadultPriceEco).Text = ""
+                End If
+            End If
+
+            If Double.TryParse(childwoPolicy.Text, doubleChildwoPolicy) Then
+                If doubleChildwoPolicy < 0 AndAlso Double.TryParse(textbox.Text, doubleAdultPriceEco) AndAlso doubleAdultPriceEco > 0 Then
+                    Dim doubleChildwoPolicyPrice As Double = doubleAdultPriceEco + doubleChildwoPolicy
+                    childwoBedPriceEcoTextBox(indexOfadultPriceEco).Text = doubleChildwoPolicyPrice.ToString("0.00")
+                ElseIf Double.TryParse(textbox.Text, doubleAdultPriceEco) AndAlso doubleAdultPriceEco = 0 Then
+                    childwoBedPriceEcoTextBox(indexOfadultPriceEco).Text = ""
+                End If
             End If
         Next
 
         For Each textbox As TextBox In adultPriceBusTextBox
-            Dim indexOfadultPriceBus As Integer = Array.IndexOf(adultPriceBusTextBox, textbox)
             Dim strAdultPriceBus As String = textbox.Text.Trim()
 
-            If Not String.IsNullOrEmpty(strAdultPriceBus) Then
-                If Double.TryParse(textbox.Text, doubleAdultPriceBus) AndAlso doubleAdultPriceBus > 0 Then
-                    textbox.BackColor = SystemColors.Window
-                    If Double.TryParse(childwPolicy.Text, doubleChildwPolicy) AndAlso doubleChildwPolicy < 0 Then
-                        Dim doubleChildwPolicyPrice As Double = doubleAdultPriceBus + doubleChildwPolicy
-                        childwBedPriceBusTextBox(indexOfadultPriceBus).Text = doubleChildwPolicyPrice.ToString("0.00")
-                        If Double.TryParse(childwoPolicy.Text, doubleChildwoPolicy) AndAlso doubleChildwoPolicy < 0 Then
-                            Dim doubleChildwoPolicyPrice As Double = doubleAdultPriceBus + doubleChildwoPolicy
-                            childwoBedPriceBusTextBox(indexOfadultPriceBus).Text = doubleChildwoPolicyPrice.ToString("0.00")
-                        Else
-                            childwoBedPriceBusTextBox(indexOfadultPriceBus).Text = "0"
-                        End If
-                    Else
-                        childwBedPriceEcoTextBox(indexOfadultPriceBus).Text = "0"
-                    End If
-                End If
-            Else
-                textbox.BackColor = Color.Pink
+            If String.IsNullOrEmpty(strAdultPriceBus) Then
                 textbox.Text = "0"
+                Continue For
+            End If
+
+            If Not Double.TryParse(textbox.Text, doubleAdultPriceBus) AndAlso doubleAdultPriceBus > 0 Then
+                Continue For
+            End If
+
+            Dim indexOfadultPriceBus As Integer = Array.IndexOf(adultPriceBusTextBox, textbox)
+
+            If Double.TryParse(childwPolicy.Text, doubleChildwPolicy) Then
+                If doubleChildwPolicy < 0 AndAlso Double.TryParse(textbox.Text, doubleAdultPriceBus) AndAlso doubleAdultPriceBus > 0 Then
+                    Dim doubleChildwPolicyPrice As Double = doubleAdultPriceBus + doubleChildwPolicy
+                    childwBedPriceBusTextBox(indexOfadultPriceBus).Text = doubleChildwPolicyPrice.ToString("0.00")
+                ElseIf Double.TryParse(textbox.Text, doubleAdultPriceBus) AndAlso doubleAdultPriceBus = 0 Then
+                    childwBedPriceBusTextBox(indexOfadultPriceBus).Text = ""
+                End If
+            End If
+
+            If Double.TryParse(childwoPolicy.Text, doubleChildwoPolicy) Then
+                If doubleChildwoPolicy < 0 AndAlso Double.TryParse(textbox.Text, doubleAdultPriceBus) AndAlso doubleAdultPriceBus > 0 Then
+                    Dim doubleChildwoPolicyPrice As Double = doubleAdultPriceBus + doubleChildwoPolicy
+                    childwoBedPriceBusTextBox(indexOfadultPriceBus).Text = doubleChildwoPolicyPrice.ToString("0.00")
+                ElseIf Double.TryParse(textbox.Text, doubleAdultPriceBus) AndAlso doubleAdultPriceBus = 0 Then
+                    childwoBedPriceBusTextBox(indexOfadultPriceBus).Text = ""
+                End If
+            End If
+        Next
+    End Sub
+    Private Sub Update_Profit_Costing()
+        Dim travelNecessitiesTextBox() As TextBox = {visaPrice, bulletTrain, luggagePrice, bukuUmrah, tagLanyard, mutawifMy, tourLeaderMy, zamZam, agentComm, officePrice, miscPrice1, miscPrice2}
+        Dim makAccOvrPriceRmTextbox() As TextBox = {ovrTotalRm2, ovrTotalRm3, ovrTotalRm4, ovrTotalRm5}
+        Dim madAccOvrPriceRmTextbox() As TextBox = {ovrTotalMadRm2, ovrTotalMadRm3, ovrTotalMadRm4, ovrTotalMadRm5}
+        Dim paxEcoTextBox() As TextBox = {adultPaxEco2, childwBedPaxEco2, childwoBedPaxEco2, adultPaxEco3, childwBedPaxEco3, childwoBedPaxEco3, adultPaxEco4, childwBedPaxEco4, childwoBedPaxEco4, adultPaxEco5, childwBedPaxEco5, childwoBedPaxEco5}
+        Dim paxBusTextBox() As TextBox = {adultPaxBus2, childwBedPaxBus2, childwoBedPaxBus2, adultPaxBus3, childwBedPaxBus3, childwoBedPaxBus3, adultPaxBus4, childwBedPaxBus4, childwoBedPaxBus4, adultPaxBus5, childwBedPaxBus5, childwoBedPaxBus5}
+        Dim priceEcoTextBox() As TextBox = {adultPriceEco2, childwBedPriceEco2, childwoBedPriceEco2, adultPriceEco3, childwBedPriceEco3, childwoBedPriceEco3, adultPriceEco4, childwBedPriceEco4, childwoBedPriceEco4, adultPriceEco5, childwBedPriceEco5, childwoBedPriceEco5}
+        Dim priceBusTextBox() As TextBox = {adultPriceBus2, childwBedPriceBus2, childwoBedPriceBus2, adultPriceBus3, childwBedPriceBus3, childwoBedPriceBus3, adultPriceBus4, childwBedPriceBus4, childwoBedPriceBus4, adultPriceBus5, childwBedPriceBus5, childwoBedPriceBus5}
+        Dim peakSeasonEcoTextBox() As TextBox = {peakEco2, peakEco3, peakEco4, peakEco5}
+        Dim peakSeasonBusTextBox() As TextBox = {peakBus2, peakBus3, peakBus4, peakBus5}
+        Dim bufferCosting(3) As Double
+        Dim totalEcoCost As Double = 0
+        Dim totalBusCost As Double = 0
+        Dim totalEcoSale As Double = 0
+        Dim totalBusSale As Double = 0
+        Dim totalEcoProfit As Double = 0
+        Dim totalBusProfit As Double = 0
+        Dim grandTotalCost As Double = 0
+        Dim grandTotalSale As Double = 0
+        Dim grandTotalProfit As Double = 0
+
+        For Each bufferCost As Double In bufferCosting
+            Dim indexOfBufferCost As Integer = Array.IndexOf(bufferCosting, bufferCost)
+            Dim doubleSaudiArrPriceRm, doubleTourLeadPriceRm, doubleMakPriceRm, doubleMadPriceRm As Double
+            Dim singlePaxCost As Double = 0
+
+            For Each textbox As TextBox In travelNecessitiesTextBox
+                Dim strTravelNec As String = textbox.Text.Trim()
+
+                If String.IsNullOrEmpty(strTravelNec) Then
+                    Continue For
+                End If
+
+                Dim doubleTravelNec As Double
+
+                If Double.TryParse(textbox.Text, doubleTravelNec) AndAlso doubleTravelNec >= 0 Then
+                    singlePaxCost += doubleTravelNec
+                End If
+            Next
+
+            If Double.TryParse(saudiArrPriceRm.Text, doubleSaudiArrPriceRm) Then
+                singlePaxCost += doubleSaudiArrPriceRm
+            End If
+
+            If Double.TryParse(tourLeadPriceRm.Text, doubleTourLeadPriceRm) Then
+                singlePaxCost += doubleTourLeadPriceRm
+            End If
+
+            If Double.TryParse(makAccOvrPriceRmTextbox(indexOfBufferCost).Text, doubleMakPriceRm) Then
+                singlePaxCost += doubleMakPriceRm
+            End If
+
+            If Double.TryParse(madAccOvrPriceRmTextbox(indexOfBufferCost).Text, doubleMadPriceRm) Then
+                singlePaxCost += doubleMadPriceRm
+            End If
+
+            bufferCosting(indexOfBufferCost) = singlePaxCost
+        Next
+
+        For Each textbox As TextBox In paxEcoTextBox
+            Dim strPaxEco As String = textbox.Text.Trim()
+            Dim indexOfPaxEco As Integer = Array.IndexOf(paxEcoTextBox, textbox)
+            Dim intPaxEco As Integer
+
+            If String.IsNullOrEmpty(strPaxEco) Or Not Integer.TryParse(textbox.Text, intPaxEco) Then
+                Continue For
+            End If
+
+            Dim arrayQuotient As Integer = indexOfPaxEco \ 3
+            Dim doublePriceEco, doubleTicketEco, doublePeakSeasonEco As Double
+            Dim strTicketEco As String = ticketPriceEco.Text.Trim()
+            Dim strPriceEco As String = priceEcoTextBox(indexOfPaxEco).Text.Trim()
+
+            If Double.TryParse(priceEcoTextBox(indexOfPaxEco).Text, doublePriceEco) AndAlso doublePriceEco >= 0 Then
+                totalEcoSale += doublePriceEco * intPaxEco
+                totalEcoCost += bufferCosting(arrayQuotient) * intPaxEco
+
+                If Double.TryParse(ticketPriceEco.Text, doubleTicketEco) AndAlso doubleTicketEco >= 0 Then
+                    totalEcoCost += doubleTicketEco * intPaxEco
+                End If
+
+                If Double.TryParse(peakSeasonEcoTextBox(arrayQuotient).Text, doublePeakSeasonEco) AndAlso doublePeakSeasonEco >= 0 Then
+                    totalEcoCost += doublePeakSeasonEco * intPaxEco
+                End If
             End If
         Next
 
+        For Each textbox As TextBox In paxBusTextBox
+            Dim strPaxBus As String = textbox.Text.Trim()
+            Dim indexOfPaxBus As Integer = Array.IndexOf(paxBusTextBox, textbox)
+            Dim intPaxBus As Integer
+
+            If String.IsNullOrEmpty(strPaxBus) Or Not Integer.TryParse(textbox.Text, intPaxBus) Or intPaxBus < 0 Then
+                Continue For
+            End If
+
+            Dim arrayQuotient As Integer = indexOfPaxBus \ 3
+            Dim doublePriceBus, doubleTicketBus, doublePeakSeasonBus As Double
+            Dim strTicketBus As String = ticketPriceBus.Text.Trim()
+            Dim strPriceBus As String = priceBusTextBox(indexOfPaxBus).Text.Trim()
+
+            If Double.TryParse(priceBusTextBox(indexOfPaxBus).Text, doublePriceBus) AndAlso doublePriceBus >= 0 Then
+                totalBusSale += doublePriceBus * intPaxBus
+                totalBusCost += bufferCosting(arrayQuotient) * intPaxBus
+
+                If Double.TryParse(ticketPriceBus.Text, doubleTicketBus) AndAlso doubleTicketBus >= 0 Then
+                    totalBusCost += doubleTicketBus * intPaxBus
+                End If
+
+                If Double.TryParse(peakSeasonBusTextBox(arrayQuotient).Text, doublePeakSeasonBus) AndAlso doublePeakSeasonBus >= 0 Then
+                    totalBusCost += doublePeakSeasonBus * intPaxBus
+                End If
+            End If
+        Next
+
+        totalBusProfit = totalBusSale - totalBusCost
+        totalEcoProfit = totalEcoSale - totalEcoCost
+        grandTotalCost = totalBusCost + totalEcoCost
+        grandTotalSale = totalBusSale + totalEcoSale
+
+        Dim doubleBabyPrice As Double
+        Dim intBabyPax As Integer
+
+
+        If Double.TryParse(babyPolicy.Text, doubleBabyPrice) AndAlso doubleBabyPrice >= 0 AndAlso Integer.TryParse(babyPax.Text, intBabyPax) AndAlso intBabyPax >= 0 Then
+            grandTotalProfit = totalBusProfit + totalEcoProfit + (doubleBabyPrice * intBabyPax)
+        Else
+            grandTotalProfit = totalBusProfit + totalEcoProfit
+        End If
+
+        RichTextBox1.Text = ""
+        RichTextBox1.SelectionColor = Color.Red
+        RichTextBox1.SelectionAlignment = HorizontalAlignment.Center
+        RichTextBox1.AppendText(totalEcoCost.ToString("N2").TrimEnd("0"c).TrimEnd("."c))
+        RichTextBox1.SelectionColor = Color.Black
+        RichTextBox1.AppendText(" / ")
+        RichTextBox1.SelectionColor = Color.Blue
+        RichTextBox1.AppendText(totalEcoSale.ToString("N2").TrimEnd("0"c).TrimEnd("."c))
+        RichTextBox1.SelectionColor = Color.Black
+        RichTextBox1.AppendText(" / ")
+        RichTextBox1.SelectionColor = Color.Green
+        RichTextBox1.AppendText(totalEcoProfit.ToString("N2").TrimEnd("0"c).TrimEnd("."c))
+
+        RichTextBox2.Text = ""
+        RichTextBox2.SelectionColor = Color.Red
+        RichTextBox2.SelectionAlignment = HorizontalAlignment.Center
+        RichTextBox2.AppendText(totalBusCost.ToString("N2").TrimEnd("0"c).TrimEnd("."c))
+        RichTextBox2.SelectionColor = Color.Black
+        RichTextBox2.AppendText(" / ")
+        RichTextBox2.SelectionColor = Color.Blue
+        RichTextBox2.AppendText(totalBusSale.ToString("N2").TrimEnd("0"c).TrimEnd("."c))
+        RichTextBox2.SelectionColor = Color.Black
+        RichTextBox2.AppendText(" / ")
+        RichTextBox2.SelectionColor = Color.Green
+        RichTextBox2.AppendText(totalBusProfit.ToString("N2").TrimEnd("0"c).TrimEnd("."c))
+
+        RichTextBox3.Text = ""
+        RichTextBox3.SelectionColor = Color.Red
+        RichTextBox3.SelectionAlignment = HorizontalAlignment.Center
+        RichTextBox3.AppendText(grandTotalCost.ToString("N2").TrimEnd("0"c).TrimEnd("."c))
+        RichTextBox3.SelectionColor = Color.Black
+        RichTextBox3.AppendText(" / ")
+        RichTextBox3.SelectionColor = Color.Blue
+        RichTextBox3.AppendText(grandTotalSale.ToString("N2").TrimEnd("0"c).TrimEnd("."c))
+        RichTextBox3.SelectionColor = Color.Black
+        RichTextBox3.AppendText(" / ")
+        RichTextBox3.SelectionColor = Color.Green
+        RichTextBox3.AppendText(grandTotalProfit.ToString("N2").TrimEnd("0"c).TrimEnd("."c))
     End Sub
 
 End Class
